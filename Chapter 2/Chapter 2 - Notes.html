@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Cybersecurity Threat Landscape - Comprehensive Study Guide</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .exam-objectives {
+            background-color: #e8f4f8;
+            border-left: 5px solid #0284c7;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .section h3 {
+            color: #764ba2;
+            margin-top: 20px;
+        }
+        .definition-box {
+            background-color: #fef3c7;
+            border: 2px solid #f59e0b;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .definition-box h4 {
+            margin-top: 0;
+            color: #d97706;
+        }
+        .exam-note {
+            background-color: #fee2e2;
+            border-left: 5px solid #ef4444;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .exam-note h4 {
+            margin-top: 0;
+            color: #dc2626;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .comparison-table th {
+            background-color: #667eea;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        .comparison-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .comparison-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        .key-concept {
+            background-color: #ecfdf5;
+            border-left: 5px solid #10b981;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .real-world-example {
+            background-color: #f0f9ff;
+            border: 1px solid #0ea5e9;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .real-world-example h4 {
+            color: #0284c7;
+            margin-top: 0;
+        }
+        ul.checkmark li {
+            list-style: none;
+            padding-left: 1.5em;
+            position: relative;
+        }
+        ul.checkmark li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+        }
+        .difficulty-badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .difficulty-basic {
+            background-color: #10b981;
+            color: white;
+        }
+        .difficulty-intermediate {
+            background-color: #f59e0b;
+            color: white;
+        }
+        .difficulty-advanced {
+            background-color: #ef4444;
+            color: white;
+        }
+        @media print {
+            .section {
+                page-break-inside: avoid;
+            }
+            body {
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Chapter 2: Cybersecurity Threat Landscape</h1>
+        <p><strong>CompTIA Security+ SY0-701 Study Guide</strong></p>
+        <p>Comprehensive Study Guide with Expanded Explanations</p>
+    </div>
+
+    <div class="exam-objectives">
+        <h2>Exam Objectives Covered</h2>
+        <h3>Domain 2.0: Threats, Vulnerabilities, and Mitigations</h3>
+        <ul>
+            <li><strong>2.1</strong> - Compare and contrast common threat actors and motivations</li>
+            <li><strong>2.2</strong> - Explain common threat vectors and attack surfaces</li>
+            <li><strong>2.3</strong> - Explain various types of vulnerabilities</li>
+        </ul>
+        <h3>Domain 4.0: Security Operations</h3>
+        <ul>
+            <li><strong>4.3</strong> - Explain various activities associated with vulnerability management</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>1. Understanding Threat Actors <span class="difficulty-badge difficulty-basic">Basic</span></h2>
+        
+        <div class="definition-box">
+            <h4>Definition: Threat Actor</h4>
+            <p>An individual or group that poses a threat to cybersecurity by attempting to exploit vulnerabilities in systems, networks, or applications to achieve their objectives.</p>
+        </div>
+
+        <h3>1.1 Classification Attributes</h3>
+        
+        <div class="key-concept">
+            <h4>Four Key Classification Criteria:</h4>
+            <ul class="checkmark">
+                <li><strong>Internal vs. External:</strong> Location relative to the organization</li>
+                <li><strong>Level of Sophistication/Capability:</strong> Technical skill and knowledge</li>
+                <li><strong>Resources/Funding:</strong> Financial and time resources available</li>
+                <li><strong>Intent/Motivation:</strong> The driving force behind the attack</li>
+            </ul>
+        </div>
+
+        <h3>1.2 Types of Threat Actors</h3>
+        
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Threat Actor</th>
+                    <th>Sophistication</th>
+                    <th>Resources</th>
+                    <th>Primary Motivation</th>
+                    <th>Key Characteristics</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Unskilled Attackers</strong><br>(Script Kiddies)</td>
+                    <td>Low</td>
+                    <td>Limited</td>
+                    <td>Thrill, Recognition</td>
+                    <td>Use pre-made tools, opportunistic attacks</td>
+                </tr>
+                <tr>
+                    <td><strong>Hacktivists</strong></td>
+                    <td>Varies</td>
+                    <td>Moderate</td>
+                    <td>Political/Philosophical</td>
+                    <td>Ideologically driven, public exposure</td>
+                </tr>
+                <tr>
+                    <td><strong>Organized Crime</strong></td>
+                    <td>High</td>
+                    <td>Significant</td>
+                    <td>Financial Gain</td>
+                    <td>Professional operations, profit-focused</td>
+                </tr>
+                <tr>
+                    <td><strong>Nation-State/APT</strong></td>
+                    <td>Very High</td>
+                    <td>Virtually Unlimited</td>
+                    <td>Espionage, Political</td>
+                    <td>Persistent, sophisticated, zero-day exploits</td>
+                </tr>
+                <tr>
+                    <td><strong>Insider Threats</strong></td>
+                    <td>Varies</td>
+                    <td>Limited</td>
+                    <td>Varies</td>
+                    <td>Already has access, knows systems</td>
+                </tr>
+                <tr>
+                    <td><strong>Shadow IT</strong></td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>Productivity</td>
+                    <td>Unintentional risk, bypasses controls</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="real-world-example">
+            <h4>Real-World Example: Anonymous Hacktivist Group</h4>
+            <p>Anonymous has targeted organizations like the Church of Scientology, PayPal, and government agencies. They operate as a decentralized collective with no hierarchical structure, making them difficult to prosecute. Their Guy Fawkes mask has become an iconic symbol of hacktivism.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. Threat Actor Motivations <span class="difficulty-badge difficulty-intermediate">Intermediate</span></h2>
+        
+        <div class="exam-note">
+            <h4>Exam Alert!</h4>
+            <p>You MUST be able to match threat actors with their typical motivations. This is a high-frequency exam topic!</p>
+        </div>
+
+        <h3>Common Motivations Explained</h3>
+        
+        <ul>
+            <li><strong>Data Exfiltration:</strong> Stealing sensitive information for various purposes
+                <ul><li>Example: Stealing customer databases, intellectual property</li></ul>
+            </li>
+            <li><strong>Espionage:</strong> Gathering intelligence on competitors or nations
+                <ul><li>Example: Nation-states stealing defense secrets</li></ul>
+            </li>
+            <li><strong>Service Disruption:</strong> Making systems unavailable
+                <ul><li>Example: DDoS attacks on banking systems</li></ul>
+            </li>
+            <li><strong>Blackmail/Extortion:</strong> Threatening to release data or continue attacks
+                <ul><li>Example: Ransomware attacks demanding payment</li></ul>
+            </li>
+            <li><strong>Financial Gain:</strong> Direct monetary benefit
+                <ul><li>Example: Credit card fraud, cryptocurrency theft</li></ul>
+            </li>
+            <li><strong>Philosophical/Political Beliefs:</strong> Advancing ideological causes
+                <ul><li>Example: Hacktivists exposing government surveillance</li></ul>
+            </li>
+            <li><strong>Ethical:</strong> Improving security (white-hat hacking)
+                <ul><li>Example: Penetration testing, responsible disclosure</li></ul>
+            </li>
+            <li><strong>Revenge:</strong> Personal retaliation
+                <ul><li>Example: Disgruntled employee deleting data</li></ul>
+            </li>
+            <li><strong>Disruption/Chaos:</strong> Creating disorder
+                <ul><li>Example: Defacing websites for notoriety</li></ul>
+            </li>
+            <li><strong>War:</strong> Military objectives
+                <ul><li>Example: Cyber warfare disrupting infrastructure</li></ul>
+            </li>
+        </ul>
+
+        <div class="real-world-example">
+            <h4>Real-World Example: Edward Snowden</h4>
+            <p>Edward Snowden, a former NSA contractor, leaked classified documents in 2013. His motivations were philosophical/political (exposing surveillance programs) and ethical (believing the public had a right to know). This makes him both an insider threat and a hacktivist.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. Threat Vectors and Attack Surfaces <span class="difficulty-badge difficulty-intermediate">Intermediate</span></h2>
+        
+        <div class="definition-box">
+            <h4>Key Definitions</h4>
+            <p><strong>Attack Surface:</strong> The sum of all possible security vulnerabilities in a system</p>
+            <p><strong>Threat Vector:</strong> The method or pathway used by threat actors to gain access</p>
+        </div>
+
+        <h3>3.1 Common Threat Vectors</h3>
+        
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Vector Type</th>
+                    <th>Description</th>
+                    <th>Common Attacks</th>
+                    <th>Mitigation Strategies</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Message-Based</strong></td>
+                    <td>Email, SMS, IM</td>
+                    <td>Phishing, Spam, Malware</td>
+                    <td>Email filtering, User training</td>
+                </tr>
+                <tr>
+                    <td><strong>Network-Based</strong></td>
+                    <td>Wired/Wireless networks</td>
+                    <td>Man-in-the-middle, Eavesdropping</td>
+                    <td>Encryption, Network segmentation</td>
+                </tr>
+                <tr>
+                    <td><strong>Physical Access</strong></td>
+                    <td>Direct system access</td>
+                    <td>Hardware tampering, Theft</td>
+                    <td>Physical security controls</td>
+                </tr>
+                <tr>
+                    <td><strong>Removable Media</strong></td>
+                    <td>USB drives, external storage</td>
+                    <td>Malware distribution, Data theft</td>
+                    <td>USB blocking, Media policies</td>
+                </tr>
+                <tr>
+                    <td><strong>Supply Chain</strong></td>
+                    <td>Vendors, MSPs, suppliers</td>
+                    <td>Backdoors, Compromised software</td>
+                    <td>Vendor assessment, Code review</td>
+                </tr>
+                <tr>
+                    <td><strong>Cloud Services</strong></td>
+                    <td>SaaS, PaaS, IaaS</td>
+                    <td>Misconfigurations, API exploits</td>
+                    <td>Cloud security policies, CASB</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>3.2 Vulnerable Components</h3>
+        
+        <div class="key-concept">
+            <h4>Common Vulnerabilities to Monitor:</h4>
+            <ul class="checkmark">
+                <li><strong>Open Service Ports:</strong> Unnecessary services exposing attack surface</li>
+                <li><strong>Default Credentials:</strong> Unchanged manufacturer passwords</li>
+                <li><strong>Unsupported Systems:</strong> Legacy systems without patches</li>
+                <li><strong>Vulnerable Software:</strong> Known CVEs in applications</li>
+                <li><strong>Unsecure Networks:</strong> Unencrypted wireless, Bluetooth</li>
+            </ul>
+        </div>
+
+        <div class="real-world-example">
+            <h4>Real-World Example: Stuxnet</h4>
+            <p>Stuxnet was an APT attack attributed to US and Israeli governments that exploited zero-day vulnerabilities to compromise Iranian uranium enrichment facilities. It spread via USB drives (removable media vector) and targeted specific industrial control systems.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. Advanced Persistent Threats (APTs) <span class="difficulty-badge difficulty-advanced">Advanced</span></h2>
+        
+        <div class="definition-box">
+            <h4>Definition: APT</h4>
+            <p>A prolonged and targeted cyberattack in which an intruder gains access to a network and remains undetected for an extended period while stealing data.</p>
+        </div>
+
+        <h3>APT Characteristics</h3>
+        
+        <ul>
+            <li><strong>Advanced:</strong> Uses sophisticated techniques and custom tools</li>
+            <li><strong>Persistent:</strong> Long-term campaigns, often lasting months or years</li>
+            <li><strong>Threat:</strong> Poses significant risk to targeted organizations</li>
+        </ul>
+
+        <div class="exam-note">
+            <h4>Exam Tip: Zero-Day Attacks</h4>
+            <p>Zero-day attacks exploit vulnerabilities unknown to vendors. No patches exist because the vulnerability hasn't been discovered yet. APT actors often use zero-days they've discovered through their own research.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>5. Threat Intelligence <span class="difficulty-badge difficulty-advanced">Advanced</span></h2>
+        
+        <h3>5.1 Intelligence Sources</h3>
+        
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Source Type</th>
+                    <th>Examples</th>
+                    <th>Advantages</th>
+                    <th>Disadvantages</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Open Source (OSINT)</strong></td>
+                    <td>CISA, SANS ISC, VirusTotal</td>
+                    <td>Free, Community-driven</td>
+                    <td>May lack detail, validation needed</td>
+                </tr>
+                <tr>
+                    <td><strong>Proprietary/Commercial</strong></td>
+                    <td>Vendor threat feeds</td>
+                    <td>Curated, Detailed analysis</td>
+                    <td>Costly, May have delays</td>
+                </tr>
+                <tr>
+                    <td><strong>Information Sharing Organizations</strong></td>
+                    <td>ISACs, CISA AIS</td>
+                    <td>Industry-specific, Trusted</td>
+                    <td>Membership requirements</td>
+                </tr>
+                <tr>
+                    <td><strong>Dark Web</strong></td>
+                    <td>Underground forums, Markets</td>
+                    <td>Early warning of breaches</td>
+                    <td>Difficult to access, verify</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>5.2 Threat Intelligence Assessment</h3>
+        
+        <div class="key-concept">
+            <h4>Three Key Assessment Criteria:</h4>
+            <ol>
+                <li><strong>Timeliness:</strong> Is the information current and relevant?</li>
+                <li><strong>Accuracy:</strong> Can we trust the source and verify the data?</li>
+                <li><strong>Relevance:</strong> Does it apply to our environment and systems?</li>
+            </ol>
+        </div>
+
+        <h3>5.3 Indicators of Compromise (IoCs)</h3>
+        
+        <div class="definition-box">
+            <h4>Common IoC Types:</h4>
+            <ul>
+                <li>File hashes (MD5, SHA-256)</li>
+                <li>IP addresses and domains</li>
+                <li>URLs and file paths</li>
+                <li>Registry keys</li>
+                <li>Network traffic patterns</li>
+                <li>Log signatures</li>
+            </ul>
+        </div>
+
+        <h3>5.4 STIX and TAXII</h3>
+        
+        <ul>
+            <li><strong>STIX (Structured Threat Information eXpression):</strong> Standardized language for describing cyber threat information</li>
+            <li><strong>TAXII (Trusted Automated eXchange of Intelligence Information):</strong> Protocol for transmitting STIX data</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>6. Supply Chain Security <span class="difficulty-badge difficulty-advanced">Advanced</span></h2>
+        
+        <div class="exam-note">
+            <h4>Critical Exam Topic!</h4>
+            <p>Supply chain attacks are increasingly common. Know the three main types: Hardware providers, Software providers, and Service providers (MSPs).</p>
+        </div>
+
+        <h3>Supply Chain Threat Vectors</h3>
+        
+        <ul>
+            <li><strong>Hardware Providers:</strong> 
+                <ul>
+                    <li>Backdoors inserted during manufacturing</li>
+                    <li>Tampering during shipping</li>
+                    <li>Counterfeit components</li>
+                </ul>
+            </li>
+            <li><strong>Software Providers:</strong>
+                <ul>
+                    <li>Malicious code in updates</li>
+                    <li>Compromised development environments</li>
+                    <li>Vulnerable third-party libraries</li>
+                </ul>
+            </li>
+            <li><strong>Service Providers (MSPs):</strong>
+                <ul>
+                    <li>Leveraging MSP access to customer networks</li>
+                    <li>Compromised management tools</li>
+                    <li>Credential theft</li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="real-world-example">
+            <h4>Real-World Example: SolarWinds Attack</h4>
+            <p>The 2020 SolarWinds supply chain attack involved malicious code inserted into legitimate software updates. This affected thousands of organizations including government agencies and Fortune 500 companies. The attackers (likely nation-state) gained access to SolarWinds' build system and inserted backdoors into signed software updates.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>7. Exam Tips and Memory Aids</h2>
+        
+        <h3>Common Exam Scenarios</h3>
+        
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>If You See...</th>
+                    <th>Think...</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ransomware attack seeking payment</td>
+                    <td>Organized crime (financial motivation)</td>
+                </tr>
+                <tr>
+                    <td>Website defacement with political message</td>
+                    <td>Hacktivist (political/philosophical motivation)</td>
+                </tr>
+                <tr>
+                    <td>Long-term, stealthy data theft</td>
+                    <td>APT/Nation-state (espionage)</td>
+                </tr>
+                <tr>
+                    <td>Employee using personal Dropbox</td>
+                    <td>Shadow IT (unintentional risk)</td>
+                </tr>
+                <tr>
+                    <td>USB drives left in parking lot</td>
+                    <td>Removable media threat vector</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Memory Tricks</h3>
+        
+        <div class="key-concept">
+            <h4>Remember APT with "ASP":</h4>
+            <ul>
+                <li><strong>A</strong>dvanced techniques</li>
+                <li><strong>S</strong>tate-sponsored (usually)</li>
+                <li><strong>P</strong>ersistent over time</li>
+            </ul>
+        </div>
+
+        <div class="key-concept">
+            <h4>Threat Intelligence "TAR":</h4>
+            <ul>
+                <li><strong>T</strong>imely</li>
+                <li><strong>A</strong>ccurate</li>
+                <li><strong>R</strong>elevant</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>8. Critical Terms Summary</h2>
+        
+        <div class="definition-box">
+            <h4>Must-Know Definitions</h4>
+            <ul>
+                <li><strong>Script Kiddie:</strong> Unskilled attacker using pre-made tools</li>
+                <li><strong>APT:</strong> Advanced Persistent Threat - sophisticated, long-term attacks</li>
+                <li><strong>Zero-Day:</strong> Vulnerability unknown to vendor, no patch available</li>
+                <li><strong>Shadow IT:</strong> Unauthorized technology used by employees</li>
+                <li><strong>IoC:</strong> Indicators of Compromise - evidence of an attack</li>
+                <li><strong>OSINT:</strong> Open Source Intelligence - publicly available threat data</li>
+                <li><strong>ISAC:</strong> Information Sharing and Analysis Center</li>
+                <li><strong>STIX:</strong> Structured Threat Information eXpression</li>
+                <li><strong>TAXII:</strong> Trusted Automated eXchange of Intelligence Information</li>
+                <li><strong>MSP:</strong> Managed Service Provider</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Detailed Answer Key - Cybersecurity Threat Landscape</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+        .quick-reference {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .answer-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .answer-table th {
+            background-color: #10b981;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        .answer-table td {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        .answer-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #10b981;
+        }
+        .answer-block {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            page-break-inside: avoid;
+        }
+        .question-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #10b981;
+            padding-bottom: 10px;
+        }
+        .question-number {
+            background-color: #10b981;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-right: 15px;
+            font-size: 1.2em;
+        }
+        .correct-answer-badge {
+            background-color: #ecfdf5;
+            color: #059669;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            border: 2px solid #10b981;
+        }
+        .explanation-box {
+            background-color: #f0fdf4;
+            border-left: 5px solid #10b981;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .why-wrong {
+            background-color: #fef2f2;
+            border-left: 5px solid #ef4444;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .why-wrong h4 {
+            color: #dc2626;
+            margin-top: 0;
+        }
+        .concept-review {
+            background-color: #fefce8;
+            border: 2px solid #facc15;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .concept-review h4 {
+            color: #ca8a04;
+            margin-top: 0;
+        }
+        .exam-tip {
+            background-color: #eff6ff;
+            border: 2px solid #3b82f6;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .exam-tip h4 {
+            color: #1e40af;
+            margin-top: 0;
+        }
+        .stats-box {
+            background-color: #f3f4f6;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .difficulty-indicator {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .difficulty-easy {
+            background-color: #10b981;
+            color: white;
+        }
+        .difficulty-medium {
+            background-color: #f59e0b;
+            color: white;
+        }
+        .difficulty-hard {
+            background-color: #ef4444;
+            color: white;
+        }
+        ul.checkmark li {
+            list-style: none;
+            padding-left: 1.5em;
+            position: relative;
+        }
+        ul.checkmark li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+        }
+        ul.crossmark li {
+            list-style: none;
+            padding-left: 1.5em;
+            position: relative;
+        }
+        ul.crossmark li:before {
+            content: "✗";
+            position: absolute;
+            left: 0;
+            color: #ef4444;
+            font-weight: bold;
+        }
+        @media print {
+            body {
+                background-color: white;
+            }
+            .answer-block {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Chapter 2: Detailed Answer Key</h1>
+        <p><strong>Cybersecurity Threat Landscape</strong></p>
+        <p>CompTIA Security+ SY0-701</p>
+    </div>
+
+    <div class="quick-reference">
+        <h2>Quick Answer Reference</h2>
+        <table class="answer-table">
+            <thead>
+                <tr>
+                    <th>Question</th>
+                    <th>Correct Answer</th>
+                    <th>Topic Area</th>
+                    <th>Difficulty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td class="correct-answer">B</td><td>Threat Intelligence</td><td>Easy</td></tr>
+                <tr><td>2</td><td class="correct-answer">C</td><td>Threat Actor Motivations</td><td>Easy</td></tr>
+                <tr><td>3</td><td class="correct-answer">A</td><td>Threat Actor Types</td><td>Easy</td></tr>
+                <tr><td>4</td><td class="correct-answer">A</td><td>APT</td><td>Easy</td></tr>
+                <tr><td>5</td><td class="correct-answer">D</td><td>Information Sharing</td><td>Medium</td></tr>
+                <tr><td>6</td><td class="correct-answer">A</td><td>Threat Actor Resources</td><td>Easy</td></tr>
+                <tr><td>7</td><td class="correct-answer">A</td><td>Threat Vectors</td><td>Easy</td></tr>
+                <tr><td>8</td><td class="correct-answer">D</td><td>Hacktivist Groups</td><td>Easy</td></tr>
+                <tr><td>9</td><td class="correct-answer">A</td><td>Insider Threats</td><td>Medium</td></tr>
+                <tr><td>10</td><td class="correct-answer">D</td><td>Supply Chain</td><td>Medium</td></tr>
+                <tr><td>11</td><td class="correct-answer">A</td><td>Supply Chain Attacks</td><td>Easy</td></tr>
+                <tr><td>12</td><td class="correct-answer">B</td><td>Threat Research</td><td>Medium</td></tr>
+                <tr><td>13</td><td class="correct-answer">C</td><td>Cloud Security</td><td>Medium</td></tr>
+                <tr><td>14</td><td class="correct-answer">A</td><td>Threat Intelligence Tools</td><td>Easy</td></tr>
+                <tr><td>15</td><td class="correct-answer">B</td><td>IoCs</td><td>Easy</td></tr>
+                <tr><td>16</td><td class="correct-answer">A</td><td>Shadow IT</td><td>Easy</td></tr>
+                <tr><td>17</td><td class="correct-answer">A</td><td>Vendor Management</td><td>Medium</td></tr>
+                <tr><td>18</td><td class="correct-answer">C</td><td>OSINT</td><td>Hard</td></tr>
+                <tr><td>19</td><td class="correct-answer">A, C</td><td>Threat Actors</td><td>Medium</td></tr>
+                <tr><td>20</td><td class="correct-answer">D</td><td>Hacking Types</td><td>Hard</td></tr>
+            </tbody>
+        </table>
+        
+        <div class="stats-box">
+            <h3>Answer Distribution Analysis</h3>
+            <p><strong>A:</strong> 7 answers (35%) | <strong>B:</strong> 2 answers (10%) | <strong>C:</strong> 3 answers (15%) | <strong>D:</strong> 6 answers (30%) | <strong>Multiple:</strong> 1 question (5%)</p>
+            <p><strong>Difficulty Distribution:</strong> Easy: 11 (55%) | Medium: 7 (35%) | Hard: 2 (10%)</p>
+        </div>
+    </div>
+
+    <!-- Question 1 -->
+    <div class="answer-block">
+        <div class="question-header">
+            <span class="question-number">1</span>
+            <span class="correct-answer-badge">Correct Answer: B (Detail)</span>
+            <span class="difficulty-indicator difficulty-easy">Easy</span>
+        </div>
+        
+        <div class="explanation-box">
+            <h4>✓ Why B is Correct:</h4>
+            <p>The three commonly used measures to assess threat intelligence are <strong>Timeliness</strong>, <strong>Accuracy</strong>, and <strong>Relevance</strong> (TAR). "Detail" is NOT one of the standard assessment criteria. While detail can be important, it's not a primary assessment measure.</p>
+        </div>
+
+        <div class="why-wrong">
+            <h4>Why Other Options Are Wrong:</h4>
+            <ul class="crossmark">
+                <li><strong>A (Timeliness):</strong> This IS a key measure - threat intelligence must be current to be useful</li>
+                <li><strong>C (Accuracy):</strong> This IS a key measure - incorrect intelligence is worse than no intelligence</li>
+                <li><strong>D (Relevance):</strong> This IS a key measure - intelligence must apply to your environment</li>
+            </ul>
+        </div>
+
+        <div class="exam-tip">
+            <h4>💡 Exam Tip:</h4>
+            <p>Remember "TAR" - Timeliness, Accuracy, Relevance. These are the three pillars of threat intelligence assessment.</p>
+        </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="answer-block">
+        <div class="question-header">
+            <span class="question-number">2</span>
+            <span class="correct-answer-badge">Correct Answer: C (Political/philosophical beliefs)</span>
+            <span class="difficulty-indicator difficulty-easy">Easy</span>
+        </div>
+        
+        <div class="explanation-box">
+            <h4>✓ Why C is Correct:</h4>
+            <p>Hacktivists are motivated by <strong>political or philosophical beliefs</strong>. They use hacking as a form of activism to promote their ideological causes, expose perceived injustices, or advance political agendas. Examples include Anonymous targeting organizations they disagree with philosophically.</p>
+        </div>
+
+        <div class="why-wrong">
+            <h4>Why Other Options Are Wrong:</h4>
+            <ul class="crossmark">
+                <li><strong>A (War):</strong> This is typically associated with nation-state actors, not hacktivists</li>
+                <li><strong>B (Financial gain):</strong> This motivates organized crime, not hacktivists who are ideologically driven</li>
+                <li><strong>D (Ethical):</strong> This describes white-hat hackers doing authorized security testing</li>
+            </ul>
+        </div>
+
+        <div class="concept-review">
+            <h4>📚 Concept Review:</h4>
+            <p>Hacktivists = Hacking + Activism. They believe they're fighting for a cause, even if their methods are illegal.</p>
+        </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="answer-block">
+        <div class="question-header">
+            <span class="question-number">3</span>
+            <span class="correct-answer-badge">Correct Answer: A (Authorized attacker)</span>
+            <span class="difficulty-indicator difficulty-easy">Easy</span>
+        </div>
+        
+        <div class="explanation-box">
+            <h4>✓ Why A is Correct:</h4>
+            <p>Kolin is an <strong>authorized attacker</strong> (white-hat hacker). His company was hired to conduct penetration testing, meaning he has explicit permission and authorization to test the security of the health-care system. This is legitimate, legal security testing.</p>
+        </div>
+
+        <div class="why-wrong">
+            <h4>Why Other Options Are Wrong:</h4>
+            <ul class="crossmark">
+                <li><strong>B (Unauthorized):</strong> He has authorization through a contract</li>
+                <li><strong>C (Unknown):</strong> Not a standard classification for threat actors</li>
+                <li><strong>D (Semi-authorized):</strong> He's fully authorized, not partially</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="answer-block">
+        <div class="question-header">
+            <span class="question-number">4</span>
+            <span class="correct-answer-badge">Correct Answer: A (Nation-state actor)</span>
+            <span class="difficulty-indicator difficulty-easy">Easy</span>
+        </div>
+        
+        <div class="explanation-box">
+            <h4>✓ Why A is Correct:</h4>
+            <p><strong>Nation-state actors</strong> are most commonly associated with APTs (Advanced Persistent Threats). They have the resources, sophistication, and motivation to conduct long-term, stealthy campaigns. Examples include Chinese military units conducting cyber espionage.</p>
+        </div>
+
+        <div class="why-wrong">
+            <h4>Why Other Options Are Wrong:</h4>
+            <ul class="crossmark">
+                <li><strong>B (Hacktivist):</strong> Usually not persistent enough for APT classification</li>
+                <li><strong>C (Unskilled):</strong> Lacks the sophistication for APT attacks</li>
+                <li><strong>D (Insider):</strong> Typically not associated with APT campaigns</li>
+            </ul>
+        </div>
+
+        <div class="concept-review">
+            <h4>📚 APT Characteristics:</h4>
+            <ul class="checkmark">
+                <li>Advanced techniques (often zero-days)</li>
+                <li>Persistent (months or years)</li>
+                <li>Well-funded (usually government-backed)</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="answer-block">
+        <div class="question-header">
+            <span class="question-number">5</span>
+            <span class="correct-answer-badge">Correct Answer: D (ISACs)</span>
+            <span class="difficulty-indicator difficulty-medium">Medium</span>
+        </div>
+        
+        <div class="explanation-box">
+            <h4>✓ Why D is Correct:</h4>
+            <p><strong>ISACs (Information Sharing and Analysis Centers)</strong> were established following Presidential Decision Directive-63 in 1998. They facilitate sector-specific threat information sharing (e.g., Financial Services ISAC, Healthcare ISAC).</p>
+        </div>
+
+        <div class="why-wrong">
+            <h4>Why Other Options Are Wrong:</h4>
+            <ul class="crossmark">
+                <li><strong>A (DHS):</strong> Department of Homeland Security oversees but didn't create ISACs</li>
+                <li><strong>B (SANS):</strong> Private training organization, not government-created</li>
+                <li><strong>C (CERTs):</strong> Computer Emergency Response Teams serve different purposes</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="answer-block">
+        <div class="question-header">
+            <span class="question-number">6</span>
+            <span class="correct-answer-badge">Correct Answer: A (Nation-state actors)</span>
+            <span class="difficulty-indicator difficulty-easy">Easy</span>
+        </div>
+        
+        <div class="explanation-box">
+            <h4>✓ Why A is Correct:</h4>
+            <p><strong>Nation-state actors</strong> have virtually unlimited resources backed by government funding. They can afford extensive research, zero-day development, and long-term operations.</p>
+        </div>
+
+        <div class="why-wrong">
+            <h4>Why Other Options Are Wrong:</h4>
+            <ul class="crossmark">
+                <li><strong>B (Organized crime):</strong> Well-funded but not to nation-state levels</li>
+                <li><strong>C (Hacktivists):</strong> Usually limited resources, volunteer-based</li>
+                <li><strong>D (Insider threats):</strong> Limited to personal resources</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="answer-block">
+        <div class="question-header">
+            <span class="question-number">7</span>
+            <span class="correct-answer-badge">Correct Answer: A (Email)</span>
+            <span class="difficulty-indicator difficulty-easy">Easy</span>
+        </div>
+        
+        <div class="explanation-box">
+            <h4>✓ Why A is Correct:</h4>
+            <p><strong>Email</strong> is the most commonly exploited vector for remote attackers. Phishing, malware attachments, and business email compromise can all be executed from anywhere in the world.</p>
+        </div>
+
+        <div class="why-wrong">
+            <h4>Why Other Options Are Wrong:</h4>
+            <ul class="crossmark">
+                <li><strong>B (Direct access):</strong> Requires physical presence</li>
+                <li><strong>C (Wireless):</strong> Requires proximity (parking lot)</li>
+                <li><strong>D (Removable media):</strong> Requires physical distribution</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="answer-block">
+        <div class="question-header">
+            <span class="question-number">8</span>
+            <span class="correct-answer-badge">Correct Answer: D (Anonymous)</span>
+            <span class="difficulty-indicator difficulty-easy">Easy</span>
+        </div>
+        
+        <div class="explanation-box">
+            <h4>✓ Why D is Correct:</h4>
+            <p><strong>Anonymous</strong> is the most well-known hacktivist group, operating as a decentralized collective pursuing various ideological causes.</p>
+        </div>
+
+        <div class="why-wrong">
+            <h4>Why Other Options Are Wrong:</h4>
+            <ul class="crossmark">
+                <li><strong>A (Chinese military):</strong> Nation-state actor, not hacktivist</li>
+                <li><strong>B (U.S. government):</strong> Nation-state actor, not hacktivist</li>
+                <li><strong>C (Russian mafia):</strong> Organized crime, not hacktivist</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Question 9 -->
+    <div class="answer-block">
+        <div class="question-header">
+            <span class="question-number">9</span>
+            <span class="correct-answer-badge">Correct Answer: A (Behavioral)</span>
+            <span class="difficulty-indicator difficulty-medium">Medium</span>
+        </div>
+        
+        <div class="explanation-box">
+            <h4>✓ Why A is Correct:</h4>
+            <p><strong>Behavioral assessments</strong> help identify insider threats by monitoring unusual patterns like accessing files outside normal duties, working odd hours, or exhibiting disgruntlement.</p>
+        </div>
+
+        <div class="why-wrong">
+            <h4>Why Other Options Are Wrong:</h4>
+            <ul class="crossmark">
+                <li><strong>B (Instinctual):</strong> Not a formal assessment type</li>
+                <li><strong>C (Habitual):</strong> Not a security assessment method</li>
+                <li><strong>D (IoCs):</strong> Used for external threat detection, not insider behavior</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="answer-block">
+        <div class="question-header">
+            <span class="question-number">10</span>
+            <span class="correct-answer-badge">Correct Answer: D (Talent provider)</span>
+            <span class="difficulty-indicator difficulty-medium">Medium</span>
+        </div>
+        
+        <div class="explanation-box">
+            <h4>✓ Why D is Correct:</h4>
+            <p><strong>Talent providers</strong> (recruiters, staffing agencies) are least likely conduits for supply chain attacks as they don't typically have access to IT systems or provide technology components.</p>
+        </div>
+
+        <div class="why-wrong">
+            <h4>Why Other Options Are Wrong:</h4>
+            <ul class="crossmark">
+                <li><strong>A (Hardware provider):</strong> Can insert backdoors in devices</li>
+                <li><strong>B (Software provider):</strong> Can distribute malicious updates</li>
+                <li><strong>C (MSP):</strong> Has direct network access to clients</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Question 11 -->
+    <div class="answer-block">
+        <div class="question-header">
+            <span class="question-number">11</span>
+            <span class="correct-answer-badge">Correct Answer: A (Supply chain)</span>
+            <span class="difficulty-indicator difficulty-easy">Easy</span>
+        </div>
+        
+        <div class="explanation-box">
+            <h4>✓ Why A is Correct:</h4>
+            <p>This is a classic <strong>supply chain attack</strong> where hardware is compromised before delivery to the end customer.</p>
+        </div>
+    </div>
+
+    <!-- Question 12 -->
+    <div class="answer-block">
+        <div class="question-header">
+            <span class="question-number">12</span>
+            <span class="correct-answer-badge">Correct Answer: B (Internet RFCs)</span>
+            <span class="difficulty-indicator difficulty-medium">Medium</span>
+        </div>
+        
+        <div class="explanation-box">
+            <h4>✓ Why B is Correct:</h4>
+            <p><strong>Internet RFCs (Request for Comments)</strong> contain the authoritative technical specifications for Internet protocols including TLS.</p>
+        </div>
+    </div>
+
+    <!-- Question 13 -->
+    <div class="answer-block">
+        <div class="question-header">
+            <span class="question-number">13</span>
+            <span class="correct-answer-badge">Correct Answer: C (API keys)</span>
+            <span class="difficulty-indicator difficulty-medium">Medium</span>
+        </div>
+        
+        <div class="explanation-box">
+            <h4>✓ Why C is Correct:</h4>
+            <p><strong>API keys</strong> in public repositories provide immediate system access and should never be exposed publicly.</p>
+        </div>
+    </div>
+
+    <!-- Question 14 -->
+    <div class="answer-block">
+        <div class="question-header">
+            <span class="question-number">14</span>
+            <span class="correct-answer-badge">Correct Answer: A (Threat map)</span>
+            <span class="difficulty-indicator difficulty-easy">Easy</span>
+        </div>
+        
+        <div class="explanation-box">
+            <h4>✓ Why A is Correct:</h4>
+            <p><strong>Threat maps</strong> provide visual geographic displays of cyber threats and their origins.</p>
+        </div>
+    </div>
+
+    <!-- Question 15 -->
+    <div class="answer-block">
+        <div class="question-header">
+            <span class="question-number">15</span>
+            <span class="correct-answer-badge">Correct Answer: B (IoC)</span>
+            <span class="difficulty-indicator difficulty-easy">Easy</span>
+        </div>
+        
+        <div class="explanation-box">
+            <h4>✓ Why B is Correct:</h4>
+            <p>Hash values of malware are classic <strong>Indicators of Compromise (IoCs)</strong> - evidence that an attack has occurred.</p>
+        </div>
+    </div>
+
+    <!-- Question 16 -->
+    <div class="answer-block">
+        <div class="question-header">
+            <span class="question-number">16</span>
+            <span class="correct-answer-badge">Correct Answer: A (Shadow IT)</span>
+            <span class="difficulty-indicator difficulty-easy">Easy</span>
+        </div>
+        
+        <div class="explanation-box">
+            <h4>✓ Why A is Correct:</h4>
+            <p><strong>Shadow IT</strong> refers to technology used without organizational approval, creating security risks.</p>
+        </div>
+    </div>
+
+    <!-- Question 17 -->
+    <div class="answer-block">
+        <div class="question-header">
+            <span class="question-number">17</span>
+            <span class="correct-answer-badge">Correct Answer: A (Unavailability of future patches)</span>
+            <span class="difficulty-indicator difficulty-medium">Medium</span>
+        </div>
+        
+        <div class="explanation-box">
+            <h4>✓ Why A is Correct:</h4>
+            <p>The biggest security concern is <strong>no future patches</strong>, leaving the system vulnerable to newly discovered exploits.</p>
+        </div>
+    </div>
+
+    <!-- Question 18 -->
+    <div class="answer-block">
+        <div class="question-header">
+            <span class="question-number">18</span>
+            <span class="correct-answer-badge">Correct Answer: C (Port scans)</span>
+            <span class="difficulty-indicator difficulty-hard">Hard</span>
+        </div>
+        
+        <div class="explanation-box">
+            <h4>✓ Why C is Correct:</h4>
+            <p><strong>Port scans</strong> are active reconnaissance requiring interaction with target systems, NOT passive OSINT collection.</p>
+        </div>
+
+        <div class="exam-tip">
+            <h4>💡 Remember:</h4>
+            <p>OSINT = PASSIVE information gathering from public sources. Port scanning is ACTIVE reconnaissance.</p>
+        </div>
+    </div>
+
+    <!-- Question 19 -->
+    <div class="answer-block">
+        <div class="question-header">
+            <span class="question-number">19</span>
+            <span class="correct-answer-badge">Correct Answers: A & C (Insider, Hacktivist)</span>
+            <span class="difficulty-indicator difficulty-medium">Medium</span>
+        </div>
+        
+        <div class="explanation-box">
+            <h4>✓ Why A & C are Correct:</h4>
+            <ul class="checkmark">
+                <li><strong>A (Insider):</strong> Snowden was a contractor with authorized access</li>
+                <li><strong>C (Hacktivist):</strong> His motivations were political/philosophical</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Question 20 -->
+    <div class="answer-block">
+        <div class="question-header">
+            <span class="question-number">20</span>
+            <span class="correct-answer-badge">Correct Answer: D (Unauthorized hacking)</span>
+            <span class="difficulty-indicator difficulty-hard">Hard</span>
+        </div>
+        
+        <div class="explanation-box">
+            <h4>✓ Why D is Correct:</h4>
+            <p>Despite good intentions and reporting the vulnerability, Renee accessed systems without permission, making this <strong>unauthorized hacking</strong>. Good intentions don't make gray-hat hacking legal.</p>
+        </div>
+
+        <div class="exam-tip">
+            <h4>⚠️ Critical Point:</h4>
+            <p>Authorization is binary - you either have it or you don't. Good intentions don't provide legal authorization.</p>
+        </div>
+    </div>
+
+    <div class="answer-block">
+        <h2>Common Exam Patterns</h2>
+        <div class="concept-review">
+            <h4>Pattern Recognition Tips:</h4>
+            <ul>
+                <li><strong>Financial motivation</strong> → Think Organized Crime</li>
+                <li><strong>Political motivation</strong> → Think Hacktivist</li>
+                <li><strong>Long-term + Sophisticated</strong> → Think APT/Nation-state</li>
+                <li><strong>Unauthorized but well-intentioned</strong> → Still illegal (Gray-hat)</li>
+                <li><strong>Employee using personal tools</strong> → Shadow IT</li>
+                <li><strong>Hardware tampering before delivery</strong> → Supply chain attack</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

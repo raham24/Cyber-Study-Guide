@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Quick Reference Sheet - Cybersecurity Threat Landscape</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            color: #111;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 15px;
+            font-size: 11pt;
+            background-color: white;
+        }
+        .header {
+            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .section-box {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 12px;
+            border-radius: 6px;
+        }
+        .section-box h2 {
+            color: #4f46e5;
+            font-size: 1.1em;
+            margin: 0 0 8px 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #4f46e5;
+        }
+        .threat-actor-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85em;
+        }
+        .threat-actor-table th {
+            background-color: #6366f1;
+            color: white;
+            padding: 5px;
+            text-align: left;
+            font-size: 0.9em;
+        }
+        .threat-actor-table td {
+            padding: 4px;
+            border: 1px solid #dee2e6;
+            font-size: 0.85em;
+        }
+        .threat-actor-table tr:nth-child(even) {
+            background-color: #f1f3f5;
+        }
+        .key-list {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+        .key-list li {
+            margin: 3px 0;
+            font-size: 0.9em;
+        }
+        .must-know {
+            background-color: #fefce8;
+            border: 2px solid #facc15;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .must-know h3 {
+            color: #ca8a04;
+            margin: 0 0 5px 0;
+            font-size: 1em;
+        }
+        .exam-alert {
+            background-color: #fee2e2;
+            border-left: 5px solid #ef4444;
+            padding: 8px;
+            margin: 10px 0;
+            font-size: 0.9em;
+        }
+        .acronym-box {
+            background-color: #ecfdf5;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .acronym-box h3 {
+            color: #059669;
+            margin: 0 0 5px 0;
+            font-size: 1em;
+        }
+        .two-column-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-size: 0.85em;
+        }
+        strong {
+            color: #4f46e5;
+        }
+        .motivation-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+            font-size: 0.85em;
+        }
+        .comparison-mini-table {
+            width: 100%;
+            font-size: 0.8em;
+            border-collapse: collapse;
+        }
+        .comparison-mini-table th {
+            background-color: #e5e7eb;
+            padding: 3px;
+            font-weight: bold;
+            text-align: left;
+        }
+        .comparison-mini-table td {
+            padding: 3px;
+            border: 1px solid #e5e7eb;
+        }
+        @media print {
+            body {
+                padding: 10px;
+                font-size: 10pt;
+            }
+            .content-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .checkmark {
+            color: #10b981;
+            font-weight: bold;
+        }
+        .crossmark {
+            color: #ef4444;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Chapter 2: Cybersecurity Threat Landscape - Quick Reference</h1>
+        <p style="margin: 5px 0;">CompTIA Security+ SY0-701 | Domains 2.0 & 4.0</p>
+    </div>
+
+    <div class="content-grid">
+        <!-- Threat Actors Section -->
+        <div class="section-box">
+            <h2>🎯 Threat Actors At-a-Glance</h2>
+            <table class="threat-actor-table">
+                <thead>
+                    <tr>
+                        <th>Actor</th>
+                        <th>Skills</th>
+                        <th>Resources</th>
+                        <th>Motivation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Unskilled</strong></td>
+                        <td>Low</td>
+                        <td>Limited</td>
+                        <td>Thrill</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hacktivist</strong></td>
+                        <td>Varies</td>
+                        <td>Moderate</td>
+                        <td>Political</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Organized Crime</strong></td>
+                        <td>High</td>
+                        <td>Significant</td>
+                        <td>Financial</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nation-State/APT</strong></td>
+                        <td>Very High</td>
+                        <td>Unlimited</td>
+                        <td>Espionage</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Insider</strong></td>
+                        <td>Varies</td>
+                        <td>Limited</td>
+                        <td>Various</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Shadow IT</strong></td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>Productivity</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Motivations Section -->
+        <div class="section-box">
+            <h2>🎯 Threat Actor Motivations</h2>
+            <div class="motivation-grid">
+                <div>• <strong>Data Exfiltration</strong> - Steal info</div>
+                <div>• <strong>Espionage</strong> - Spy on targets</div>
+                <div>• <strong>Service Disruption</strong> - DDoS/outages</div>
+                <div>• <strong>Blackmail</strong> - Extortion/ransom</div>
+                <div>• <strong>Financial Gain</strong> - Make money</div>
+                <div>• <strong>Political/Philosophical</strong> - Ideology</div>
+                <div>• <strong>Ethical</strong> - Improve security</div>
+                <div>• <strong>Revenge</strong> - Retaliation</div>
+                <div>• <strong>Disruption/Chaos</strong> - Anarchy</div>
+                <div>• <strong>War</strong> - Military objectives</div>
+            </div>
+            <div class="exam-alert" style="margin-top: 10px;">
+                <strong>⚠️ EXAM TIP:</strong> Match actors to motivations!<br>
+                Hacktivist → Political | Crime → Financial | APT → Espionage
+            </div>
+        </div>
+
+        <!-- Threat Vectors Section -->
+        <div class="section-box">
+            <h2>📡 Common Threat Vectors</h2>
+            <table class="comparison-mini-table">
+                <tr>
+                    <th>Vector</th>
+                    <th>Attack Method</th>
+                    <th>Defense</th>
+                </tr>
+                <tr>
+                    <td><strong>Email</strong></td>
+                    <td>Phishing, malware</td>
+                    <td>Filtering, training</td>
+                </tr>
+                <tr>
+                    <td><strong>Network</strong></td>
+                    <td>MitM, sniffing</td>
+                    <td>Encryption, segmentation</td>
+                </tr>
+                <tr>
+                    <td><strong>Physical</strong></td>
+                    <td>Direct access</td>
+                    <td>Physical security</td>
+                </tr>
+                <tr>
+                    <td><strong>Removable Media</strong></td>
+                    <td>USB malware</td>
+                    <td>USB blocking</td>
+                </tr>
+                <tr>
+                    <td><strong>Supply Chain</strong></td>
+                    <td>Vendor compromise</td>
+                    <td>Vendor assessment</td>
+                </tr>
+                <tr>
+                    <td><strong>Cloud</strong></td>
+                    <td>Misconfig, API</td>
+                    <td>CASB, policies</td>
+                </tr>
+                <tr>
+                    <td><strong>Wireless</strong></td>
+                    <td>Eavesdropping</td>
+                    <td>WPA3, monitoring</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- APT Characteristics -->
+        <div class="section-box">
+            <h2>🔴 APT Characteristics</h2>
+            <ul class="key-list">
+                <li><strong>A</strong>dvanced - Sophisticated techniques, zero-days</li>
+                <li><strong>P</strong>ersistent - Long-term campaigns (months/years)</li>
+                <li><strong>T</strong>hreat - Significant risk to targets</li>
+            </ul>
+            <p style="font-size: 0.9em; margin: 5px 0;"><strong>Key Features:</strong> Nation-state backing, custom tools, patient stalking, data exfiltration focus</p>
+            <p style="font-size: 0.9em; margin: 5px 0;"><strong>Example:</strong> Stuxnet (US/Israel vs Iran uranium)</p>
+        </div>
+
+        <!-- Must-Know Acronyms -->
+        <div class="section-box">
+            <div class="acronym-box">
+                <h3>📚 Must-Know Acronyms & Terms</h3>
+                <div class="two-column-list">
+                    <div>
+                        <strong>APT</strong> - Advanced Persistent Threat<br>
+                        <strong>IoC</strong> - Indicators of Compromise<br>
+                        <strong>OSINT</strong> - Open Source Intelligence<br>
+                        <strong>ISAC</strong> - Info Sharing & Analysis Center<br>
+                        <strong>MSP</strong> - Managed Service Provider
+                    </div>
+                    <div>
+                        <strong>STIX</strong> - Structured Threat Info eXpression<br>
+                        <strong>TAXII</strong> - Trusted Automated eXchange<br>
+                        <strong>CVE</strong> - Common Vulnerabilities & Exposures<br>
+                        <strong>TTP</strong> - Tactics, Techniques, Procedures<br>
+                        <strong>RFC</strong> - Request for Comments
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Threat Intelligence -->
+        <div class="section-box">
+            <h2>🔍 Threat Intelligence</h2>
+            <p style="font-size: 0.9em; margin: 5px 0;"><strong>Assessment Criteria (TAR):</strong></p>
+            <ul class="key-list" style="margin: 5px 0;">
+                <li><strong>T</strong>imely - Current and relevant?</li>
+                <li><strong>A</strong>ccurate - Can we trust it?</li>
+                <li><strong>R</strong>elevant - Applies to our environment?</li>
+            </ul>
+            <p style="font-size: 0.9em; margin: 10px 0 5px 0;"><strong>Intelligence Sources:</strong></p>
+            <div style="font-size: 0.85em;">
+                • <strong>OSINT:</strong> Public sources (CISA, SANS ISC)<br>
+                • <strong>Commercial:</strong> Vendor feeds (costly but curated)<br>
+                • <strong>ISACs:</strong> Industry-specific sharing<br>
+                • <strong>Dark Web:</strong> Underground markets
+            </div>
+        </div>
+
+        <!-- Supply Chain Vulnerabilities -->
+        <div class="section-box">
+            <h2>⛓️ Supply Chain Attack Vectors</h2>
+            <ul class="key-list">
+                <li><strong>Hardware:</strong> Backdoors in manufacturing/shipping</li>
+                <li><strong>Software:</strong> Malicious updates, compromised libraries</li>
+                <li><strong>Service (MSP):</strong> Leveraging provider access</li>
+            </ul>
+            <div class="exam-alert" style="margin-top: 10px;">
+                <strong>Remember:</strong> SolarWinds = Supply chain attack example
+            </div>
+        </div>
+
+        <!-- Vulnerability Types -->
+        <div class="section-box">
+            <h2>🛡️ Common Vulnerabilities</h2>
+            <ul class="key-list">
+                <li><strong>Zero-Day:</strong> Unknown to vendor, no patch</li>
+                <li><strong>Default Credentials:</strong> Unchanged passwords</li>
+                <li><strong>Open Ports:</strong> Unnecessary services</li>
+                <li><strong>Unsupported Systems:</strong> No patches available</li>
+                <li><strong>Unsecure Networks:</strong> Unencrypted wireless</li>
+                <li><strong>Shadow IT:</strong> Unauthorized technology</li>
+            </ul>
+        </div>
+
+        <!-- Exam Success Tips -->
+        <div class="section-box">
+            <div class="must-know">
+                <h3>🎯 Exam Success Patterns</h3>
+                <div style="font-size: 0.85em;">
+                    <span class="checkmark">✓</span> Ransomware payment → <strong>Organized Crime</strong><br>
+                    <span class="checkmark">✓</span> Political message → <strong>Hacktivist</strong><br>
+                    <span class="checkmark">✓</span> Long-term stealth → <strong>APT/Nation-state</strong><br>
+                    <span class="checkmark">✓</span> Personal Dropbox → <strong>Shadow IT</strong><br>
+                    <span class="checkmark">✓</span> USB in parking lot → <strong>Removable media vector</strong><br>
+                    <span class="checkmark">✓</span> No vendor support → <strong>No future patches risk</strong><br>
+                    <span class="crossmark">✗</span> Good intentions ≠ Authorization<br>
+                    <span class="crossmark">✗</span> Port scanning ≠ OSINT (it's active)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 15px; padding: 10px; background-color: #eff6ff; border-radius: 5px; text-align: center;">
+        <strong style="color: #1e40af;">Quick Memory Aids:</strong>
+        APT = "ASP" (Advanced, State-sponsored, Persistent) | 
+        Threat Intel = "TAR" (Timely, Accurate, Relevant) | 
+        Hackers: White = Authorized, Black = Malicious, Gray = Unauthorized but well-intentioned
+    </div>
+</body>
+</html>

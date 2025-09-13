@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1 Review Questions - CompTIA Security+ SY0-701</title>
+    <style>
+        @media print {
+            body { margin: 0; }
+            .page-break { page-break-after: always; }
+            .no-break { page-break-inside: avoid; }
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .header-info {
+            background-color: #e3f2fd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .instructions {
+            background-color: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .instructions h2 {
+            color: #856404;
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+        
+        .question {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #6c757d;
+            border-radius: 5px;
+            page-break-inside: avoid;
+        }
+        
+        .question-number {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            display: block;
+            background-color: #e9ecef;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        
+        .question-text {
+            margin: 15px 0;
+            color: #212529;
+            font-size: 1.05em;
+        }
+        
+        .options {
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+        
+        .option {
+            margin: 10px 0;
+            padding: 8px;
+            background-color: white;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+        }
+        
+        .option-letter {
+            font-weight: bold;
+            color: #495057;
+            margin-right: 10px;
+        }
+        
+        .special-note {
+            background-color: #e8f4f8;
+            border: 1px solid #17a2b8;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 10px;
+            font-style: italic;
+            color: #0c5460;
+        }
+        
+        .table-question {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        .table-question th {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        .table-question td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+            background-color: white;
+        }
+        
+        .table-question tr:nth-child(even) td {
+            background-color: #f8f9fa;
+        }
+        
+        .section-divider {
+            text-align: center;
+            margin: 40px 0;
+            color: #6c757d;
+            font-weight: bold;
+        }
+        
+        .section-divider::before,
+        .section-divider::after {
+            content: "━━━";
+            margin: 0 10px;
+        }
+        
+        .answer-sheet {
+            background-color: #f0f8ff;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        .answer-sheet h2 {
+            color: #004085;
+            margin-top: 0;
+        }
+        
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .answer-box {
+            background-color: white;
+            border: 1px solid #b8daff;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .answer-number {
+            font-weight: bold;
+            color: #004085;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .answer-blank {
+            border-bottom: 2px solid #333;
+            display: inline-block;
+            width: 40px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chapter 1: Today's Security Professional</h1>
+        <div class="header-info">
+            <strong>Review Questions</strong><br>
+            CompTIA Security+ SY0-701 Study Guide (9th Edition)<br>
+            Pages 51-78<br>
+            Total Questions: 20
+        </div>
+
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <ul>
+                <li>Read each question carefully, paying attention to keywords like "NOT", "MOST", or "BEST"</li>
+                <li>Consider all options before selecting your answer</li>
+                <li>These questions test concepts from Domain 1.0 (General Security Concepts), Domain 3.0 (Security Architecture), and Domain 5.0 (Security Program Management)</li>
+                <li>Mark your answers on the answer sheet provided at the end</li>
+            </ul>
+        </div>
+
+        <div class="question no-break">
+            <span class="question-number">Question 1</span>
+            <div class="question-text">
+                Matt is updating the organization's threat assessment process. What category of control is Matt implementing?
+            </div>
+            <div class="options">
+                <div class="option"><span class="option-letter">A.</span> Operational</div>
+                <div class="option"><span class="option-letter">B.</span> Technical</div>
+                <div class="option"><span class="option-letter">C.</span> Corrective</div>
+                <div class="option"><span class="option-letter">D.</span> Managerial</div>
+            </div>
+        </div>
+
+        <div class="question no-break">
+            <span class="question-number">Question 2</span>
+            <div class="question-text">
+                Jade's organization recently suffered a security breach that affected stored credit card data. Jade's primary concern is the fact that the organization is subject to sanctions for violating the provisions of the Payment Card Industry Data Security Standard. What category of risk is concerning Jade?
+            </div>
+            <div class="options">
+                <div class="option"><span class="option-letter">A.</span> Strategic</div>
+                <div class="option"><span class="option-letter">B.</span> Compliance</div>
+                <div class="option"><span class="option-letter">C.</span> Operational</div>
+                <div class="option"><span class="option-letter">D.</span> Financial</div>
+            </div>
+        </div>
+
+        <div class="question no-break">
+            <span class="question-number">Question 3</span>
+            <div class="question-text">
+                Chris is responding to a security incident that compromised one of his organization's web servers. He believes that the attackers defaced one or more pages on the website. What cybersecurity objective did this attack violate?
+            </div>
+            <div class="options">
+                <div class="option"><span class="option-letter">A.</span> Confidentiality</div>
+                <div class="option"><span class="option-letter">B.</span> Nonrepudiation</div>
+                <div class="option"><span class="option-letter">C.</span> Integrity</div>
+                <div class="option"><span class="option-letter">D.</span> Availability</div>
+            </div>
+        </div>
+
+        <div class="question no-break">
+            <span class="question-number">Question 4</span>
+            <div class="question-text">
+                Gwen is exploring a customer transaction reporting system and discovers the table shown here. What type of data minimization has most likely been used on this table?
+            </div>
+            <table class="table-question">
+                <thead>
+                    <tr>
+                        <th>Order Number</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Credit Card Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1023</td>
+                        <td>$46,438</td>
+                        <td>11/3/2020</td>
+                        <td>*** *** *** 1858</td>
+                    </tr>
+                    <tr>
+                        <td>1024</td>
+                        <td>$83,007</td>
+                        <td>9/22/2020</td>
+                        <td>*** *** *** 8925</td>
+                    </tr>
+                    <tr>
+                        <td>1025</td>
+                        <td>$42,289</td>
+                        <td>7/19/2020</td>
+                        <td>*** *** *** 8184</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="options">
+                <div class="option"><span class="option-letter">A.</span> Destruction</div>
+                <div class="option"><span class="option-letter">B.</span> Masking</div>
+                <div class="option"><span class="option-letter">C.</span> Tokenization</div>
+                <div class="option"><span class="option-letter">D.</span> Hashing</div>
+            </div>
+        </div>
+
+        <div class="question no-break">
+            <span class="question-number">Question 5</span>
+            <div class="question-text">
+                Tonya is concerned about the risk that an attacker will attempt to gain access to her organization's database server. She is searching for a control that would discourage the attacker from attempting to gain access. What type of security control is she seeking to implement?
+            </div>
+            <div class="options">
+                <div class="option"><span class="option-letter">A.</span> Preventive</div>
+                <div class="option"><span class="option-letter">B.</span> Detective</div>
+                <div class="option"><span class="option-letter">C.</span> Corrective</div>
+                <div class="option"><span class="option-letter">D.</span> Deterrent</div>
+            </div>
+        </div>
+
+        <div class="question no-break">
+            <span class="question-number">Question 6</span>
+            <div class="question-text">
+                Greg is implementing a data loss prevention system. He would like to ensure that it protects against transmissions of sensitive information by guests on his wireless network. What DLP technology would best meet this goal?
+            </div>
+            <div class="options">
+                <div class="option"><span class="option-letter">A.</span> Watermarking</div>
+                <div class="option"><span class="option-letter">B.</span> Pattern recognition</div>
+                <div class="option"><span class="option-letter">C.</span> Host-based</div>
+                <div class="option"><span class="option-letter">D.</span> Network-based</div>
+            </div>
+        </div>
+
+        <div class="question no-break">
+            <span class="question-number">Question 7</span>
+            <div class="question-text">
+                What term best describes data that is being sent between two systems over a network connection?
+            </div>
+            <div class="options">
+                <div class="option"><span class="option-letter">A.</span> Data at rest</div>
+                <div class="option"><span class="option-letter">B.</span> Data in transit</div>
+                <div class="option"><span class="option-letter">C.</span> Data in processing</div>
+                <div class="option"><span class="option-letter">D.</span> Data in use</div>
+            </div>
+        </div>
+
+        <div class="question no-break">
+            <span class="question-number">Question 8</span>
+            <div class="question-text">
+                Tina is tuning her organization's intrusion prevention system to prevent false positive alerts. What type of control is Tina implementing?
+            </div>
+            <div class="options">
+                <div class="option"><span class="option-letter">A.</span> Technical control</div>
+                <div class="option"><span class="option-letter">B.</span> Physical control</div>
+                <div class="option"><span class="option-letter">C.</span> Managerial control</div>
+                <div class="option"><span class="option-letter">D.</span> Operational control</div>
+            </div>
+        </div>
+
+        <div class="question no-break">
+            <span class="question-number">Question 9</span>
+            <div class="question-text">
+                Which one of the following is NOT a common goal of a cybersecurity attacker?
+            </div>
+            <div class="options">
+                <div class="option"><span class="option-letter">A.</span> Disclosure</div>
+                <div class="option"><span class="option-letter">B.</span> Denial</div>
+                <div class="option"><span class="option-letter">C.</span> Alteration</div>
+                <div class="option"><span class="option-letter">D.</span> Allocation</div>
+            </div>
+            <div class="special-note">
+                Note: This question asks for the option that is NOT a common goal.
+            </div>
+        </div>
+
+        <div class="question no-break">
+            <span class="question-number">Question 10</span>
+            <div class="question-text">
+                Tony is reviewing the status of his organization's defenses against a breach of their file server. He believes that a compromise of the file server could reveal information that would prevent the company from continuing to do business. What term best describes the risk that Tony is considering?
+            </div>
+            <div class="options">
+                <div class="option"><span class="option-letter">A.</span> Strategic</div>
+                <div class="option"><span class="option-letter">B.</span> Reputational</div>
+                <div class="option"><span class="option-letter">C.</span> Financial</div>
+                <div class="option"><span class="option-letter">D.</span> Operational</div>
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <div class="question no-break">
+            <span class="question-number">Question 11</span>
+            <div class="question-text">
+                Which one of the following data elements is NOT commonly associated with identity theft?
+            </div>
+            <div class="options">
+                <div class="option"><span class="option-letter">A.</span> Social Security number</div>
+                <div class="option"><span class="option-letter">B.</span> Driver's license number</div>
+                <div class="option"><span class="option-letter">C.</span> Frequent flyer number</div>
+                <div class="option"><span class="option-letter">D.</span> Passport number</div>
+            </div>
+            <div class="special-note">
+                Note: This question asks for the element that is NOT commonly associated with identity theft.
+            </div>
+        </div>
+
+        <div class="question no-break">
+            <span class="question-number">Question 12</span>
+            <div class="question-text">
+                What term best describes an organization's desired security state?
+            </div>
+            <div class="options">
+                <div class="option"><span class="option-letter">A.</span> Control objectives</div>
+                <div class="option"><span class="option-letter">B.</span> Security priorities</div>
+                <div class="option"><span class="option-letter">C.</span> Strategic goals</div>
+                <div class="option"><span class="option-letter">D.</span> Best practices</div>
+            </div>
+        </div>
+
+        <div class="question no-break">
+            <span class="question-number">Question 13</span>
+            <div class="question-text">
+                Lou mounted the sign below on the fence surrounding his organization's datacenter. What control type best describes this control?
+            </div>
+            <div class="special-note">
+                The sign reads: "BEWARE OF DOG" with an image of a guard dog
+            </div>
+            <div class="options">
+                <div class="option"><span class="option-letter">A.</span> Compensating</div>
+                <div class="option"><span class="option-letter">B.</span> Detective</div>
+                <div class="option"><span class="option-letter">C.</span> Physical</div>
+                <div class="option"><span class="option-letter">D.</span> Deterrent</div>
+            </div>
+        </div>
+
+        <div class="question no-break">
+            <span class="question-number">Question 14</span>
+            <div class="question-text">
+                What technology uses mathematical algorithms to render information unreadable to those lacking the required key?
+            </div>
+            <div class="options">
+                <div class="option"><span class="option-letter">A.</span> Data loss prevention</div>
+                <div class="option"><span class="option-letter">B.</span> Data obfuscation</div>
+                <div class="option"><span class="option-letter">C.</span> Data minimization</div>
+                <div class="option"><span class="option-letter">D.</span> Data encryption</div>
+            </div>
+        </div>
+
+        <div class="question no-break">
+            <span class="question-number">Question 15</span>
+            <div class="question-text">
+                Greg recently conducted an assessment of his organization's security controls and discovered a potential gap: the organization does not use full-disk encryption on laptops. What type of control gap exists in this case?
+            </div>
+            <div class="options">
+                <div class="option"><span class="option-letter">A.</span> Detective</div>
+                <div class="option"><span class="option-letter">B.</span> Corrective</div>
+                <div class="option"><span class="option-letter">C.</span> Deterrent</div>
+                <div class="option"><span class="option-letter">D.</span> Preventive</div>
+            </div>
+        </div>
+
+        <div class="question no-break">
+            <span class="question-number">Question 16</span>
+            <div class="question-text">
+                What compliance regulation most directly affects the operations of a health-care provider?
+            </div>
+            <div class="options">
+                <div class="option"><span class="option-letter">A.</span> HIPAA</div>
+                <div class="option"><span class="option-letter">B.</span> PCI DSS</div>
+                <div class="option"><span class="option-letter">C.</span> GLBA</div>
+                <div class="option"><span class="option-letter">D.</span> SOX</div>
+            </div>
+        </div>
+
+        <div class="question no-break">
+            <span class="question-number">Question 17</span>
+            <div class="question-text">
+                Nolan is writing an after action report on a security breach that took place in his organization. The attackers stole thousands of customer records from the organization's database. What cybersecurity principle was most impacted in this breach?
+            </div>
+            <div class="options">
+                <div class="option"><span class="option-letter">A.</span> Availability</div>
+                <div class="option"><span class="option-letter">B.</span> Nonrepudiation</div>
+                <div class="option"><span class="option-letter">C.</span> Confidentiality</div>
+                <div class="option"><span class="option-letter">D.</span> Integrity</div>
+            </div>
+        </div>
+
+        <div class="question no-break">
+            <span class="question-number">Question 18</span>
+            <div class="question-text">
+                Which one of the following objectives is NOT one of the three main objectives that information security professionals must achieve to protect their organizations against cybersecurity threats?
+            </div>
+            <div class="options">
+                <div class="option"><span class="option-letter">A.</span> Integrity</div>
+                <div class="option"><span class="option-letter">B.</span> Nonrepudiation</div>
+                <div class="option"><span class="option-letter">C.</span> Availability</div>
+                <div class="option"><span class="option-letter">D.</span> Confidentiality</div>
+            </div>
+            <div class="special-note">
+                Note: This question asks for the objective that is NOT one of the three main objectives.
+            </div>
+        </div>
+
+        <div class="question no-break">
+            <span class="question-number">Question 19</span>
+            <div class="question-text">
+                Which one of the following data protection techniques is reversible when conducted properly?
+            </div>
+            <div class="options">
+                <div class="option"><span class="option-letter">A.</span> Tokenization</div>
+                <div class="option"><span class="option-letter">B.</span> Masking</div>
+                <div class="option"><span class="option-letter">C.</span> Hashing</div>
+                <div class="option"><span class="option-letter">D.</span> Shredding</div>
+            </div>
+        </div>
+
+        <div class="question no-break">
+            <span class="question-number">Question 20</span>
+            <div class="question-text">
+                Which one of the following statements is NOT true about compensating controls under PCI DSS?
+            </div>
+            <div class="options">
+                <div class="option"><span class="option-letter">A.</span> Controls used to fulfill one PCI DSS requirement may be used to compensate for the absence of a control needed to meet another requirement.</div>
+                <div class="option"><span class="option-letter">B.</span> Controls must meet the intent of the original requirement.</div>
+                <div class="option"><span class="option-letter">C.</span> Controls must meet the rigor of the original requirement.</div>
+                <div class="option"><span class="option-letter">D.</span> Compensating controls must provide a similar level of defense as the original requirement.</div>
+            </div>
+            <div class="special-note">
+                Note: This question asks for the statement that is NOT true.
+            </div>
+        </div>
+
+        <div class="section-divider">End of Questions</div>
+
+        <div class="answer-sheet">
+            <h2>Answer Sheet</h2>
+            <p>Record your answers below. Check your answers against the answer key when complete.</p>
+            <div class="answer-grid">
+                <div class="answer-box">
+                    <span class="answer-number">1.</span>
+                    <span class="answer-blank"></span>
+                </div>
+                <div class="answer-box">
+                    <span class="answer-number">2.</span>
+                    <span class="answer-blank"></span>
+                </div>
+                <div class="answer-box">
+                    <span class="answer-number">3.</span>
+                    <span class="answer-blank"></span>
+                </div>
+                <div class="answer-box">
+                    <span class="answer-number">4.</span>
+                    <span class="answer-blank"></span>
+                </div>
+                <div class="answer-box">
+                    <span class="answer-number">5.</span>
+                    <span class="answer-blank"></span>
+                </div>
+                <div class="answer-box">
+                    <span class="answer-number">6.</span>
+                    <span class="answer-blank"></span>
+                </div>
+                <div class="answer-box">
+                    <span class="answer-number">7.</span>
+                    <span class="answer-blank"></span>
+                </div>
+                <div class="answer-box">
+                    <span class="answer-number">8.</span>
+                    <span class="answer-blank"></span>
+                </div>
+                <div class="answer-box">
+                    <span class="answer-number">9.</span>
+                    <span class="answer-blank"></span>
+                </div>
+                <div class="answer-box">
+                    <span class="answer-number">10.</span>
+                    <span class="answer-blank"></span>
+                </div>
+                <div class="answer-box">
+                    <span class="answer-number">11.</span>
+                    <span class="answer-blank"></span>
+                </div>
+                <div class="answer-box">
+                    <span class="answer-number">12.</span>
+                    <span class="answer-blank"></span>
+                </div>
+                <div class="answer-box">
+                    <span class="answer-number">13.</span>
+                    <span class="answer-blank"></span>
+                </div>
+                <div class="answer-box">
+                    <span class="answer-number">14.</span>
+                    <span class="answer-blank"></span>
+                </div>
+                <div class="answer-box">
+                    <span class="answer-number">15.</span>
+                    <span class="answer-blank"></span>
+                </div>
+                <div class="answer-box">
+                    <span class="answer-number">16.</span>
+                    <span class="answer-blank"></span>
+                </div>
+                <div class="answer-box">
+                    <span class="answer-number">17.</span>
+                    <span class="answer-blank"></span>
+                </div>
+                <div class="answer-box">
+                    <span class="answer-number">18.</span>
+                    <span class="answer-blank"></span>
+                </div>
+                <div class="answer-box">
+                    <span class="answer-number">19.</span>
+                    <span class="answer-blank"></span>
+                </div>
+                <div class="answer-box">
+                    <span class="answer-number">20.</span>
+                    <span class="answer-blank"></span>
+                </div>
+            </div>
+            
+            <div style="margin-top: 30px; padding: 15px; background-color: #e7f3ff; border-radius: 5px;">
+                <strong>Quick Answer Key:</strong> 1-D, 2-B, 3-C, 4-B, 5-D, 6-D, 7-B, 8-D, 9-D, 10-A, 11-C, 12-A, 13-D, 14-D, 15-D, 16-A, 17-C, 18-B, 19-A, 20-A
+            </div>
+        </div>
+    </div>
+</body>
+</html>
