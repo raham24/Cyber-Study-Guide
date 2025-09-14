@@ -4,159 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 2: Review Questions - Cybersecurity Threat Landscape</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.8;
-            color: #333;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9fafb;
-        }
-        .header {
-            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.2em;
-        }
-        .instructions {
-            background-color: #fef3c7;
-            border: 2px solid #f59e0b;
-            padding: 20px;
-            margin-bottom: 30px;
-            border-radius: 8px;
-        }
-        .instructions h2 {
-            color: #d97706;
-            margin-top: 0;
-        }
-        .question-block {
-            background-color: white;
-            padding: 25px;
-            margin-bottom: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            page-break-inside: avoid;
-        }
-        .question-number {
-            background-color: #3b82f6;
-            color: white;
-            padding: 5px 12px;
-            border-radius: 20px;
-            display: inline-block;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-        .question-text {
-            font-size: 1.1em;
-            margin-bottom: 20px;
-            color: #1f2937;
-        }
-        .options {
-            margin-left: 20px;
-        }
-        .option {
-            margin-bottom: 12px;
-            padding: 10px;
-            background-color: #f3f4f6;
-            border-radius: 5px;
-            border: 2px solid transparent;
-            transition: all 0.3s;
-        }
-        .option:hover {
-            background-color: #e5e7eb;
-            border-color: #3b82f6;
-        }
-        .option-letter {
-            font-weight: bold;
-            color: #3b82f6;
-            margin-right: 10px;
-        }
-        .note-box {
-            background-color: #fee2e2;
-            border-left: 5px solid #ef4444;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 5px;
-        }
-        .note-box strong {
-            color: #dc2626;
-        }
-        .scenario-box {
-            background-color: #f0f9ff;
-            border: 1px solid #0ea5e9;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            font-style: italic;
-        }
-        .multi-select-note {
-            background-color: #ecfdf5;
-            border: 2px solid #10b981;
-            padding: 10px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            font-weight: bold;
-            color: #059669;
-        }
-        .answer-sheet {
-            background-color: white;
-            padding: 30px;
-            margin-top: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 15px;
-        }
-        .answer-row {
-            display: flex;
-            align-items: center;
-            padding: 10px;
-            background-color: #f9fafb;
-            border-radius: 5px;
-        }
-        .answer-number {
-            font-weight: bold;
-            margin-right: 10px;
-            color: #3b82f6;
-        }
-        .answer-circles {
-            display: flex;
-            gap: 8px;
-        }
-        .circle {
-            width: 20px;
-            height: 20px;
-            border: 2px solid #9ca3af;
-            border-radius: 50%;
-            text-align: center;
-            font-size: 12px;
-            line-height: 16px;
-            color: #6b7280;
-        }
-        @media print {
-            body {
-                background-color: white;
-            }
-            .question-block {
-                page-break-inside: avoid;
-            }
-            .option:hover {
-                background-color: #f3f4f6;
-                border-color: transparent;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="../cyber-guide-global.css">
+    <script src="../cyber-guide-global.js"></script>
 </head>
 <body>
     <div class="header">
@@ -172,525 +21,285 @@
             <li>Pay special attention to questions containing "NOT" or "EXCEPT"</li>
             <li>For scenario-based questions, consider all aspects of the situation</li>
             <li>Some questions may have multiple correct answers (marked accordingly)</li>
-            <li>Mark your answers on the answer sheet provided at the end</li>
-            <li>Time recommendation: 2 minutes per question</li>
+            <li>Selections are saved until you refresh or close the page</li>
+            <li>Each user's selections are kept separate</li>
         </ul>
     </div>
 
-    <!-- Question 1 -->
-    <div class="question-block">
-        <span class="question-number">1</span>
-        <div class="question-text">
-            Which of the following measures is <strong>NOT</strong> commonly used to assess threat intelligence?
-        </div>
-        <div class="options">
-            <div class="option"><span class="option-letter">A.</span> Timeliness</div>
-            <div class="option"><span class="option-letter">B.</span> Detail</div>
-            <div class="option"><span class="option-letter">C.</span> Accuracy</div>
-            <div class="option"><span class="option-letter">D.</span> Relevance</div>
-        </div>
-    </div>
-
-    <!-- Question 2 -->
-    <div class="question-block">
-        <span class="question-number">2</span>
-        <div class="question-text">
-            Which one of the following motivations is most commonly attributed to hacktivists?
-        </div>
-        <div class="options">
-            <div class="option"><span class="option-letter">A.</span> War</div>
-            <div class="option"><span class="option-letter">B.</span> Financial gain</div>
-            <div class="option"><span class="option-letter">C.</span> Political/philosophical beliefs</div>
-            <div class="option"><span class="option-letter">D.</span> Ethical</div>
-        </div>
-    </div>
-
-    <!-- Question 3 -->
-    <div class="question-block">
-        <span class="question-number">3</span>
-        <div class="scenario-box">
-            Scenario: Kolin is a penetration tester who works for a cybersecurity company. His firm was hired to conduct a penetration test against a health-care system, and Kolin is working to gain access to the systems belonging to a hospital in that system.
-        </div>
-        <div class="question-text">
-            What term best describes Kolin's work?
-        </div>
-        <div class="options">
-            <div class="option"><span class="option-letter">A.</span> Authorized attacker</div>
-            <div class="option"><span class="option-letter">B.</span> Unauthorized attacker</div>
-            <div class="option"><span class="option-letter">C.</span> Unknown attacker</div>
-            <div class="option"><span class="option-letter">D.</span> Semi-authorized attacker</div>
-        </div>
-    </div>
-
-    <!-- Question 4 -->
-    <div class="question-block">
-        <span class="question-number">4</span>
-        <div class="question-text">
-            Which one of the following attackers is most likely to be associated with an APT?
-        </div>
-        <div class="options">
-            <div class="option"><span class="option-letter">A.</span> Nation-state actor</div>
-            <div class="option"><span class="option-letter">B.</span> Hacktivist</div>
-            <div class="option"><span class="option-letter">C.</span> Unskilled</div>
-            <div class="option"><span class="option-letter">D.</span> Insider</div>
-        </div>
-    </div>
-
-    <!-- Question 5 -->
-    <div class="question-block">
-        <span class="question-number">5</span>
-        <div class="question-text">
-            Which organization did the U.S. government help create to share knowledge between organizations in specific verticals?
-        </div>
-        <div class="options">
-            <div class="option"><span class="option-letter">A.</span> DHS</div>
-            <div class="option"><span class="option-letter">B.</span> SANS</div>
-            <div class="option"><span class="option-letter">C.</span> CERTS</div>
-            <div class="option"><span class="option-letter">D.</span> ISACs</div>
-        </div>
-    </div>
-
-    <!-- Question 6 -->
-    <div class="question-block">
-        <span class="question-number">6</span>
-        <div class="question-text">
-            Which of the following threat actors typically has the greatest access to resources?
-        </div>
-        <div class="options">
-            <div class="option"><span class="option-letter">A.</span> Nation-state actors</div>
-            <div class="option"><span class="option-letter">B.</span> Organized crime</div>
-            <div class="option"><span class="option-letter">C.</span> Hacktivists</div>
-            <div class="option"><span class="option-letter">D.</span> Insider threats</div>
-        </div>
-    </div>
-
-    <!-- Question 7 -->
-    <div class="question-block">
-        <span class="question-number">7</span>
-        <div class="question-text">
-            Of the threat vectors shown here, which one is most commonly exploited by attackers who are at a distant location?
-        </div>
-        <div class="options">
-            <div class="option"><span class="option-letter">A.</span> Email</div>
-            <div class="option"><span class="option-letter">B.</span> Direct access</div>
-            <div class="option"><span class="option-letter">C.</span> Wireless</div>
-            <div class="option"><span class="option-letter">D.</span> Removable media</div>
-        </div>
-    </div>
-
-    <!-- Question 8 -->
-    <div class="question-block">
-        <span class="question-number">8</span>
-        <div class="question-text">
-            Which one of the following is the best example of a hacktivist group?
-        </div>
-        <div class="options">
-            <div class="option"><span class="option-letter">A.</span> Chinese military</div>
-            <div class="option"><span class="option-letter">B.</span> U.S. government</div>
-            <div class="option"><span class="option-letter">C.</span> Russian mafia</div>
-            <div class="option"><span class="option-letter">D.</span> Anonymous</div>
-        </div>
-    </div>
-
-    <!-- Question 9 -->
-    <div class="question-block">
-        <span class="question-number">9</span>
-        <div class="question-text">
-            What type of assessment is particularly useful for identifying insider threats?
-        </div>
-        <div class="options">
-            <div class="option"><span class="option-letter">A.</span> Behavioral</div>
-            <div class="option"><span class="option-letter">B.</span> Instinctual</div>
-            <div class="option"><span class="option-letter">C.</span> Habitual</div>
-            <div class="option"><span class="option-letter">D.</span> IoCs</div>
-        </div>
-    </div>
-
-    <!-- Question 10 -->
-    <div class="question-block">
-        <span class="question-number">10</span>
-        <div class="scenario-box">
-            Scenario: Cindy is concerned that her organization may be targeted by a supply chain attack and is conducting a review of all of her vendor and supplier partners.
-        </div>
-        <div class="question-text">
-            Which one of the following organizations is <strong>LEAST</strong> likely to be the conduit for a supply chain attack?
-        </div>
-        <div class="options">
-            <div class="option"><span class="option-letter">A.</span> Hardware provider</div>
-            <div class="option"><span class="option-letter">B.</span> Software provider</div>
-            <div class="option"><span class="option-letter">C.</span> Managed service provider</div>
-            <div class="option"><span class="option-letter">D.</span> Talent provider</div>
-        </div>
-    </div>
-
-    <!-- Question 11 -->
-    <div class="question-block">
-        <span class="question-number">11</span>
-        <div class="scenario-box">
-            Scenario: Greg believes that an attacker may have installed malicious firmware in a network device before it was provided to his organization by the supplier.
-        </div>
-        <div class="question-text">
-            What type of threat vector best describes this attack?
-        </div>
-        <div class="options">
-            <div class="option"><span class="option-letter">A.</span> Supply chain</div>
-            <div class="option"><span class="option-letter">B.</span> Removable media</div>
-            <div class="option"><span class="option-letter">C.</span> Cloud</div>
-            <div class="option"><span class="option-letter">D.</span> Direct access</div>
-        </div>
-    </div>
-
-    <!-- Question 12 -->
-    <div class="question-block">
-        <span class="question-number">12</span>
-        <div class="scenario-box">
-            Scenario: Ken is conducting threat research on Transport Layer Security (TLS) and would like to consult the authoritative reference for the protocol's technical specification.
-        </div>
-        <div class="question-text">
-            What resource would best meet his needs?
-        </div>
-        <div class="options">
-            <div class="option"><span class="option-letter">A.</span> Academic journal</div>
-            <div class="option"><span class="option-letter">B.</span> Internet RFCs</div>
-            <div class="option"><span class="option-letter">C.</span> Subject matter experts</div>
-            <div class="option"><span class="option-letter">D.</span> Textbooks</div>
-        </div>
-    </div>
-
-    <!-- Question 13 -->
-    <div class="question-block">
-        <span class="question-number">13</span>
-        <div class="scenario-box">
-            Scenario: Wendy is scanning cloud-based repositories for sensitive information.
-        </div>
-        <div class="question-text">
-            Which one of the following should concern her most, if discovered in a public repository?
-        </div>
-        <div class="options">
-            <div class="option"><span class="option-letter">A.</span> Product manuals</div>
-            <div class="option"><span class="option-letter">B.</span> Source code</div>
-            <div class="option"><span class="option-letter">C.</span> API keys</div>
-            <div class="option"><span class="option-letter">D.</span> Open source data</div>
-        </div>
-    </div>
-
-    <!-- Question 14 -->
-    <div class="question-block">
-        <span class="question-number">14</span>
-        <div class="question-text">
-            Which one of the following threat research tools is used to visually display information about the location of threat actors?
-        </div>
-        <div class="options">
-            <div class="option"><span class="option-letter">A.</span> Threat map</div>
-            <div class="option"><span class="option-letter">B.</span> Predictive analysis</div>
-            <div class="option"><span class="option-letter">C.</span> Vulnerability feed</div>
-            <div class="option"><span class="option-letter">D.</span> STIX</div>
-        </div>
-    </div>
-
-    <!-- Question 15 -->
-    <div class="question-block">
-        <span class="question-number">15</span>
-        <div class="scenario-box">
-            Scenario: Vince recently received the hash values of malicious software that several other firms in his industry found installed on their systems after a compromise.
-        </div>
-        <div class="question-text">
-            What term best describes this information?
-        </div>
-        <div class="options">
-            <div class="option"><span class="option-letter">A.</span> Vulnerability feed</div>
-            <div class="option"><span class="option-letter">B.</span> IoC</div>
-            <div class="option"><span class="option-letter">C.</span> TTP</div>
-            <div class="option"><span class="option-letter">D.</span> RFC</div>
-        </div>
-    </div>
-
-    <!-- Question 16 -->
-    <div class="question-block">
-        <span class="question-number">16</span>
-        <div class="scenario-box">
-            Scenario: Ursula recently discovered that a group of developers are sharing information over a messaging tool provided by a cloud vendor but not sanctioned by her organization.
-        </div>
-        <div class="question-text">
-            What term best describes this use of technology?
-        </div>
-        <div class="options">
-            <div class="option"><span class="option-letter">A.</span> Shadow IT</div>
-            <div class="option"><span class="option-letter">B.</span> System integration</div>
-            <div class="option"><span class="option-letter">C.</span> Vendor management</div>
-            <div class="option"><span class="option-letter">D.</span> Data exfiltration</div>
-        </div>
-    </div>
-
-    <!-- Question 17 -->
-    <div class="question-block">
-        <span class="question-number">17</span>
-        <div class="scenario-box">
-            Scenario: Tom's organization recently learned that the vendor is discontinuing support for their customer relationship management (CRM) system.
-        </div>
-        <div class="question-text">
-            What should concern Tom the most from a security perspective?
-        </div>
-        <div class="options">
-            <div class="option"><span class="option-letter">A.</span> Unavailability of future patches</div>
-            <div class="option"><span class="option-letter">B.</span> Lack of technical support</div>
-            <div class="option"><span class="option-letter">C.</span> Theft of customer information</div>
-            <div class="option"><span class="option-letter">D.</span> Increased costs</div>
-        </div>
-    </div>
-
-    <!-- Question 18 -->
-    <div class="question-block">
-        <span class="question-number">18</span>
-        <div class="question-text">
-            Which one of the following information sources would <strong>NOT</strong> be considered an OSINT source?
-        </div>
-        <div class="note-box">
-            <strong>Note:</strong> Pay attention to the word "NOT" in this question!
-        </div>
-        <div class="options">
-            <div class="option"><span class="option-letter">A.</span> DNS lookup</div>
-            <div class="option"><span class="option-letter">B.</span> Search engine research</div>
-            <div class="option"><span class="option-letter">C.</span> Port scans</div>
-            <div class="option"><span class="option-letter">D.</span> WHOIS queries</div>
-        </div>
-    </div>
-
-    <!-- Question 19 -->
-    <div class="question-block">
-        <span class="question-number">19</span>
-        <div class="multi-select-note">
-            ⚠️ MULTI-SELECT: Choose TWO answers
-        </div>
-        <div class="scenario-box">
-            Scenario: Edward Snowden was a government contractor who disclosed sensitive government documents to journalists to uncover what he believed were unethical activities.
-        </div>
-        <div class="question-text">
-            Which of the following terms best describe Snowden's activities? (Choose two.)
-        </div>
-        <div class="options">
-            <div class="option"><span class="option-letter">A.</span> Insider</div>
-            <div class="option"><span class="option-letter">B.</span> State actor</div>
-            <div class="option"><span class="option-letter">C.</span> Hacktivist</div>
-            <div class="option"><span class="option-letter">D.</span> APT</div>
-            <div class="option"><span class="option-letter">E.</span> Organized crime</div>
-        </div>
-    </div>
-
-    <!-- Question 20 -->
-    <div class="question-block">
-        <span class="question-number">20</span>
-        <div class="scenario-box">
-            Scenario: Renee is a cybersecurity hobbyist. She receives an email about a new web-based grading system being used by her son's school and she visits the site. She notices that the URL for the site looks like this:
-            <br><br>
-            <code>www.myschool.edu/grades.php&studentID=1023425</code>
-            <br><br>
-            She realizes that 1023425 is her son's student ID number and she then attempts to access the following similar URLs:
-            <br>
-            <code>www.myschool.edu/grades.php&studentID=1023423</code><br>
-            <code>www.myschool.edu/grades.php&studentID=1023424</code><br>
-            <code>www.myschool.edu/grades.php&studentID=1023426</code><br>
-            <code>www.myschool.edu/grades.php&studentID=1023427</code>
-            <br><br>
-            When she does so, she accesses the records of other students. She closes the records and immediately informs the school principal of the vulnerability.
-        </div>
-        <div class="question-text">
-            What term best describes Renee's work?
-        </div>
-        <div class="options">
-            <div class="option"><span class="option-letter">A.</span> Authorized hacking</div>
-            <div class="option"><span class="option-letter">B.</span> Unknown hacking</div>
-            <div class="option"><span class="option-letter">C.</span> Semi-authorized hacking</div>
-            <div class="option"><span class="option-letter">D.</span> Unauthorized hacking</div>
-        </div>
-    </div>
-
-    <!-- Answer Sheet -->
-    <div class="answer-sheet">
-        <h2 style="text-align: center; color: #3b82f6; margin-bottom: 30px;">ANSWER SHEET</h2>
-        <div class="answer-grid">
-            <div class="answer-row">
-                <span class="answer-number">1.</span>
-                <div class="answer-circles">
-                    <span class="circle">A</span>
-                    <span class="circle">B</span>
-                    <span class="circle">C</span>
-                    <span class="circle">D</span>
-                </div>
+    <div class="section">
+        <!-- Question 1 -->
+        <div class="question-block">
+            <span class="question-number">1</span>
+            <div class="question-text">
+                Which of the following is NOT a standard threat intelligence assessment criterion?
             </div>
-            <div class="answer-row">
-                <span class="answer-number">2.</span>
-                <div class="answer-circles">
-                    <span class="circle">A</span>
-                    <span class="circle">B</span>
-                    <span class="circle">C</span>
-                    <span class="circle">D</span>
-                </div>
-            </div>
-            <div class="answer-row">
-                <span class="answer-number">3.</span>
-                <div class="answer-circles">
-                    <span class="circle">A</span>
-                    <span class="circle">B</span>
-                    <span class="circle">C</span>
-                    <span class="circle">D</span>
-                </div>
-            </div>
-            <div class="answer-row">
-                <span class="answer-number">4.</span>
-                <div class="answer-circles">
-                    <span class="circle">A</span>
-                    <span class="circle">B</span>
-                    <span class="circle">C</span>
-                    <span class="circle">D</span>
-                </div>
-            </div>
-            <div class="answer-row">
-                <span class="answer-number">5.</span>
-                <div class="answer-circles">
-                    <span class="circle">A</span>
-                    <span class="circle">B</span>
-                    <span class="circle">C</span>
-                    <span class="circle">D</span>
-                </div>
-            </div>
-            <div class="answer-row">
-                <span class="answer-number">6.</span>
-                <div class="answer-circles">
-                    <span class="circle">A</span>
-                    <span class="circle">B</span>
-                    <span class="circle">C</span>
-                    <span class="circle">D</span>
-                </div>
-            </div>
-            <div class="answer-row">
-                <span class="answer-number">7.</span>
-                <div class="answer-circles">
-                    <span class="circle">A</span>
-                    <span class="circle">B</span>
-                    <span class="circle">C</span>
-                    <span class="circle">D</span>
-                </div>
-            </div>
-            <div class="answer-row">
-                <span class="answer-number">8.</span>
-                <div class="answer-circles">
-                    <span class="circle">A</span>
-                    <span class="circle">B</span>
-                    <span class="circle">C</span>
-                    <span class="circle">D</span>
-                </div>
-            </div>
-            <div class="answer-row">
-                <span class="answer-number">9.</span>
-                <div class="answer-circles">
-                    <span class="circle">A</span>
-                    <span class="circle">B</span>
-                    <span class="circle">C</span>
-                    <span class="circle">D</span>
-                </div>
-            </div>
-            <div class="answer-row">
-                <span class="answer-number">10.</span>
-                <div class="answer-circles">
-                    <span class="circle">A</span>
-                    <span class="circle">B</span>
-                    <span class="circle">C</span>
-                    <span class="circle">D</span>
-                </div>
-            </div>
-            <div class="answer-row">
-                <span class="answer-number">11.</span>
-                <div class="answer-circles">
-                    <span class="circle">A</span>
-                    <span class="circle">B</span>
-                    <span class="circle">C</span>
-                    <span class="circle">D</span>
-                </div>
-            </div>
-            <div class="answer-row">
-                <span class="answer-number">12.</span>
-                <div class="answer-circles">
-                    <span class="circle">A</span>
-                    <span class="circle">B</span>
-                    <span class="circle">C</span>
-                    <span class="circle">D</span>
-                </div>
-            </div>
-            <div class="answer-row">
-                <span class="answer-number">13.</span>
-                <div class="answer-circles">
-                    <span class="circle">A</span>
-                    <span class="circle">B</span>
-                    <span class="circle">C</span>
-                    <span class="circle">D</span>
-                </div>
-            </div>
-            <div class="answer-row">
-                <span class="answer-number">14.</span>
-                <div class="answer-circles">
-                    <span class="circle">A</span>
-                    <span class="circle">B</span>
-                    <span class="circle">C</span>
-                    <span class="circle">D</span>
-                </div>
-            </div>
-            <div class="answer-row">
-                <span class="answer-number">15.</span>
-                <div class="answer-circles">
-                    <span class="circle">A</span>
-                    <span class="circle">B</span>
-                    <span class="circle">C</span>
-                    <span class="circle">D</span>
-                </div>
-            </div>
-            <div class="answer-row">
-                <span class="answer-number">16.</span>
-                <div class="answer-circles">
-                    <span class="circle">A</span>
-                    <span class="circle">B</span>
-                    <span class="circle">C</span>
-                    <span class="circle">D</span>
-                </div>
-            </div>
-            <div class="answer-row">
-                <span class="answer-number">17.</span>
-                <div class="answer-circles">
-                    <span class="circle">A</span>
-                    <span class="circle">B</span>
-                    <span class="circle">C</span>
-                    <span class="circle">D</span>
-                </div>
-            </div>
-            <div class="answer-row">
-                <span class="answer-number">18.</span>
-                <div class="answer-circles">
-                    <span class="circle">A</span>
-                    <span class="circle">B</span>
-                    <span class="circle">C</span>
-                    <span class="circle">D</span>
-                </div>
-            </div>
-            <div class="answer-row">
-                <span class="answer-number">19.</span>
-                <div class="answer-circles">
-                    <span class="circle">A</span>
-                    <span class="circle">B</span>
-                    <span class="circle">C</span>
-                    <span class="circle">D</span>
-                    <span class="circle">E</span>
-                </div>
-            </div>
-            <div class="answer-row">
-                <span class="answer-number">20.</span>
-                <div class="answer-circles">
-                    <span class="circle">A</span>
-                    <span class="circle">B</span>
-                    <span class="circle">C</span>
-                    <span class="circle">D</span>
-                </div>
+            <div class="options">
+                <label class="option"><input type="radio" name="q1" value="A"> <span class="option-letter">A.</span> Timeliness</label>
+                <label class="option"><input type="radio" name="q1" value="B"> <span class="option-letter">B.</span> Detail</label>
+                <label class="option"><input type="radio" name="q1" value="C"> <span class="option-letter">C.</span> Accuracy</label>
+                <label class="option"><input type="radio" name="q1" value="D"> <span class="option-letter">D.</span> Relevance</label>
             </div>
         </div>
+        <!-- Question 2 -->
+        <div class="question-block multi-select">
+            <span class="question-number">2</span>
+            <div class="multi-select-note">
+                ⚠️ MULTI-SELECT: Choose TWO answers
+            </div>
+            <div class="question-text">
+                Which of the following are common threat actor motivations? (Choose two.)
+            </div>
+            <div class="options">
+                <label class="option"><input type="checkbox" name="q2" value="A"> <span class="option-letter">A.</span> Financial gain</label>
+                <label class="option"><input type="checkbox" name="q2" value="B"> <span class="option-letter">B.</span> Fame</label>
+                <label class="option"><input type="checkbox" name="q2" value="C"> <span class="option-letter">C.</span> Political/philosophical beliefs</label>
+                <label class="option"><input type="checkbox" name="q2" value="D"> <span class="option-letter">D.</span> Boredom</label>
+            </div>
+        </div>
+        <!-- Question 3 -->
+        <div class="question-block">
+            <span class="question-number">3</span>
+            <div class="question-text">
+                Which type of threat actor typically uses existing tools and scripts, lacking advanced skills?
+            </div>
+            <div class="options">
+                <label class="option"><input type="radio" name="q3" value="A"> <span class="option-letter">A.</span> Script kiddie</label>
+                <label class="option"><input type="radio" name="q3" value="B"> <span class="option-letter">B.</span> Hacktivist</label>
+                <label class="option"><input type="radio" name="q3" value="C"> <span class="option-letter">C.</span> Nation-state</label>
+                <label class="option"><input type="radio" name="q3" value="D"> <span class="option-letter">D.</span> Insider</label>
+            </div>
+        </div>
+        <!-- Question 4 -->
+        <div class="question-block">
+            <span class="question-number">4</span>
+            <div class="question-text">
+                Which threat actor is highly skilled, well-funded, and persistent, often linked to nation-states?
+            </div>
+            <div class="options">
+                <label class="option"><input type="radio" name="q4" value="A"> <span class="option-letter">A.</span> Advanced Persistent Threat (APT)</label>
+                <label class="option"><input type="radio" name="q4" value="B"> <span class="option-letter">B.</span> Script kiddie</label>
+                <label class="option"><input type="radio" name="q4" value="C"> <span class="option-letter">C.</span> Hacktivist</label>
+                <label class="option"><input type="radio" name="q4" value="D"> <span class="option-letter">D.</span> Insider</label>
+            </div>
+        </div>
+        <!-- Question 5 -->
+        <div class="question-block">
+            <span class="question-number">5</span>
+            <div class="question-text">
+                What is the name of organizations that facilitate sharing threat intelligence among members?
+            </div>
+            <div class="options">
+                <label class="option"><input type="radio" name="q5" value="A"> <span class="option-letter">A.</span> SIEMs</label>
+                <label class="option"><input type="radio" name="q5" value="B"> <span class="option-letter">B.</span> MSSPs</label>
+                <label class="option"><input type="radio" name="q5" value="C"> <span class="option-letter">C.</span> SOCs</label>
+                <label class="option"><input type="radio" name="q5" value="D"> <span class="option-letter">D.</span> ISACs</label>
+            </div>
+        </div>
+        <!-- Question 6 -->
+        <div class="question-block">
+            <span class="question-number">6</span>
+            <div class="question-text">
+                Which resource is most critical for threat actors to acquire advanced tools and expertise?
+            </div>
+            <div class="options">
+                <label class="option"><input type="radio" name="q6" value="A"> <span class="option-letter">A.</span> Funding</label>
+                <label class="option"><input type="radio" name="q6" value="B"> <span class="option-letter">B.</span> Fame</label>
+                <label class="option"><input type="radio" name="q6" value="C"> <span class="option-letter">C.</span> Motivation</label>
+                <label class="option"><input type="radio" name="q6" value="D"> <span class="option-letter">D.</span> Location</label>
+            </div>
+        </div>
+        <!-- Question 7 -->
+        <div class="question-block">
+            <span class="question-number">7</span>
+            <div class="question-text">
+                Which of the following is a common threat vector used to gain unauthorized access or information?
+            </div>
+            <div class="options">
+                <label class="option"><input type="radio" name="q7" value="A"> <span class="option-letter">A.</span> Phishing</label>
+                <label class="option"><input type="radio" name="q7" value="B"> <span class="option-letter">B.</span> Encryption</label>
+                <label class="option"><input type="radio" name="q7" value="C"> <span class="option-letter">C.</span> Firewall</label>
+                <label class="option"><input type="radio" name="q7" value="D"> <span class="option-letter">D.</span> VPN</label>
+            </div>
+        </div>
+        <!-- Question 8 -->
+        <div class="question-block">
+            <span class="question-number">8</span>
+            <div class="question-text">
+                Which group is a well-known hacktivist organization?
+            </div>
+            <div class="options">
+                <label class="option"><input type="radio" name="q8" value="A"> <span class="option-letter">A.</span> Nation-state</label>
+                <label class="option"><input type="radio" name="q8" value="B"> <span class="option-letter">B.</span> Script kiddie</label>
+                <label class="option"><input type="radio" name="q8" value="C"> <span class="option-letter">C.</span> Insider</label>
+                <label class="option"><input type="radio" name="q8" value="D"> <span class="option-letter">D.</span> Anonymous</label>
+            </div>
+        </div>
+        <!-- Question 9 -->
+        <div class="question-block">
+            <span class="question-number">9</span>
+            <div class="question-text">
+                Why are insider threats considered particularly dangerous?
+            </div>
+            <div class="options">
+                <label class="option"><input type="radio" name="q9" value="A"> <span class="option-letter">A.</span> Already has access</label>
+                <label class="option"><input type="radio" name="q9" value="B"> <span class="option-letter">B.</span> Lack of motivation</label>
+                <label class="option"><input type="radio" name="q9" value="C"> <span class="option-letter">C.</span> No technical skills</label>
+                <label class="option"><input type="radio" name="q9" value="D"> <span class="option-letter">D.</span> External to organization</label>
+            </div>
+        </div>
+        <!-- Question 10 -->
+        <div class="question-block">
+            <span class="question-number">10</span>
+            <div class="question-text">
+                Which attack targets vulnerabilities in third-party vendors or service providers?
+            </div>
+            <div class="options">
+                <label class="option"><input type="radio" name="q10" value="A"> <span class="option-letter">A.</span> Phishing</label>
+                <label class="option"><input type="radio" name="q10" value="B"> <span class="option-letter">B.</span> Ransomware</label>
+                <label class="option"><input type="radio" name="q10" value="C"> <span class="option-letter">C.</span> DDoS</label>
+                <label class="option"><input type="radio" name="q10" value="D"> <span class="option-letter">D.</span> Supply chain</label>
+            </div>
+        </div>
+        <!-- Question 11 -->
+        <div class="question-block">
+            <span class="question-number">11</span>
+            <div class="question-text">
+                What is a common supply chain attack vector?
+            </div>
+            <div class="options">
+                <label class="option"><input type="radio" name="q11" value="A"> <span class="option-letter">A.</span> Software updates</label>
+                <label class="option"><input type="radio" name="q11" value="B"> <span class="option-letter">B.</span> Social engineering</label>
+                <label class="option"><input type="radio" name="q11" value="C"> <span class="option-letter">C.</span> Insider threats</label>
+                <label class="option"><input type="radio" name="q11" value="D"> <span class="option-letter">D.</span> Physical theft</label>
+            </div>
+        </div>
+        <!-- Question 12 -->
+        <div class="question-block">
+            <span class="question-number">12</span>
+            <div class="question-text">
+                Which source provides up-to-date information on emerging threats and vulnerabilities?
+            </div>
+            <div class="options">
+                <label class="option"><input type="radio" name="q12" value="A"> <span class="option-letter">A.</span> SIEM logs</label>
+                <label class="option"><input type="radio" name="q12" value="B"> <span class="option-letter">B.</span> Threat feeds</label>
+                <label class="option"><input type="radio" name="q12" value="C"> <span class="option-letter">C.</span> Firewall rules</label>
+                <label class="option"><input type="radio" name="q12" value="D"> <span class="option-letter">D.</span> VPN connections</label>
+            </div>
+        </div>
+        <!-- Question 13 -->
+        <div class="question-block">
+            <span class="question-number">13</span>
+            <div class="question-text">
+                What is the security model for cloud services?
+            </div>
+            <div class="options">
+                <label class="option"><input type="radio" name="q13" value="A"> <span class="option-letter">A.</span> Provider only</label>
+                <label class="option"><input type="radio" name="q13" value="B"> <span class="option-letter">B.</span> Customer only</label>
+                <label class="option"><input type="radio" name="q13" value="C"> <span class="option-letter">C.</span> Shared responsibility</label>
+                <label class="option"><input type="radio" name="q13" value="D"> <span class="option-letter">D.</span> No responsibility</label>
+            </div>
+        </div>
+        <!-- Question 14 -->
+        <div class="question-block">
+            <span class="question-number">14</span>
+            <div class="question-text">
+                Which tool aggregates and analyzes security data from multiple sources?
+            </div>
+            <div class="options">
+                <label class="option"><input type="radio" name="q14" value="A"> <span class="option-letter">A.</span> SIEM</label>
+                <label class="option"><input type="radio" name="q14" value="B"> <span class="option-letter">B.</span> Firewall</label>
+                <label class="option"><input type="radio" name="q14" value="C"> <span class="option-letter">C.</span> IDS</label>
+                <label class="option"><input type="radio" name="q14" value="D"> <span class="option-letter">D.</span> VPN</label>
+            </div>
+        </div>
+        <!-- Question 15 -->
+        <div class="question-block">
+            <span class="question-number">15</span>
+            <div class="question-text">
+                What does IoC stand for in cybersecurity?
+            </div>
+            <div class="options">
+                <label class="option"><input type="radio" name="q15" value="A"> <span class="option-letter">A.</span> Internet of Cloud</label>
+                <label class="option"><input type="radio" name="q15" value="B"> <span class="option-letter">B.</span> Indicators of Compromise</label>
+                <label class="option"><input type="radio" name="q15" value="C"> <span class="option-letter">C.</span> Internal Operations Center</label>
+                <label class="option"><input type="radio" name="q15" value="D"> <span class="option-letter">D.</span> Integrated Online Control</label>
+            </div>
+        </div>
+        <!-- Question 16 -->
+        <div class="question-block">
+            <span class="question-number">16</span>
+            <div class="question-text">
+                What term describes systems and solutions built and used inside organizations without explicit approval?
+            </div>
+            <div class="options">
+                <label class="option"><input type="radio" name="q16" value="A"> <span class="option-letter">A.</span> Shadow IT</label>
+                <label class="option"><input type="radio" name="q16" value="B"> <span class="option-letter">B.</span> Insider threat</label>
+                <label class="option"><input type="radio" name="q16" value="C"> <span class="option-letter">C.</span> Hacktivism</label>
+                <label class="option"><input type="radio" name="q16" value="D"> <span class="option-letter">D.</span> Supply chain</label>
+            </div>
+        </div>
+        <!-- Question 17 -->
+        <div class="question-block">
+            <span class="question-number">17</span>
+            <div class="question-text">
+                What process is critical to reducing supply chain risks?
+            </div>
+            <div class="options">
+                <label class="option"><input type="radio" name="q17" value="A"> <span class="option-letter">A.</span> Vendor management</label>
+                <label class="option"><input type="radio" name="q17" value="B"> <span class="option-letter">B.</span> Encryption</label>
+                <label class="option"><input type="radio" name="q17" value="C"> <span class="option-letter">C.</span> Phishing awareness</label>
+                <label class="option"><input type="radio" name="q17" value="D"> <span class="option-letter">D.</span> VPN usage</label>
+            </div>
+        </div>
+        <!-- Question 18 -->
+        <div class="question-block">
+            <span class="question-number">18</span>
+            <div class="question-text">
+                What does OSINT stand for?
+            </div>
+            <div class="options">
+                <label class="option"><input type="radio" name="q18" value="A"> <span class="option-letter">A.</span> Operational Security Intelligence</label>
+                <label class="option"><input type="radio" name="q18" value="B"> <span class="option-letter">B.</span> Online Security Integration</label>
+                <label class="option"><input type="radio" name="q18" value="C"> <span class="option-letter">C.</span> Open Source Intelligence</label>
+                <label class="option"><input type="radio" name="q18" value="D"> <span class="option-letter">D.</span> Organizational Security Initiative</label>
+            </div>
+        </div>
+        <!-- Question 19 -->
+        <div class="question-block multi-select">
+            <span class="question-number">19</span>
+            <div class="multi-select-note">
+                ⚠️ MULTI-SELECT: Choose TWO answers
+            </div>
+            <div class="question-text">
+                Which threat actors are highly resourced and pose significant threats? (Choose two.)
+            </div>
+            <div class="options">
+                <label class="option"><input type="checkbox" name="q19" value="A"> <span class="option-letter">A.</span> Nation-state</label>
+                <label class="option"><input type="checkbox" name="q19" value="B"> <span class="option-letter">B.</span> Script kiddie</label>
+                <label class="option"><input type="checkbox" name="q19" value="C"> <span class="option-letter">C.</span> Organized crime</label>
+                <label class="option"><input type="checkbox" name="q19" value="D"> <span class="option-letter">D.</span> Insider</label>
+            </div>
+        </div>
+        <!-- Question 20 -->
+        <div class="question-block">
+            <span class="question-number">20</span>
+            <div class="question-text">
+                What is hacking for a political or social cause called?
+            </div>
+            <div class="options">
+                <label class="option"><input type="radio" name="q20" value="A"> <span class="option-letter">A.</span> Insider threat</label>
+                <label class="option"><input type="radio" name="q20" value="B"> <span class="option-letter">B.</span> Phishing</label>
+                <label class="option"><input type="radio" name="q20" value="C"> <span class="option-letter">C.</span> DDoS</label>
+                <label class="option"><input type="radio" name="q20" value="D"> <span class="option-letter">D.</span> Hacktivism</label>
+            </div>
+        </div>
+
+        <div class="section-divider">End of Questions</div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setupQuestionPersistence('chapter2');
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3: Malicious Code - Detailed Answer Key</title>
+    <link rel="stylesheet" href="../cyber-guide-global.css">
+    <script src="../cyber-guide-global.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Chapter 3: Detailed Answer Key</h1>
+        <p><strong>Malicious Code</strong></p>
+        <p>CompTIA Security+ SY0-701</p>
+    </div>
+
+    <div class="section">
+        <h2>Quick Answer Reference</h2>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Question</th>
+                    <th>Correct Answer</th>
+                    <th>Key Concept</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>B</td><td>Logic bomb prevention requires code review</td></tr>
+                <tr><td>2</td><td>C</td><td>Ransom demands indicate ransomware, not rootkits</td></tr>
+                <tr><td>3</td><td>A</td><td>Keyloggers capture password inputs</td></tr>
+                <tr><td>4</td><td>A</td><td>Port 6667 = IRC = C&C communication</td></tr>
+                <tr><td>5</td><td>D</td><td>Remote access software = backdoor</td></tr>
+                <tr><td>6</td><td>A</td><td>Bloatware primarily consumes resources</td></tr>
+                <tr><td>7</td><td>C</td><td>Spyware gathers browsing and system information</td></tr>
+                <tr><td>8</td><td>D</td><td>Vendors use different malware naming conventions</td></tr>
+                <tr><td>9</td><td>D</td><td>Keyloggers capture various input types</td></tr>
+                <tr><td>10</td><td>C</td><td>Bitcoin payment demands = ransomware</td></tr>
+                <tr><td>11</td><td>B</td><td>Scan rootkit-infected drives externally</td></tr>
+                <tr><td>12</td><td>C</td><td>Conditional execution = logic bomb</td></tr>
+                <tr><td>13</td><td>B</td><td>Complete malware removal requires drive wipe</td></tr>
+                <tr><td>14</td><td>B</td><td>Worms self-propagate, viruses need user action</td></tr>
+                <tr><td>15</td><td>B</td><td>Python code can be read directly</td></tr>
+                <tr><td>16</td><td>B</td><td>Control download sources to prevent Trojans</td></tr>
+                <tr><td>17</td><td>C</td><td>Network vulnerability exploitation = worm</td></tr>
+                <tr><td>18</td><td>D</td><td>Pre-installed unwanted software = bloatware</td></tr>
+                <tr><td>19</td><td>A</td><td>C&C connected malware = bot</td></tr>
+                <tr><td>20</td><td>C</td><td>Deceptive files = Trojans</td></tr>
+            </tbody>
+        </table>
+        <div class="key-concept">
+            <h4>Answer Distribution Analysis</h4>
+            <p><strong>A:</strong> 3 answers (15%) | <strong>B:</strong> 7 answers (35%) | <strong>C:</strong> 7 answers (35%) | <strong>D:</strong> 3 answers (15%)</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Detailed Explanations</h2>
+        <div class="definition-box">
+            <h4>Question 1</h4>
+            <p><strong>Correct Answer:</strong> B (Using a code review process)</p>
+            <p><strong>Explanation:</strong> Logic bombs are code inserted into applications that execute under specific conditions. Code review processes can identify suspicious code, unauthorized functionality, or time-based triggers that characterize logic bombs.</p>
+        </div>
+        <div class="definition-box">
+            <h4>Question 2</h4>
+            <p><strong>Correct Answer:</strong> C (Pop-ups demanding a ransom)</p>
+            <p><strong>Explanation:</strong> Pop-ups demanding ransom payments are characteristic of ransomware, not rootkits. Rootkits are designed to remain hidden and provide backdoor access, not to extort money from users through visible ransom demands.</p>
+        </div>
+        <div class="definition-box">
+            <h4>Question 3</h4>
+            <p><strong>Correct Answer:</strong> A (A keylogger)</p>
+            <p><strong>Explanation:</strong> A keylogger captures all keyboard input, including passwords when they are typed. This would allow a student to obtain the staff member's credentials without their knowledge.</p>
+        </div>
+        <div class="definition-box">
+            <h4>Question 4</h4>
+            <p><strong>Correct Answer:</strong> A (Command and control)</p>
+            <p><strong>Explanation:</strong> TCP port 6667 is the standard port for Internet Relay Chat (IRC), which is commonly used for command and control communications by malware.</p>
+        </div>
+        <div class="definition-box">
+            <h4>Question 5</h4>
+            <p><strong>Correct Answer:</strong> D (A backdoor)</p>
+            <p><strong>Explanation:</strong> Software that allows remote access to systems is classified as a backdoor. The most precise classification for software providing unauthorized remote access is a backdoor.</p>
+        </div>
+        <div class="definition-box">
+            <h4>Question 6</h4>
+            <p><strong>Correct Answer:</strong> A (Consuming resources)</p>
+            <p><strong>Explanation:</strong> Bloatware primarily impacts systems by consuming system resources (disk space, memory, CPU cycles) without providing benefit to users.</p>
+        </div>
+        <div class="definition-box">
+            <h4>Question 7</h4>
+            <p><strong>Correct Answer:</strong> C (Spyware)</p>
+            <p><strong>Explanation:</strong> Spyware is specifically designed to gather information about users, including browsing habits and system information.</p>
+        </div>
+        <div class="definition-box">
+            <h4>Question 8</h4>
+            <p><strong>Correct Answer:</strong> D (Different vendors use different names for malware packages.)</p>
+            <p><strong>Explanation:</strong> Different antivirus vendors often use different naming conventions for the same malware. There is no standardized naming system.</p>
+        </div>
+        <div class="definition-box">
+            <h4>Question 9</h4>
+            <p><strong>Correct Answer:</strong> D (Keyboard and other input from the user)</p>
+            <p><strong>Explanation:</strong> Software keyloggers capture keyboard input and may also capture other input such as mouse movements, touchscreen inputs, and credit card swipes.</p>
+        </div>
+        <div class="definition-box">
+            <h4>Question 10</h4>
+            <p><strong>Correct Answer:</strong> C (Ransomware)</p>
+            <p><strong>Explanation:</strong> A message demanding payment in Bitcoin for encrypted files is the classic signature of ransomware.</p>
+        </div>
+        <div class="definition-box">
+            <h4>Question 11</h4>
+            <p><strong>Correct Answer:</strong> B (Mount the drive on another system and scan it that way.)</p>
+            <p><strong>Explanation:</strong> Rootkits are designed to hide from detection by hooking into the operating system. Mounting the drive on a trusted, clean system prevents the rootkit from hiding its presence.</p>
+        </div>
+        <div class="definition-box">
+            <h4>Question 12</h4>
+            <p><strong>Correct Answer:</strong> C (A logic bomb)</p>
+            <p><strong>Explanation:</strong> A logic bomb is code that executes when specific conditions are met (in this case, the developer not being employed).</p>
+        </div>
+        <div class="definition-box">
+            <h4>Question 13</h4>
+            <p><strong>Correct Answer:</strong> B (Wipe the drive and reinstall from known good media.)</p>
+            <p><strong>Explanation:</strong> The most reliable method is to wipe the drive completely and reinstall from known good media or restore from a clean backup.</p>
+        </div>
+        <div class="definition-box">
+            <h4>Question 14</h4>
+            <p><strong>Correct Answer:</strong> B (How they spread)</p>
+            <p><strong>Explanation:</strong> The key difference between worms and viruses is their propagation method. Worms spread themselves automatically without user interaction, while viruses require user action to spread.</p>
+        </div>
+        <div class="definition-box">
+            <h4>Question 15</h4>
+            <p><strong>Correct Answer:</strong> B (Open the file using a text editor to review the code)</p>
+            <p><strong>Explanation:</strong> Python is an interpreted language with source code that can be read directly. Opening the Python file in a text editor allows direct examination of the code logic.</p>
+        </div>
+        <div class="definition-box">
+            <h4>Question 16</h4>
+            <p><strong>Correct Answer:</strong> B (Preventing downloads from application stores)</p>
+            <p><strong>Explanation:</strong> Trojans are malware disguised as legitimate software that users voluntarily download and run. Preventing downloads from application stores directly addresses the primary infection vector for Trojans.</p>
+        </div>
+        <div class="definition-box">
+            <h4>Question 17</h4>
+            <p><strong>Correct Answer:</strong> C (A worm)</p>
+            <p><strong>Explanation:</strong> When malware exploits a network vulnerability to spread across multiple systems, this indicates worm behavior.</p>
+        </div>
+        <div class="definition-box">
+            <h4>Question 18</h4>
+            <p><strong>Correct Answer:</strong> D (Bloatware)</p>
+            <p><strong>Explanation:</strong> Unwanted programs pre-installed by manufacturers that load at startup are classic examples of bloatware.</p>
+        </div>
+        <div class="definition-box">
+            <h4>Question 19</h4>
+            <p><strong>Correct Answer:</strong> A (A bot)</p>
+            <p><strong>Explanation:</strong> Malware that connects to command and control systems for remote management are called bots. Multiple bots under centralized control form a botnet.</p>
+        </div>
+        <div class="definition-box">
+            <h4>Question 20</h4>
+            <p><strong>Correct Answer:</strong> C (A trojan)</p>
+            <p><strong>Explanation:</strong> When a user manually opens a file that appears innocent but contains malicious content, this is characteristic of a Trojan.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Exam Notes</h2>
+        <div class="exam-note">
+            <h4>Tip:</h4>
+            <p>Review the explanations for each answer to understand why the correct choice is best. Focus on malware types, propagation methods, indicators, and mitigation strategies for the exam.</p>
+        </div>
+    </div>
+</body>
+</html>

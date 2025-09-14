@@ -1,0 +1,476 @@
+/* Global CSS for Cyber-Study-Guide Project */
+
+/* Typography & Layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+h2 {
+    color: #667eea;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+h3 {
+    color: #764ba2;
+    margin-top: 20px;
+}
+h4 {
+    color: #d97706;
+    margin-top: 0;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Section Styling */
+.section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.section h2 {
+    color: #667eea;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+.section h3 {
+    color: #764ba2;
+    margin-top: 20px;
+}
+
+/* Definition Box */
+.definition-box {
+    background-color: #fef3c7;
+    border: 2px solid #f59e0b;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+.definition-box h4 {
+    margin-top: 0;
+    color: #d97706;
+}
+
+/* Exam Note */
+.exam-note {
+    background-color: #fee2e2;
+    border-left: 5px solid #ef4444;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+.exam-note h4 {
+    margin-top: 0;
+    color: #dc2626;
+}
+
+/* Tables */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+.comparison-table th {
+    background-color: #667eea;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+.comparison-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.comparison-table tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+/* Key Concept */
+.key-concept {
+    background-color: #ecfdf5;
+    border-left: 5px solid #10b981;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+/* Real World Example */
+.real-world-example {
+    background-color: #f0f9ff;
+    border: 1px solid #0ea5e9;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+.real-world-example h4 {
+    color: #0284c7;
+    margin-top: 0;
+}
+
+/* Checkmark List */
+ul.checkmark li {
+    list-style: none;
+    padding-left: 1.5em;
+    position: relative;
+}
+ul.checkmark li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+}
+
+/* Difficulty Badges */
+.difficulty-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.difficulty-basic {
+    background-color: #10b981;
+    color: white;
+}
+.difficulty-intermediate {
+    background-color: #f59e0b;
+    color: white;
+}
+.difficulty-advanced {
+    background-color: #ef4444;
+    color: white;
+}
+
+/* Responsive Print */
+@media print {
+    .section {
+        page-break-inside: avoid;
+    }
+    body {
+        background-color: white;
+    }
+}
+
+/* Question Page Formatting */
+.question-block {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    page-break-inside: avoid;
+}
+.question-number {
+    background-color: #3b82f6;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.question-text {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #1f2937;
+}
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+.option {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: #f3f4f6;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-bottom: 0;
+    word-break: break-word;
+    min-height: 32px;
+}
+.option:hover {
+    background-color: #e5e7eb;
+    border-color: #3b82f6;
+}
+.option input[type="radio"],
+.option input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+.option-letter {
+    font-weight: bold;
+    color: #3b82f6;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+.note-box {
+    background-color: #fee2e2;
+    border-left: 5px solid #ef4444;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+.note-box strong {
+    color: #dc2626;
+}
+.scenario-box {
+    background-color: #f0f9ff;
+    border: 1px solid #0ea5e9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-style: italic;
+}
+.multi-select-note {
+    background-color: #ecfdf5;
+    border: 2px solid #10b981;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #059669;
+}
+.answer-sheet {
+    background-color: white;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.answer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+.answer-row {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9fafb;
+    border-radius: 5px;
+}
+.answer-number {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #3b82f6;
+}
+.answer-circles {
+    display: flex;
+    gap: 8px;
+}
+.circle {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #9ca3af;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6b7280;
+}
+.table-question {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+.table-question th, .table-question td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.table-question th {
+    background-color: #667eea;
+    color: white;
+}
+.table-question tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+.special-note {
+    background-color: #fee2e2;
+    border-left: 5px solid #ef4444;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #dc2626;
+}
+.section-divider {
+    text-align: center;
+    font-weight: bold;
+    color: #667eea;
+    margin: 30px 0 10px 0;
+    font-size: 1.2em;
+}
+
+/* --- Chapter 2 Reference Sheet Styles (scoped, non-conflicting) --- */
+.chapter2-ref-body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+    color: #111;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 11pt;
+    background-color: white;
+}
+.chapter2-header {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+.chapter2-ref-body h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.section-box {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    border-radius: 6px;
+}
+.section-box h2 {
+    color: #4f46e5;
+    font-size: 1.1em;
+    margin: 0 0 8px 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #4f46e5;
+}
+.threat-actor-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85em;
+}
+.threat-actor-table th {
+    background-color: #6366f1;
+    color: white;
+    padding: 5px;
+    text-align: left;
+    font-size: 0.9em;
+}
+.threat-actor-table td {
+    padding: 4px;
+    border: 1px solid #dee2e6;
+    font-size: 0.85em;
+}
+.threat-actor-table tr:nth-child(even) {
+    background-color: #f1f3f5;
+}
+.key-list {
+    margin: 5px 0;
+    padding-left: 20px;
+}
+.key-list li {
+    margin: 3px 0;
+    font-size: 0.9em;
+}
+.must-know {
+    background-color: #fefce8;
+    border: 2px solid #facc15;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.must-know h3 {
+    color: #ca8a04;
+    margin: 0 0 5px 0;
+    font-size: 1em;
+}
+.exam-alert {
+    background-color: #fee2e2;
+    border-left: 5px solid #ef4444;
+    padding: 8px;
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+.acronym-box {
+    background-color: #ecfdf5;
+    padding: 10px;
+    border-radius: 5px;
+}
+.acronym-box h3 {
+    color: #059669;
+    margin: 0 0 5px 0;
+    font-size: 1em;
+}
+.two-column-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-size: 0.85em;
+}
+.chapter2-ref-body strong {
+    color: #4f46e5;
+}
+.motivation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    font-size: 0.85em;
+}
+.comparison-mini-table {
+    width: 100%;
+    font-size: 0.8em;
+    border-collapse: collapse;
+}
+.comparison-mini-table th {
+    background-color: #e5e7eb;
+    padding: 3px;
+    font-weight: bold;
+    text-align: left;
+}
+.comparison-mini-table td {
+    padding: 3px;
+    border: 1px solid #e5e7eb;
+}
+@media print {
+    .chapter2-ref-body {
+        padding: 10px;
+        font-size: 10pt;
+    }
+    .content-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.checkmark {
+    color: #10b981;
+    font-weight: bold;
+}
+.crossmark {
+    color: #ef4444;
+    font-weight: bold;
+}
+/* --- End Chapter 2 Reference Sheet Styles --- */

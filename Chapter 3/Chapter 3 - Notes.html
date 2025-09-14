@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3: Malicious Code - Comprehensive Study Guide</title>
+    <link rel="stylesheet" href="../cyber-guide-global.css">
+    <script src="../cyber-guide-global.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Chapter 3: Malicious Code</h1>
+        <p><strong>CompTIA Security+ SY0-701 Study Guide</strong></p>
+        <p>Comprehensive Study Guide</p>
+    </div>
+
+    <div class="section">
+        <h2>Exam Objectives Covered</h2>
+        <h3>Domain 2.0: Threats, Vulnerabilities, and Mitigations</h3>
+        <ul>
+            <li><strong>2.4</strong> - Given a scenario, analyze indicators of malicious activity</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>1. Understanding Malware <span class="difficulty-badge difficulty-basic">Basic</span></h2>
+        <div class="definition-box">
+            <h4>Definition: Malware</h4>
+            <p>Malware is software intentionally designed to cause harm to systems, networks, or users. It can gather information, provide illicit access, and perform unwanted actions.</p>
+        </div>
+        <h3>Common Malware Types</h3>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Key Characteristic</th>
+                    <th>Propagation Method</th>
+                    <th>Primary Goal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ransomware</td>
+                    <td>Demands payment</td>
+                    <td>Phishing, RDP</td>
+                    <td>Financial gain</td>
+                </tr>
+                <tr>
+                    <td>Trojan</td>
+                    <td>Disguised as legitimate</td>
+                    <td>User execution</td>
+                    <td>System access</td>
+                </tr>
+                <tr>
+                    <td>Worm</td>
+                    <td>Self-propagating</td>
+                    <td>Network vulnerabilities</td>
+                    <td>Spreading/persistence</td>
+                </tr>
+                <tr>
+                    <td>Virus</td>
+                    <td>Self-replicating</td>
+                    <td>User action required</td>
+                    <td>Spreading/payload delivery</td>
+                </tr>
+                <tr>
+                    <td>Spyware</td>
+                    <td>Information gathering</td>
+                    <td>Various</td>
+                    <td>Data theft</td>
+                </tr>
+                <tr>
+                    <td>Keylogger</td>
+                    <td>Input capture</td>
+                    <td>Various</td>
+                    <td>Credential theft</td>
+                </tr>
+                <tr>
+                    <td>Rootkit</td>
+                    <td>Stealth/persistence</td>
+                    <td>Various</td>
+                    <td>Backdoor access</td>
+                </tr>
+                <tr>
+                    <td>Logic Bomb</td>
+                    <td>Conditional activation</td>
+                    <td>Code insertion</td>
+                    <td>Sabotage</td>
+                </tr>
+                <tr>
+                    <td>Bloatware</td>
+                    <td>Unwanted software</td>
+                    <td>Pre-installation</td>
+                    <td>Resource consumption</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>2. Ransomware <span class="difficulty-badge difficulty-intermediate">Intermediate</span></h2>
+        <div class="definition-box">
+            <h4>What is Ransomware?</h4>
+            <p>Ransomware encrypts files and demands payment for decryption. Crypto malware is the most common type.</p>
+        </div>
+        <h3>Attack Vectors</h3>
+        <ul>
+            <li>Phishing emails with malicious attachments/links</li>
+            <li>RDP exploitation</li>
+            <li>Compromised applications</li>
+        </ul>
+        <div class="key-concept">
+            <h4>Indicators of Compromise (IoCs):</h4>
+            <ul>
+                <li>C&C traffic to malicious IPs</li>
+                <li>File encryption activity</li>
+                <li>Ransom notices</li>
+                <li>Large data transfers</li>
+            </ul>
+        </div>
+        <div class="exam-note">
+            <h4>Mitigation Strategies</h4>
+            <ul>
+                <li>Backups stored separately</li>
+                <li>Email security & user training</li>
+                <li>Endpoint protection</li>
+                <li>Anti-ransomware tools</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. Trojans <span class="difficulty-badge difficulty-basic">Basic</span></h2>
+        <div class="definition-box">
+            <h4>What are Trojans?</h4>
+            <p>Malware disguised as legitimate software, relying on users to run them.</p>
+        </div>
+        <h3>Indicators of Compromise</h3>
+        <ul>
+            <li>Malicious application signatures</li>
+            <li>C&C hostnames/IPs</li>
+            <li>Unexpected folders/files</li>
+        </ul>
+        <div class="exam-note">
+            <h4>Mitigation Strategies</h4>
+            <ul>
+                <li>Security awareness training</li>
+                <li>Application whitelisting</li>
+                <li>Anti-malware/EDR tools</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. Worms <span class="difficulty-badge difficulty-intermediate">Intermediate</span></h2>
+        <div class="definition-box">
+            <h4>What are Worms?</h4>
+            <p>Self-propagating malware that spreads without user interaction.</p>
+        </div>
+        <h3>Propagation Methods</h3>
+        <ul>
+            <li>Network vulnerabilities</li>
+            <li>Email attachments</li>
+            <li>File shares</li>
+            <li>USB drives</li>
+        </ul>
+        <div class="key-concept">
+            <h4>Indicators of Compromise</h4>
+            <ul>
+                <li>Malicious files</li>
+                <li>Downloads from remote systems</li>
+                <li>C&C contact</li>
+                <li>Malicious system commands</li>
+            </ul>
+        </div>
+        <div class="exam-note">
+            <h4>Mitigation Strategies</h4>
+            <ul>
+                <li>Firewalls, IPS, segmentation</li>
+                <li>Patch management</li>
+                <li>Anti-malware/EDR</li>
+                <li>System reimaging</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>5. Spyware <span class="difficulty-badge difficulty-basic">Basic</span></h2>
+        <div class="definition-box">
+            <h4>What is Spyware?</h4>
+            <p>Malware designed to obtain information about users or systems and report it to attackers.</p>
+        </div>
+        <h3>Types of Information Targeted</h3>
+        <ul>
+            <li>Browsing habits</li>
+            <li>System configuration</li>
+            <li>Personal files</li>
+            <li>Camera/microphone access</li>
+        </ul>
+        <div class="key-concept">
+            <h4>Indicators of Compromise</h4>
+            <ul>
+                <li>Remote access indicators</li>
+                <li>Malicious processes</li>
+                <li>Browser injection attacks</li>
+            </ul>
+        </div>
+        <div class="exam-note">
+            <h4>Mitigation Strategies</h4>
+            <ul>
+                <li>User education</li>
+                <li>Software whitelisting</li>
+                <li>Anti-spyware tools</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>6. Bloatware <span class="difficulty-badge difficulty-basic">Basic</span></h2>
+        <div class="definition-box">
+            <h4>What is Bloatware?</h4>
+            <p>Unwanted applications installed by manufacturers or bundled with software.</p>
+        </div>
+        <h3>Security Concerns</h3>
+        <ul>
+            <li>Vulnerabilities</li>
+            <li>Privacy concerns</li>
+            <li>Resource consumption</li>
+        </ul>
+        <div class="exam-note">
+            <h4>Mitigation Strategies</h4>
+            <ul>
+                <li>Uninstall unwanted apps</li>
+                <li>Use clean OS images</li>
+                <li>Deployment standards</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>7. Viruses <span class="difficulty-badge difficulty-intermediate">Intermediate</span></h2>
+        <div class="definition-box">
+            <h4>What are Viruses?</h4>
+            <p>Malicious programs that self-replicate once activated, typically requiring user action.</p>
+        </div>
+        <h3>Virus Types</h3>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Characteristics</th>
+                    <th>Persistence</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Memory-resident</td>
+                    <td>Remain in memory</td>
+                    <td>Until shutdown</td>
+                </tr>
+                <tr>
+                    <td>Non-memory-resident</td>
+                    <td>Execute and shut down</td>
+                    <td>File-based</td>
+                </tr>
+                <tr>
+                    <td>Boot sector</td>
+                    <td>Reside in boot sector</td>
+                    <td>Survives OS reinstall</td>
+                </tr>
+                <tr>
+                    <td>Macro</td>
+                    <td>Use document macros</td>
+                    <td>Document-based</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>Spread via email</td>
+                    <td>Various</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="exam-note">
+            <h4>Mitigation Strategies</h4>
+            <ul>
+                <li>Update browsers/plugins</li>
+                <li>Behavioral analysis</li>
+                <li>IPS, reputation-based protection</li>
+                <li>System wipe/reinstall</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>8. Keyloggers <span class="difficulty-badge difficulty-basic">Basic</span></h2>
+        <div class="definition-box">
+            <h4>What are Keyloggers?</h4>
+            <p>Programs that capture keystrokes and other input for attackers.</p>
+        </div>
+        <h3>Capture Methods</h3>
+        <ul>
+            <li>Kernel-level hooks</li>
+            <li>API interception</li>
+            <li>Script-based (JavaScript)</li>
+            <li>Memory-based</li>
+        </ul>
+        <div class="key-concept">
+            <h4>Indicators of Compromise</h4>
+            <ul>
+                <li>File hashes/signatures</li>
+                <li>Exfiltration activity</li>
+                <li>Disguised process names</li>
+            </ul>
+        </div>
+        <div class="exam-note">
+            <h4>Mitigation Strategies</h4>
+            <ul>
+                <li>Patching, anti-malware</li>
+                <li>Multi-factor authentication</li>
+                <li>Trusted bootable media</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>9. Logic Bombs <span class="difficulty-badge difficulty-advanced">Advanced</span></h2>
+        <div class="definition-box">
+            <h4>What are Logic Bombs?</h4>
+            <p>Malicious code embedded in legitimate programs, triggered by specific conditions.</p>
+        </div>
+        <h3>Characteristics</h3>
+        <ul>
+            <li>Embedded in applications</li>
+            <li>Triggered by events/dates</li>
+            <li>Difficult to detect</li>
+        </ul>
+        <div class="exam-note">
+            <h4>Mitigation Strategies</h4>
+            <ul>
+                <li>Code review</li>
+                <li>Secure coding practices</li>
+                <li>Version control/change management</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>10. Rootkits <span class="difficulty-badge difficulty-advanced">Advanced</span></h2>
+        <div class="definition-box">
+            <h4>What are Rootkits?</h4>
+            <p>Malware designed to provide backdoor access and conceal its presence using stealth techniques.</p>
+        </div>
+        <h3>Stealth Techniques</h3>
+        <ul>
+            <li>File system hooks</li>
+            <li>Process/network hiding</li>
+            <li>MBR infection</li>
+        </ul>
+        <div class="key-concept">
+            <h4>Indicators of Compromise</h4>
+            <ul>
+                <li>File hashes/signatures</li>
+                <li>C&C domains/IPs</li>
+                <li>Behavior-based identification</li>
+            </ul>
+        </div>
+        <div class="exam-note">
+            <h4>Mitigation Strategies</h4>
+            <ul>
+                <li>Patching, secure configs</li>
+                <li>External system analysis</li>
+                <li>System rebuild/restoration</li>
+                <li>Secure Boot</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>11. Malware Analysis Techniques</h2>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Technique</th>
+                    <th>Description</th>
+                    <th>Use Case</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Online Analysis</td>
+                    <td>VirusTotal, threat intelligence platforms</td>
+                    <td>Quick identification</td>
+                </tr>
+                <tr>
+                    <td>Sandbox Analysis</td>
+                    <td>Behavior analysis in protected environment</td>
+                    <td>Safe dynamic analysis</td>
+                </tr>
+                <tr>
+                    <td>Manual Code Analysis</td>
+                    <td>Direct script/code examination</td>
+                    <td>Interpreted languages</td>
+                </tr>
+                <tr>
+                    <td>String Analysis</td>
+                    <td>Extract readable artifacts from binaries</td>
+                    <td>Find URLs, IPs, commands</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>12. Exam Tips and Common Scenarios</h2>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>If You See...</th>
+                    <th>Think...</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Files encrypted + ransom demand</td>
+                    <td>Ransomware</td>
+                </tr>
+                <tr>
+                    <td>Downloaded "game" behaving maliciously</td>
+                    <td>Trojan</td>
+                </tr>
+                <tr>
+                    <td>Network vulnerability exploitation</td>
+                    <td>Worm</td>
+                </tr>
+                <tr>
+                    <td>TCP port 6667 traffic</td>
+                    <td>IRC C&C communication</td>
+                </tr>
+                <tr>
+                    <td>Captured keystrokes, unknown login</td>
+                    <td>Keylogger</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="key-concept">
+            <h4>Memory Tricks</h4>
+            <ul>
+                <li>APT = "ASP": Advanced, State-sponsored, Persistent</li>
+                <li>Threat Intel = "TAR": Timely, Accurate, Relevant</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>13. Critical Terms Summary</h2>
+        <div class="definition-box">
+            <h4>Must-Know Definitions</h4>
+            <ul>
+                <li><strong>Ransomware:</strong> Malware demanding payment</li>
+                <li><strong>Trojan:</strong> Disguised as legitimate software</li>
+                <li><strong>Worm:</strong> Self-propagating malware</li>
+                <li><strong>Virus:</strong> Self-replicating, needs user action</li>
+                <li><strong>Spyware:</strong> Information-gathering malware</li>
+                <li><strong>Keylogger:</strong> Captures input</li>
+                <li><strong>Rootkit:</strong> Stealthy backdoor malware</li>
+                <li><strong>Logic Bomb:</strong> Conditional activation code</li>
+                <li><strong>Bloatware:</strong> Unwanted, resource-consuming software</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

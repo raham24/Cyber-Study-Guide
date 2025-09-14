@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3: Malicious Code - Quick Reference Sheet</title>
+    <link rel="stylesheet" href="../cyber-guide-global.css">
+    <style>
+        /* Custom styles for wide top sections */
+        .wide-top-section {
+            grid-column: 1 / -1;
+            margin-bottom: 20px;
+        }
+        .wide-top-section .acronym-box {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .wide-top-section .section-box {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        @media (max-width: 900px) {
+            .wide-top-section {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body class="chapter2-ref-body">
+    <div class="chapter2-header">
+        <h1>Chapter 3: Malicious Code - Quick Reference</h1>
+        <p style="margin: 5px 0;">CompTIA Security+ SY0-701 | Domain 2.4</p>
+    </div>
+
+    <div class="content-grid">
+        <!-- Exam Objectives (full width at top) -->
+        <div class="wide-top-section">
+            <div class="acronym-box">
+                <strong>Exam Objective 2.4:</strong> Given a scenario, analyze indicators of malicious activity.<br>
+                <strong>Malware Types:</strong> Ransomware, Trojan, Worm, Spyware, Bloatware, Virus, Keylogger, Logic bomb, Rootkit
+            </div>
+        </div>
+
+        <!-- Malware Types At-a-Glance (full width below objectives) -->
+        <div class="wide-top-section">
+            <div class="section-box">
+                <h2>🦠 Malware Types At-a-Glance</h2>
+                <div class="content-grid">
+                    <div>
+                        <div class="section-box">
+                            <h3>🔒 Ransomware</h3>
+                            <div class="definition-box">
+                                <strong>Definition:</strong> Malware that encrypts files and demands payment
+                            </div>
+                            <div class="exam-note">
+                                <strong>IoCs:</strong> C&C traffic, file encryption, ransom notices, data exfiltration, lateral movement
+                            </div>
+                            <div class="key-concept">
+                                <strong>Mitigation:</strong> Offline backups, email security, user training, endpoint protection
+                            </div>
+                        </div>
+                        <div class="section-box">
+                            <h3>🐎 Trojans</h3>
+                            <div class="definition-box">
+                                <strong>Definition:</strong> Malware disguised as legitimate software
+                            </div>
+                            <div class="exam-note">
+                                <strong>IoCs:</strong> Malware signatures, C&C communications, suspicious file creation
+                            </div>
+                            <div class="key-concept">
+                                <strong>Mitigation:</strong> User awareness, application control, EDR tools
+                            </div>
+                        </div>
+                        <div class="section-box">
+                            <h3>🐛 Worms</h3>
+                            <div class="definition-box">
+                                <strong>Definition:</strong> Self-propagating malware, spreads automatically
+                            </div>
+                            <div class="exam-note">
+                                <strong>IoCs:</strong> Network scanning, vulnerability exploitation, automated spreading
+                            </div>
+                            <div class="key-concept">
+                                <strong>Mitigation:</strong> Network segmentation, patching, firewalls, IPS
+                            </div>
+                        </div>
+                        <div class="section-box">
+                            <h3>🕵️ Spyware</h3>
+                            <div class="definition-box">
+                                <strong>Definition:</strong> Gathers information about users and systems
+                            </div>
+                            <div class="exam-note">
+                                <strong>IoCs:</strong> Data exfiltration, browser injection, disguised processes
+                            </div>
+                            <div class="key-concept">
+                                <strong>Mitigation:</strong> Anti-spyware tools, application control, user awareness
+                            </div>
+                        </div>
+                        <div class="section-box">
+                            <h3>📦 Bloatware</h3>
+                            <div class="definition-box">
+                                <strong>Definition:</strong> Unwanted pre-installed software
+                            </div>
+                            <div class="exam-note">
+                                <strong>IoCs:</strong> Resource consumption, startup programs, vendor software
+                            </div>
+                            <div class="key-concept">
+                                <strong>Mitigation:</strong> Uninstallation, clean OS images, deployment standards
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="section-box">
+                            <h3>🦠 Viruses</h3>
+                            <div class="definition-box">
+                                <strong>Definition:</strong> Self-replicating malware requiring user action
+                            </div>
+                            <div class="exam-note">
+                                <strong>IoCs:</strong> File modifications, replication behavior, payload activation
+                            </div>
+                            <div class="key-concept">
+                                <strong>Mitigation:</strong> Antivirus, user awareness, system updates, behavioral analysis
+                            </div>
+                        </div>
+                        <div class="section-box">
+                            <h3>⌨️ Keyloggers</h3>
+                            <div class="definition-box">
+                                <strong>Definition:</strong> Capture keyboard and input device data
+                            </div>
+                            <div class="exam-note">
+                                <strong>IoCs:</strong> Input capture, credential theft, data exfiltration
+                            </div>
+                            <div class="key-concept">
+                                <strong>Mitigation:</strong> Multi-factor authentication, anti-malware, secure input methods
+                            </div>
+                        </div>
+                        <div class="section-box">
+                            <h3>💣 Logic Bombs</h3>
+                            <div class="definition-box">
+                                <strong>Definition:</strong> Code that executes under specific conditions
+                            </div>
+                            <div class="exam-note">
+                                <strong>IoCs:</strong> Conditional code, time-based triggers, insider threats
+                            </div>
+                            <div class="key-concept">
+                                <strong>Mitigation:</strong> Code review, secure development, change management
+                            </div>
+                        </div>
+                        <div class="section-box">
+                            <h3>🔐 Rootkits</h3>
+                            <div class="definition-box">
+                                <strong>Definition:</strong> Provide backdoor access while hiding presence
+                            </div>
+                            <div class="exam-note">
+                                <strong>IoCs:</strong> System hooks, hidden processes, persistence mechanisms
+                            </div>
+                            <div class="key-concept">
+                                <strong>Mitigation:</strong> External scanning, integrity checking, system rebuild
+                            </div>
+                        </div>
+                        <div class="section-box">
+                            <h3>🤖 Bots & C&C</h3>
+                            <div class="definition-box">
+                                <strong>Definition:</strong> Remote-controlled malware systems
+                            </div>
+                            <div class="exam-note">
+                                <strong>Key Port:</strong> TCP 6667 (IRC C&C), HTTPS (encrypted C&C)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The rest of your reference sheet content remains unchanged below -->
+        <div class="section-box">
+            <h2>📡 Common Attack Vectors</h2>
+            <table class="comparison-mini-table">
+                <tr>
+                    <th>Vector</th>
+                    <th>Attack Method</th>
+                    <th>Defense</th>
+                </tr>
+                <tr>
+                    <td><strong>Email</strong></td>
+                    <td>Phishing, malware</td>
+                    <td>Filtering, training</td>
+                </tr>
+                <tr>
+                    <td><strong>Network</strong></td>
+                    <td>MitM, worm spread</td>
+                    <td>Encryption, segmentation</td>
+                </tr>
+                <tr>
+                    <td><strong>Removable Media</strong></td>
+                    <td>USB malware</td>
+                    <td>USB blocking</td>
+                </tr>
+                <tr>
+                    <td><strong>Software Downloads</strong></td>
+                    <td>Trojans, bloatware</td>
+                    <td>Whitelisting, user training</td>
+                </tr>
+                <tr>
+                    <td><strong>Web Browsing</strong></td>
+                    <td>Drive-by downloads, spyware</td>
+                    <td>Browser security, anti-malware</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section-box">
+            <h2>🔑 Key Malware Characteristics</h2>
+            <ul class="key-list">
+                <li><strong>Ransomware:</strong> Encrypts files, demands payment</li>
+                <li><strong>Trojan:</strong> Disguised as legitimate software</li>
+                <li><strong>Worm:</strong> Spreads automatically via network</li>
+                <li><strong>Virus:</strong> Needs user action to spread</li>
+                <li><strong>Spyware:</strong> Gathers user/system info</li>
+                <li><strong>Keylogger:</strong> Captures input data</li>
+                <li><strong>Rootkit:</strong> Hides presence, provides backdoor</li>
+                <li><strong>Logic Bomb:</strong> Executes on specific conditions</li>
+                <li><strong>Bloatware:</strong> Consumes resources, unwanted</li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <div class="acronym-box">
+                <h3>📚 Must-Know Acronyms & Terms</h3>
+                <div class="two-column-list">
+                    <div>
+                        <strong>IoC</strong> - Indicator of Compromise<br>
+                        <strong>C&C</strong> - Command & Control<br>
+                        <strong>EDR</strong> - Endpoint Detection & Response<br>
+                        <strong>RAT</strong> - Remote Access Trojan<br>
+                        <strong>MBR</strong> - Master Boot Record
+                    </div>
+                    <div>
+                        <strong>Phishing</strong> - Social engineering via email<br>
+                        <strong>Payload</strong> - Malicious code delivered<br>
+                        <strong>Persistence</strong> - Ability to survive reboots<br>
+                        <strong>Zero-Day</strong> - Unknown vulnerability<br>
+                        <strong>Exploit</strong> - Attack on vulnerability
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-box">
+            <div class="must-know">
+                <h3>🎯 Exam Success Patterns</h3>
+                <div style="font-size: 0.85em;">
+                    <span class="checkmark">✓</span> Payment demand → <strong>Ransomware</strong><br>
+                    <span class="checkmark">✓</span> Disguised app → <strong>Trojan</strong><br>
+                    <span class="checkmark">✓</span> Network auto-spread → <strong>Worm</strong><br>
+                    <span class="checkmark">✓</span> Input capture → <strong>Keylogger</strong><br>
+                    <span class="checkmark">✓</span> Hidden process → <strong>Rootkit</strong><br>
+                    <span class="checkmark">✓</span> Conditional code → <strong>Logic Bomb</strong><br>
+                    <span class="crossmark">✗</span> Bloatware ≠ malware (but can be a risk)<br>
+                    <span class="crossmark">✗</span> Virus ≠ worm (propagation method differs)
+                </div>
+            </div>
+        </div>
+
+        <div class="section-box">
+            <h3>💡 Exam Success Tips</h3>
+            <div class="content-grid">
+                <div>
+                    <strong>Scenario Analysis:</strong>
+                    <ul>
+                        <li>Look for payment demands → <span class="key-concept">Ransomware</span></li>
+                        <li>Disguised software → <span class="key-concept">Trojan</span></li>
+                        <li>Network spreading → <span class="key-concept">Worm</span></li>
+                        <li>Captured keystrokes → <span class="key-concept">Keylogger</span></li>
+                        <li>Pre-installed junk → <span class="key-concept">Bloatware</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <strong>Common Traps:</strong>
+                    <ul>
+                        <li>NOT/EXCEPT questions - choose wrong answer</li>
+                        <li>RATs vs. legitimate remote tools</li>
+                        <li>Spyware vs. Bloatware distinction</li>
+                        <li>Virus vs. Worm propagation methods</li>
+                        <li>False positives in detection tools</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 15px; padding: 10px; background-color: #eff6ff; border-radius: 5px; text-align: center;">
+        <strong style="color: #1e40af;">Quick Memory Aids:</strong>
+        Ransomware = Payment | Trojan = Disguise | Worm = Network Spread | Virus = User Action | Rootkit = Stealth | Keylogger = Input Capture | Logic Bomb = Condition | Bloatware = Unwanted
+        <br>
+        <span style="color: #64748b; font-size: 0.95em;">Focus on distinctive characteristics that help differentiate malware types in exam scenarios. When in doubt, consider the primary purpose and behavior of each malware type.</span>
+    </div>
+</body>
+</html>

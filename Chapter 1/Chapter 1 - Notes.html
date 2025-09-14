@@ -4,244 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 1: Today's Security Professional - CompTIA Security+ SY0-701</title>
-    <style>
-        @media print {
-            body { margin: 0; }
-            .page-break { page-break-after: always; }
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        
-        .container {
-            background-color: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
-        
-        h1 {
-            color: #2c3e50;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-        }
-        
-        h2 {
-            color: #34495e;
-            margin-top: 35px;
-            margin-bottom: 20px;
-            padding: 10px;
-            background-color: #ecf0f1;
-            border-left: 4px solid #3498db;
-        }
-        
-        h3 {
-            color: #555;
-            margin-top: 25px;
-            margin-bottom: 15px;
-            font-size: 1.2em;
-        }
-        
-        h4 {
-            color: #666;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
-        
-        .exam-note {
-            background-color: #fff3cd;
-            border: 2px solid #ffc107;
-            border-radius: 8px;
-            padding: 15px;
-            margin: 20px 0;
-            position: relative;
-        }
-        
-        .exam-note::before {
-            content: "📝 EXAM NOTE";
-            font-weight: bold;
-            color: #856404;
-            display: block;
-            margin-bottom: 10px;
-        }
-        
-        .important {
-            background-color: #e8f4f8;
-            border-left: 4px solid #17a2b8;
-            padding: 15px;
-            margin: 20px 0;
-        }
-        
-        .definition {
-            background-color: #f8f9fa;
-            border: 1px solid #dee2e6;
-            border-radius: 5px;
-            padding: 15px;
-            margin: 15px 0;
-        }
-        
-        .definition-term {
-            font-weight: bold;
-            color: #2c3e50;
-            display: block;
-            margin-bottom: 5px;
-        }
-        
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        
-        th {
-            background-color: #3498db;
-            color: white;
-            padding: 12px;
-            text-align: left;
-            font-weight: bold;
-        }
-        
-        td {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
-        
-        tr:nth-child(even) {
-            background-color: #f8f9fa;
-        }
-        
-        ul, ol {
-            margin: 15px 0;
-            padding-left: 30px;
-        }
-        
-        li {
-            margin: 8px 0;
-        }
-        
-        .highlight {
-            background-color: #ffeb3b;
-            padding: 2px 4px;
-            border-radius: 3px;
-        }
-        
-        .chapter-info {
-            background-color: #e3f2fd;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 30px;
-        }
-        
-        .risk-category {
-            margin: 20px 0;
-            padding: 15px;
-            border-radius: 8px;
-        }
-        
-        .financial { background-color: #ffebee; }
-        .reputational { background-color: #f3e5f5; }
-        .strategic { background-color: #e8f5e9; }
-        .operational { background-color: #fff3e0; }
-        .compliance { background-color: #e1f5fe; }
-    </style>
+    <link rel="stylesheet" href="../cyber-guide-global.css">
+    <script src="../cyber-guide-global.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="header">
         <h1>Chapter 1: Today's Security Professional</h1>
-        <div class="chapter-info">
-            <strong>CompTIA Security+ SY0-701 Study Guide (9th Edition)</strong><br>
-            <strong>Pages:</strong> 51-78<br>
-            <strong>Focus:</strong> Fundamental security concepts, controls, and data protection
-        </div>
+        <p><strong>CompTIA Security+ SY0-701 Study Guide (9th Edition)</strong></p>
+        <p>Fundamental security concepts, controls, and data protection</p>
+    </div>
 
+    <div class="exam-objectives">
         <h2>Exam Objectives Covered</h2>
-        <table>
-            <tr>
-                <th>Domain</th>
-                <th>Objectives</th>
-                <th>Key Topics</th>
-            </tr>
-            <tr>
-                <td><strong>1.0 General Security Concepts</strong></td>
-                <td>1.1, 1.2, 1.4</td>
-                <td>Security controls, CIA triad, Cryptographic solutions</td>
-            </tr>
-            <tr>
-                <td><strong>3.0 Security Architecture</strong></td>
-                <td>3.3</td>
-                <td>Data states, Data protection methods</td>
-            </tr>
-            <tr>
-                <td><strong>5.0 Security Program Management</strong></td>
-                <td>5.2</td>
-                <td>Risk identification</td>
-            </tr>
-        </table>
+        <h3>Domain 1.0: General Security Concepts</h3>
+        <ul>
+            <li><strong>1.1, 1.2, 1.4</strong> - Security controls, CIA triad, Cryptographic solutions</li>
+        </ul>
+        <h3>Domain 3.0: Security Architecture</h3>
+        <ul>
+            <li><strong>3.3</strong> - Data states, Data protection methods</li>
+        </ul>
+        <h3>Domain 5.0: Security Program Management</h3>
+        <ul>
+            <li><strong>5.2</strong> - Risk identification</li>
+        </ul>
+    </div>
 
-        <h2>Section 1: Cybersecurity Objectives - The CIA Triad</h2>
-        
-        <div class="important">
-            <strong>Core Principle:</strong> Security professionals are responsible for protecting the confidentiality, integrity, and availability of information and information systems used by their organizations.
+    <div class="section">
+        <h2>1. Cybersecurity Objectives - The CIA Triad <span class="difficulty-badge difficulty-basic">Basic</span></h2>
+
+        <div class="definition-box">
+            <h4>Core Principle</h4>
+            <p>Security professionals are responsible for protecting the confidentiality, integrity, and availability of information and information systems used by their organizations.</p>
         </div>
 
         <h3>The CIA Triad Components</h3>
-        
-        <div class="definition">
-            <span class="definition-term">Confidentiality</span>
-            Ensures that unauthorized individuals cannot gain access to sensitive information. This is what most people think of first when considering cybersecurity - preventing hackers from stealing sensitive data like Social Security numbers, credit cards, or military secrets.
+
+        <div class="definition-box">
+            <h4>Confidentiality</h4>
             <ul>
                 <li><strong>Implementation Controls:</strong> Firewalls, access control lists (ACLs), encryption protocols</li>
-                <li><strong>Primary Threat:</strong> Data exfiltration - when attackers gain access and remove sensitive information</li>
+                <li><strong>Primary Threat:</strong> Data exfiltration</li>
                 <li><strong>Common Vulnerabilities:</strong> Misconfigured access controls, lost devices, insider threats</li>
             </ul>
         </div>
-
-        <div class="definition">
-            <span class="definition-term">Integrity</span>
-            Ensures no unauthorized modifications to information or systems occur, whether intentional or unintentional. This protects against both malicious alterations and accidental corruption.
+        <div class="definition-box">
+            <h4>Integrity</h4>
             <ul>
                 <li><strong>Implementation Controls:</strong> Hashing algorithms, integrity monitoring solutions, checksums</li>
-                <li><strong>Example Threats:</strong> 
-                    <ul>
-                        <li>Attackers modifying financial records for fraudulent transactions</li>
-                        <li>Power surges causing "bit flips" that corrupt stored data</li>
-                        <li>Users accidentally modifying critical system files</li>
-                    </ul>
-                </li>
+                <li><strong>Example Threats:</strong> Modifying financial records, bit flips, accidental changes</li>
             </ul>
         </div>
-
-        <div class="definition">
-            <span class="definition-term">Availability</span>
-            Ensures information and systems are ready to meet the needs of legitimate users when requested. Systems must be operational and accessible when needed.
+        <div class="definition-box">
+            <h4>Availability</h4>
             <ul>
                 <li><strong>Implementation Controls:</strong> Fault tolerance, clustering, backup systems, redundancy</li>
-                <li><strong>Common Threats:</strong>
-                    <ul>
-                        <li>Distributed Denial-of-Service (DDoS) attacks</li>
-                        <li>Hardware failures or critical server crashes</li>
-                        <li>Natural disasters affecting datacenters or communication circuits</li>
-                    </ul>
-                </li>
+                <li><strong>Common Threats:</strong> DDoS attacks, hardware failures, natural disasters</li>
             </ul>
         </div>
-
-        <h4>Additional Security Principle: Nonrepudiation</h4>
-        <div class="definition">
-            <span class="definition-term">Nonrepudiation</span>
-            Prevents someone from denying they performed an action, such as sending a message or authorizing a transaction. While not part of the CIA triad, it's crucial for accountability.
+        <div class="definition-box">
+            <h4>Nonrepudiation</h4>
             <ul>
                 <li><strong>Primary Implementation:</strong> Digital signatures</li>
-                <li><strong>Purpose:</strong> Allows verification that messages/actions truly originated from their purported source</li>
+                <li><strong>Purpose:</strong> Verification of origin and accountability</li>
                 <li><strong>Use Cases:</strong> Email authentication, transaction verification, audit trails</li>
             </ul>
         </div>
@@ -249,128 +74,66 @@
         <div class="exam-note">
             Remember the CIA triad components (Confidentiality, Integrity, Availability) and understand that nonrepudiation provides assurance that actions cannot be denied. These four concepts form the foundation of information security.
         </div>
+    </div>
 
-        <div class="page-break"></div>
+    <div class="section">
+        <h2>2. Data Breach Risks - The DAD Triad <span class="difficulty-badge difficulty-basic">Basic</span></h2>
 
-        <h2>Section 2: Data Breach Risks - The DAD Triad</h2>
-        
-        <p>The DAD triad represents the three key threats to cybersecurity efforts, directly opposing the CIA triad objectives:</p>
+        <div class="key-concept">
+            <h4>DAD Triad</h4>
+            <ul class="checkmark">
+                <li><strong>Disclosure:</strong> Violates Confidentiality</li>
+                <li><strong>Alteration:</strong> Violates Integrity</li>
+                <li><strong>Denial:</strong> Violates Availability</li>
+            </ul>
+        </div>
 
-        <table>
-            <tr>
-                <th>DAD Threat</th>
-                <th>CIA Principle Violated</th>
-                <th>Description</th>
-                <th>Examples</th>
-            </tr>
-            <tr>
-                <td><strong>Disclosure</strong></td>
-                <td>Confidentiality</td>
-                <td>Exposure of sensitive information to unauthorized individuals (data loss)</td>
-                <td>
-                    • Data exfiltration by attackers<br>
-                    • Misconfigured access controls<br>
-                    • Lost or stolen devices
-                </td>
-            </tr>
-            <tr>
-                <td><strong>Alteration</strong></td>
-                <td>Integrity</td>
-                <td>Unauthorized modification of information</td>
-                <td>
-                    • Fraudulent financial transactions<br>
-                    • Website defacement<br>
-                    • Database record tampering
-                </td>
-            </tr>
-            <tr>
-                <td><strong>Denial</strong></td>
-                <td>Availability</td>
-                <td>Disruption of legitimate user access to information</td>
-                <td>
-                    • DDoS attacks<br>
-                    • Ransomware encryption<br>
-                    • Service outages
-                </td>
-            </tr>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>DAD Threat</th>
+                    <th>CIA Principle Violated</th>
+                    <th>Description</th>
+                    <th>Examples</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Disclosure</strong></td>
+                    <td>Confidentiality</td>
+                    <td>Exposure of sensitive information to unauthorized individuals</td>
+                    <td>Data exfiltration, misconfigured access controls, lost devices</td>
+                </tr>
+                <tr>
+                    <td><strong>Alteration</strong></td>
+                    <td>Integrity</td>
+                    <td>Unauthorized modification of information</td>
+                    <td>Fraudulent transactions, website defacement, database tampering</td>
+                </tr>
+                <tr>
+                    <td><strong>Denial</strong></td>
+                    <td>Availability</td>
+                    <td>Disruption of legitimate user access</td>
+                    <td>DDoS attacks, ransomware, outages</td>
+                </tr>
+            </tbody>
         </table>
 
         <h3>Five Categories of Breach Impact</h3>
 
-        <div class="risk-category financial">
-            <h4>1. Financial Risk</h4>
-            <strong>Definition:</strong> Risk of monetary damage resulting from a data breach<br>
-            <strong>Direct Costs:</strong>
-            <ul>
-                <li>Datacenter rebuilding after physical destruction</li>
-                <li>Incident response and forensic analysis services</li>
-                <li>Legal fees and regulatory fines</li>
-                <li>Customer notification and credit monitoring services</li>
+        <div class="key-concept">
+            <h4>Impact Categories</h4>
+            <ul class="checkmark">
+                <li><strong>Financial Risk:</strong> Monetary damage, direct/indirect costs</li>
+                <li><strong>Reputational Risk:</strong> Loss of goodwill, trust, and loyalty</li>
+                <li><strong>Strategic Risk:</strong> Threatens ability to meet goals</li>
+                <li><strong>Operational Risk:</strong> Disrupts day-to-day functions</li>
+                <li><strong>Compliance Risk:</strong> Violates legal/regulatory requirements</li>
             </ul>
-            <strong>Indirect Costs:</strong>
-            <ul>
-                <li>Lost revenue from competitors gaining proprietary information</li>
-                <li>Market share loss due to first-mover advantage compromise</li>
-                <li>Decreased stock value</li>
-            </ul>
-            <strong>Example:</strong> Lost laptop containing new product plans results in direct loss (laptop cost) plus indirect loss (competitors beating you to market)
         </div>
 
-        <div class="risk-category reputational">
-            <h4>2. Reputational Risk</h4>
-            <strong>Definition:</strong> Loss of goodwill among stakeholders due to negative publicity<br>
-            <strong>Characteristics:</strong>
-            <ul>
-                <li>Difficult to quantify but long-lasting impact</li>
-                <li>Affects customer trust and loyalty</li>
-                <li>Impacts relationships with suppliers and partners</li>
-                <li>May influence future business decisions silently</li>
-            </ul>
-            <strong>Stakeholders Affected:</strong> Customers, employees, suppliers, investors, partners
-        </div>
-
-        <div class="risk-category strategic">
-            <h4>3. Strategic Risk</h4>
-            <strong>Definition:</strong> Risk of becoming less effective in meeting major goals and objectives<br>
-            <strong>Examples:</strong>
-            <ul>
-                <li>Loss of competitive advantage through stolen intellectual property</li>
-                <li>Inability to execute business plans due to missing data</li>
-                <li>Product development delays from lost research</li>
-                <li>Market position compromise from leaked strategic plans</li>
-            </ul>
-            <strong>Key Distinction:</strong> Threatens the organization's ongoing viability and ability to execute business strategy
-        </div>
-
-        <div class="risk-category operational">
-            <h4>4. Operational Risk</h4>
-            <strong>Definition:</strong> Risk to the organization's ability to carry out day-to-day functions<br>
-            <strong>Impact:</strong>
-            <ul>
-                <li>Slowed business processes</li>
-                <li>Delayed customer order delivery</li>
-                <li>Need for manual workarounds to automated systems</li>
-                <li>Reduced efficiency and productivity</li>
-            </ul>
-            <strong>Distinction from Strategic Risk:</strong> Causes inefficiency and delays but doesn't threaten organizational existence
-        </div>
-
-        <div class="risk-category compliance">
-            <h4>5. Compliance Risk</h4>
-            <strong>Definition:</strong> Risk of violating legal or regulatory requirements<br>
-            <strong>Key Regulations:</strong>
-            <ul>
-                <li><strong>HIPAA:</strong> Health Insurance Portability and Accountability Act - protects health information</li>
-                <li><strong>PCI DSS:</strong> Payment Card Industry Data Security Standard - protects credit card data</li>
-                <li><strong>GDPR:</strong> General Data Protection Regulation - EU privacy law</li>
-                <li><strong>SOX:</strong> Sarbanes-Oxley Act - financial reporting requirements</li>
-            </ul>
-            <strong>Consequences:</strong> Sanctions, fines, legal action, loss of business licenses
-        </div>
-
-        <div class="important">
-            <strong>Identity Theft Considerations:</strong><br>
-            When breaches occur, they often extend beyond the organization to affect individuals. Organizations must specially protect Personally Identifiable Information (PII) including:
+        <div class="definition-box">
+            <h4>Identity Theft Considerations</h4>
             <ul>
                 <li>Social Security numbers</li>
                 <li>Bank account and credit card information</li>
@@ -379,481 +142,358 @@
                 <li>Medical records</li>
             </ul>
         </div>
+    </div>
 
-        <div class="page-break"></div>
+    <div class="section">
+        <h2>3. Implementing Security Controls <span class="difficulty-badge difficulty-intermediate">Intermediate</span></h2>
 
-        <h2>Section 3: Implementing Security Controls</h2>
-
-        <div class="important">
-            <strong>Key Concepts:</strong><br>
-            • <strong>Control Objectives:</strong> Statements of desired security state (what we want to achieve)<br>
-            • <strong>Security Controls:</strong> Specific measures that fulfill security objectives (how we achieve it)<br>
-            • <strong>Gap Analysis:</strong> Process of reviewing control objectives and examining whether current controls meet those objectives
+        <div class="key-concept">
+            <h4>Key Concepts</h4>
+            <ul class="checkmark">
+                <li><strong>Control Objectives:</strong> Desired security state</li>
+                <li><strong>Security Controls:</strong> Measures to fulfill objectives</li>
+                <li><strong>Gap Analysis:</strong> Review objectives vs. actual controls</li>
+            </ul>
         </div>
 
-        <h3>Security Control Categories (Mechanism of Action)</h3>
-
-        <table>
-            <tr>
-                <th>Category</th>
-                <th>Description</th>
-                <th>Examples</th>
-            </tr>
-            <tr>
-                <td><strong>Technical</strong></td>
-                <td>Enforce security in the digital space through technology</td>
-                <td>
-                    • Firewall rules<br>
-                    • Access control lists (ACLs)<br>
-                    • Intrusion prevention systems (IPS)<br>
-                    • Encryption algorithms<br>
-                    • Antivirus software
-                </td>
-            </tr>
-            <tr>
-                <td><strong>Operational</strong></td>
-                <td>Processes to manage technology securely</td>
-                <td>
-                    • User access reviews<br>
-                    • Log monitoring<br>
-                    • Vulnerability management<br>
-                    • Incident response procedures<br>
-                    • Security awareness training
-                </td>
-            </tr>
-            <tr>
-                <td><strong>Managerial</strong></td>
-                <td>Procedural mechanisms focusing on risk management process</td>
-                <td>
-                    • Periodic risk assessments<br>
-                    • Security planning exercises<br>
-                    • Change management integration<br>
-                    • Service acquisition policies<br>
-                    • Project management practices
-                </td>
-            </tr>
-            <tr>
-                <td><strong>Physical</strong></td>
-                <td>Controls that impact the physical world</td>
-                <td>
-                    • Fences and barriers<br>
-                    • Perimeter lighting<br>
-                    • Locks and biometric scanners<br>
-                    • Fire suppression systems<br>
-                    • Burglar alarms<br>
-                    • Security cameras
-                </td>
-            </tr>
+        <h3>Security Control Categories</h3>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Examples</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Technical</strong></td>
+                    <td>Digital security enforcement</td>
+                    <td>Firewalls, ACLs, IPS, encryption, antivirus</td>
+                </tr>
+                <tr>
+                    <td><strong>Operational</strong></td>
+                    <td>Process management</td>
+                    <td>User access reviews, log monitoring, vulnerability management, incident response, training</td>
+                </tr>
+                <tr>
+                    <td><strong>Managerial</strong></td>
+                    <td>Risk management process</td>
+                    <td>Risk assessments, planning, change management, service acquisition, project management</td>
+                </tr>
+                <tr>
+                    <td><strong>Physical</strong></td>
+                    <td>Physical world controls</td>
+                    <td>Fences, lighting, locks, suppression, alarms, cameras</td>
+                </tr>
+            </tbody>
         </table>
 
-        <h3>Security Control Types (Desired Effect)</h3>
-
-        <table>
-            <tr>
-                <th>Type</th>
-                <th>Purpose</th>
-                <th>Examples</th>
-            </tr>
-            <tr>
-                <td><strong>Preventive</strong></td>
-                <td>Stop security issues before they occur</td>
-                <td>Firewalls, encryption, access controls, security guards</td>
-            </tr>
-            <tr>
-                <td><strong>Deterrent</strong></td>
-                <td>Discourage attackers from attempting violations</td>
-                <td>"Beware of Dog" signs, security cameras (visible), barbed wire fences</td>
-            </tr>
-            <tr>
-                <td><strong>Detective</strong></td>
-                <td>Identify security events that have already occurred</td>
-                <td>Intrusion detection systems (IDS), log analysis, security audits</td>
-            </tr>
-            <tr>
-                <td><strong>Corrective</strong></td>
-                <td>Remediate security issues after they occur</td>
-                <td>Backup restoration, patch deployment, incident response</td>
-            </tr>
-            <tr>
-                <td><strong>Compensating</strong></td>
-                <td>Mitigate risk when primary controls cannot be implemented</td>
-                <td>Network isolation for legacy systems, additional monitoring</td>
-            </tr>
-            <tr>
-                <td><strong>Directive</strong></td>
-                <td>Inform people what they should do</td>
-                <td>Policies, procedures, standards, guidelines, training materials</td>
-            </tr>
+        <h3>Security Control Types</h3>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Purpose</th>
+                    <th>Examples</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Preventive</strong></td>
+                    <td>Stop issues before they occur</td>
+                    <td>Firewalls, encryption, access controls, guards</td>
+                </tr>
+                <tr>
+                    <td><strong>Deterrent</strong></td>
+                    <td>Discourage attackers</td>
+                    <td>Warning signs, visible cameras, barbed wire</td>
+                </tr>
+                <tr>
+                    <td><strong>Detective</strong></td>
+                    <td>Identify events after they occur</td>
+                    <td>IDS, log analysis, audits</td>
+                </tr>
+                <tr>
+                    <td><strong>Corrective</strong></td>
+                    <td>Remediate issues after they occur</td>
+                    <td>Backup restoration, patching, incident response</td>
+                </tr>
+                <tr>
+                    <td><strong>Compensating</strong></td>
+                    <td>Mitigate risk when primary controls can't be used</td>
+                    <td>Network isolation, extra monitoring</td>
+                </tr>
+                <tr>
+                    <td><strong>Directive</strong></td>
+                    <td>Inform people what to do</td>
+                    <td>Policies, procedures, standards, guidelines, training</td>
+                </tr>
+            </tbody>
         </table>
 
         <div class="exam-note">
             Control categories and types are UNIQUE to CompTIA. Memorize both the categories (Technical, Operational, Managerial, Physical) and types (Preventive, Deterrent, Detective, Corrective, Compensating, Directive). You will be tested on identifying which category and type applies to specific scenarios.
         </div>
+    </div>
 
-        <h4>Compensating Controls - PCI DSS Requirements</h4>
-        
-        <div class="definition">
-            <span class="definition-term">Compensating Controls</span>
-            Alternative controls implemented when an organization cannot meet original control requirements. Must satisfy three criteria under PCI DSS:
-            <ol>
-                <li><strong>Meet intent and rigor</strong> of the original requirement</li>
-                <li><strong>Provide similar level of defense</strong> as the original requirement</li>
-                <li>Be <strong>"above and beyond"</strong> other PCI DSS requirements (cannot reuse controls)</li>
-            </ol>
-            <strong>Example:</strong> Running outdated OS on isolated network when software requires legacy system - isolation compensates for inability to patch.
-        </div>
-
-        <div class="page-break"></div>
-
-        <h2>Section 4: Data Protection Strategies</h2>
+    <div class="section">
+        <h2>4. Data Protection Strategies <span class="difficulty-badge difficulty-intermediate">Intermediate</span></h2>
 
         <h3>Three Data States</h3>
-
-        <table>
-            <tr>
-                <th>State</th>
-                <th>Description</th>
-                <th>Vulnerabilities</th>
-                <th>Protection Methods</th>
-            </tr>
-            <tr>
-                <td><strong>Data at Rest</strong></td>
-                <td>Stored on hard drives, tapes, cloud storage, or other media</td>
-                <td>
-                    • Theft by insiders<br>
-                    • External attackers browsing systems<br>
-                    • Physical device theft
-                </td>
-                <td>
-                    • Full-disk encryption<br>
-                    • File-level encryption<br>
-                    • Access controls<br>
-                    • Physical security
-                </td>
-            </tr>
-            <tr>
-                <td><strong>Data in Transit</strong></td>
-                <td>Moving over network connections</td>
-                <td>
-                    • Eavesdropping attacks<br>
-                    • Man-in-the-middle attacks<br>
-                    • Network sniffing
-                </td>
-                <td>
-                    • TLS/SSL encryption<br>
-                    • VPN tunnels<br>
-                    • Encrypted protocols (HTTPS, SFTP)<br>
-                    • Network segmentation
-                </td>
-            </tr>
-            <tr>
-                <td><strong>Data in Use</strong></td>
-                <td>Actively processed in system memory</td>
-                <td>
-                    • Memory dumps<br>
-                    • Cold boot attacks<br>
-                    • Process injection<br>
-                    • Screen capture
-                </td>
-                <td>
-                    • Application-level encryption<br>
-                    • Secure enclaves<br>
-                    • Process isolation<br>
-                    • Memory encryption
-                </td>
-            </tr>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>State</th>
+                    <th>Description</th>
+                    <th>Vulnerabilities</th>
+                    <th>Protection Methods</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Data at Rest</strong></td>
+                    <td>Stored on media</td>
+                    <td>Theft, browsing, device theft</td>
+                    <td>Full-disk encryption, access controls, physical security</td>
+                </tr>
+                <tr>
+                    <td><strong>Data in Transit</strong></td>
+                    <td>Moving over networks</td>
+                    <td>Eavesdropping, MITM, sniffing</td>
+                    <td>TLS/SSL, VPN, encrypted protocols, segmentation</td>
+                </tr>
+                <tr>
+                    <td><strong>Data in Use</strong></td>
+                    <td>Processed in memory</td>
+                    <td>Memory dumps, cold boot, injection, screen capture</td>
+                    <td>App-level encryption, secure enclaves, isolation, memory encryption</td>
+                </tr>
+            </tbody>
         </table>
 
         <h3>Data Loss Prevention (DLP) Systems</h3>
-
-        <div class="definition">
-            <span class="definition-term">Data Loss Prevention (DLP)</span>
-            Systems that enforce information handling policies to prevent data loss and theft by searching for unsecured sensitive information and monitoring network traffic for removal attempts.
+        <div class="definition-box">
+            <h4>Data Loss Prevention (DLP)</h4>
+            <p>Systems that enforce information handling policies to prevent data loss and theft by searching for unsecured sensitive information and monitoring network traffic for removal attempts.</p>
         </div>
 
         <h4>DLP Deployment Types</h4>
-
-        <table>
-            <tr>
-                <th>Type</th>
-                <th>Description</th>
-                <th>Capabilities</th>
-            </tr>
-            <tr>
-                <td><strong>Agent-based (Host-based)</strong></td>
-                <td>Software agents installed on individual systems</td>
-                <td>
-                    • Search for stored sensitive data<br>
-                    • Monitor system configuration<br>
-                    • Block USB device access<br>
-                    • Control user actions<br>
-                    • Encrypt data automatically
-                </td>
-            </tr>
-            <tr>
-                <td><strong>Agentless (Network-based)</strong></td>
-                <td>Dedicated devices monitoring network traffic</td>
-                <td>
-                    • Monitor outbound transmissions<br>
-                    • Block unencrypted sensitive data<br>
-                    • Apply automatic encryption<br>
-                    • Alert on policy violations<br>
-                    • Work with email systems
-                </td>
-            </tr>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Capabilities</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Agent-based (Host-based)</strong></td>
+                    <td>Software agents on systems</td>
+                    <td>Search data, monitor config, block USB, control actions, auto-encrypt</td>
+                </tr>
+                <tr>
+                    <td><strong>Agentless (Network-based)</strong></td>
+                    <td>Dedicated network devices</td>
+                    <td>Monitor outbound, block unencrypted, auto-encrypt, alert, email integration</td>
+                </tr>
+            </tbody>
         </table>
 
         <h4>DLP Detection Mechanisms</h4>
+        <div class="key-concept">
+            <h4>Detection Methods</h4>
+            <ul class="checkmark">
+                <li><strong>Pattern Matching:</strong> Recognizes sensitive formats and terms</li>
+                <li><strong>Watermarking:</strong> Electronic tags for tracking and DRM</li>
+            </ul>
+        </div>
+    </div>
 
-        <ol>
-            <li><strong>Pattern Matching:</strong>
-                <ul>
-                    <li>Identifies telltale signs of sensitive information</li>
-                    <li>Recognizes credit card number formats (16 digits in groups)</li>
-                    <li>Detects Social Security number patterns (XXX-XX-XXXX)</li>
-                    <li>Triggers on sensitive terms ("Top Secret", "Confidential")</li>
-                </ul>
-            </li>
-            <li><strong>Watermarking:</strong>
-                <ul>
-                    <li>Electronic tags applied to sensitive documents</li>
-                    <li>Monitors for tagged content in transmissions</li>
-                    <li>Used in Digital Rights Management (DRM) solutions</li>
-                    <li>Enforces copyright and data ownership</li>
-                </ul>
-            </li>
-        </ol>
+    <div class="section">
+        <h2>5. Data Minimization and Obfuscation Techniques <span class="difficulty-badge difficulty-advanced">Advanced</span></h2>
 
-        <h3>Data Minimization and Obfuscation Techniques</h3>
-
-        <div class="important">
-            <strong>Principle:</strong> Reduce risk by reducing the amount of sensitive information maintained. Best approach: destroy data when no longer needed for business purposes.
+        <div class="key-concept">
+            <h4>Principle</h4>
+            <p>Reduce risk by reducing the amount of sensitive information maintained. Destroy data when no longer needed.</p>
         </div>
 
-        <table>
-            <tr>
-                <th>Technique</th>
-                <th>Description</th>
-                <th>Use Cases</th>
-                <th>Considerations</th>
-            </tr>
-            <tr>
-                <td><strong>Hashing</strong></td>
-                <td>One-way mathematical transformation using hash functions</td>
-                <td>
-                    • Password storage<br>
-                    • Data integrity verification<br>
-                    • Anonymizing identifiers
-                </td>
-                <td>
-                    ⚠️ Vulnerable to rainbow table attacks<br>
-                    • Use only with salt values<br>
-                    • Cannot retrieve original value
-                </td>
-            </tr>
-            <tr>
-                <td><strong>Tokenization</strong></td>
-                <td>Replace sensitive values with random identifiers using lookup table</td>
-                <td>
-                    • Credit card processing<br>
-                    • Student ID replacement<br>
-                    • Medical record numbers
-                </td>
-                <td>
-                    • Lookup table must be secured<br>
-                    • Reversible with table access<br>
-                    • Good for repeated use
-                </td>
-            </tr>
-            <tr>
-                <td><strong>Masking</strong></td>
-                <td>Partial redaction with blank characters (X's or *'s)</td>
-                <td>
-                    • Credit card displays (****1234)<br>
-                    • Social Security numbers<br>
-                    • Account numbers in reports
-                </td>
-                <td>
-                    • Irreversible<br>
-                    • Maintains format<br>
-                    • Good for display purposes
-                </td>
-            </tr>
-            <tr>
-                <td><strong>Deidentification</strong></td>
-                <td>Remove ability to link data to individuals</td>
-                <td>
-                    • Research datasets<br>
-                    • Analytics<br>
-                    • Public reporting
-                </td>
-                <td>
-                    • May still allow re-identification<br>
-                    • Requires careful analysis<br>
-                    • Often combined with other methods
-                </td>
-            </tr>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Technique</th>
+                    <th>Description</th>
+                    <th>Use Cases</th>
+                    <th>Considerations</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Hashing</strong></td>
+                    <td>One-way transformation</td>
+                    <td>Password storage, integrity, anonymizing</td>
+                    <td>Vulnerable to rainbow tables, use salt, irreversible</td>
+                </tr>
+                <tr>
+                    <td><strong>Tokenization</strong></td>
+                    <td>Replace values with random identifiers</td>
+                    <td>Credit cards, student IDs, medical records</td>
+                    <td>Lookup table must be secured, reversible, good for repeated use</td>
+                </tr>
+                <tr>
+                    <td><strong>Masking</strong></td>
+                    <td>Partial redaction</td>
+                    <td>Credit card displays, SSNs, account numbers</td>
+                    <td>Irreversible, maintains format, good for display</td>
+                </tr>
+                <tr>
+                    <td><strong>Deidentification</strong></td>
+                    <td>Remove ability to link data to individuals</td>
+                    <td>Research datasets, analytics, public reporting</td>
+                    <td>May allow re-identification, needs analysis, often combined</td>
+                </tr>
+            </tbody>
         </table>
+    </div>
 
-        <h3>Access Restrictions</h3>
+    <div class="section">
+        <h2>6. Access Restrictions & Network Protection <span class="difficulty-badge difficulty-advanced">Advanced</span></h2>
 
-        <div class="definition">
-            <span class="definition-term">Geographic Restrictions</span>
-            Limit access based on physical location using IP geolocation, GPS coordinates, or regional network boundaries. Prevents access from untrusted locations or countries.
+        <div class="definition-box">
+            <h4>Geographic Restrictions</h4>
+            <p>Limit access based on location using IP, GPS, or network boundaries.</p>
         </div>
-
-        <div class="definition">
-            <span class="definition-term">Permission Restrictions</span>
-            Limit access based on user role or authorization level. Implements principle of least privilege - users only get access necessary for their job functions.
+        <div class="definition-box">
+            <h4>Permission Restrictions</h4>
+            <p>Limit access based on user role or authorization level. Principle of least privilege.</p>
         </div>
 
         <h3>Network-Based Protection</h3>
-
-        <table>
-            <tr>
-                <th>Method</th>
-                <th>Description</th>
-                <th>Implementation</th>
-            </tr>
-            <tr>
-                <td><strong>Segmentation</strong></td>
-                <td>Separate networks with controlled communication</td>
-                <td>
-                    • VLANs for logical separation<br>
-                    • Firewalls between segments<br>
-                    • Restricted routing rules<br>
-                    • DMZ for public-facing services
-                </td>
-            </tr>
-            <tr>
-                <td><strong>Isolation</strong></td>
-                <td>Complete cutoff from outside networks</td>
-                <td>
-                    • Air-gapped networks<br>
-                    • No external connectivity<br>
-                    • Physical separation<br>
-                    • Used for critical infrastructure
-                </td>
-            </tr>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Method</th>
+                    <th>Description</th>
+                    <th>Implementation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Segmentation</strong></td>
+                    <td>Separate networks with controlled communication</td>
+                    <td>VLANs, firewalls, routing rules, DMZ</td>
+                </tr>
+                <tr>
+                    <td><strong>Isolation</strong></td>
+                    <td>Complete cutoff from outside networks</td>
+                    <td>Air-gapped, no connectivity, physical separation</td>
+                </tr>
+            </tbody>
         </table>
+    </div>
 
-        <div class="page-break"></div>
-
-        <h2>Critical Exam Preparation Points</h2>
-
-        <h3>Must-Know Concepts</h3>
+    <div class="section">
+        <h2>7. Critical Exam Preparation Points</h2>
 
         <div class="exam-note">
             <strong>Top Priority Items for Exam Success:</strong>
             <ol>
-                <li><strong>CIA Triad:</strong> Confidentiality, Integrity, Availability - know definitions and examples</li>
-                <li><strong>Nonrepudiation:</strong> Assurance that actions cannot be denied</li>
+                <li><strong>CIA Triad:</strong> Confidentiality, Integrity, Availability</li>
+                <li><strong>Nonrepudiation:</strong> Assurance actions can't be denied</li>
                 <li><strong>Control Categories:</strong> Technical, Operational, Managerial, Physical</li>
                 <li><strong>Control Types:</strong> Preventive, Deterrent, Detective, Corrective, Compensating, Directive</li>
                 <li><strong>Data States:</strong> At rest, In transit, In use</li>
                 <li><strong>Risk Categories:</strong> Financial, Reputational, Strategic, Operational, Compliance</li>
-                <li><strong>DLP Types:</strong> Agent-based vs. Agentless (Network-based)</li>
-                <li><strong>Data Obfuscation:</strong> Hashing, Tokenization, Masking differences</li>
+                <li><strong>DLP Types:</strong> Agent-based vs. Agentless</li>
+                <li><strong>Data Obfuscation:</strong> Hashing, Tokenization, Masking</li>
             </ol>
         </div>
 
         <h3>Common Exam Scenarios</h3>
-
-        <table>
-            <tr>
-                <th>Scenario Type</th>
-                <th>Key Points to Remember</th>
-            </tr>
-            <tr>
-                <td>Identifying CIA Violations</td>
-                <td>
-                    • Website defacement = Integrity violation<br>
-                    • Data theft = Confidentiality violation<br>
-                    • DDoS attack = Availability violation
-                </td>
-            </tr>
-            <tr>
-                <td>Control Selection</td>
-                <td>
-                    • Warning signs = Deterrent control<br>
-                    • IDS alerts = Detective control<br>
-                    • Encryption = Preventive control<br>
-                    • Backup restoration = Corrective control
-                </td>
-            </tr>
-            <tr>
-                <td>Risk Assessment</td>
-                <td>
-                    • PCI DSS violations = Compliance risk<br>
-                    • Lost competitive advantage = Strategic risk<br>
-                    • Process delays = Operational risk<br>
-                    • Customer trust loss = Reputational risk
-                </td>
-            </tr>
-            <tr>
-                <td>Data Protection</td>
-                <td>
-                    • Network monitoring = DLP network-based<br>
-                    • USB blocking = DLP agent-based<br>
-                    • Credit card ****1234 = Masking<br>
-                    • Lookup table replacement = Tokenization
-                </td>
-            </tr>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Scenario Type</th>
+                    <th>Key Points to Remember</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Identifying CIA Violations</td>
+                    <td>Website defacement = Integrity<br>Data theft = Confidentiality<br>DDoS = Availability</td>
+                </tr>
+                <tr>
+                    <td>Control Selection</td>
+                    <td>Warning signs = Deterrent<br>IDS alerts = Detective<br>Encryption = Preventive<br>Backup = Corrective</td>
+                </tr>
+                <tr>
+                    <td>Risk Assessment</td>
+                    <td>PCI DSS = Compliance<br>Competitive loss = Strategic<br>Delays = Operational<br>Trust loss = Reputational</td>
+                </tr>
+                <tr>
+                    <td>Data Protection</td>
+                    <td>Network monitoring = DLP network<br>USB blocking = DLP agent<br>Credit card ****1234 = Masking<br>Lookup replacement = Tokenization</td>
+                </tr>
+            </tbody>
         </table>
+    </div>
 
-        <h3>Key Definitions Summary</h3>
-
-        <ul>
-            <li><strong>Gap Analysis:</strong> Review of control objectives vs. actual controls to identify gaps</li>
-            <li><strong>Control Objectives:</strong> Statements of desired security state</li>
-            <li><strong>Security Controls:</strong> Specific measures that fulfill security objectives</li>
-            <li><strong>Data Exfiltration:</strong> Unauthorized removal of data from an organization</li>
-            <li><strong>Rainbow Table Attack:</strong> Using precomputed hashes to reverse hashed values</li>
-            <li><strong>Compensating Controls:</strong> Alternative controls when primary controls cannot be implemented</li>
-            <li><strong>Deidentification:</strong> Removing ability to link data back to individuals</li>
-        </ul>
-
-        <h3>Compliance Regulations Quick Reference</h3>
-
-        <table>
-            <tr>
-                <th>Regulation</th>
-                <th>Full Name</th>
-                <th>Applies To</th>
-                <th>Key Protection</th>
-            </tr>
-            <tr>
-                <td><strong>HIPAA</strong></td>
-                <td>Health Insurance Portability and Accountability Act</td>
-                <td>Healthcare providers, insurers</td>
-                <td>Protected Health Information (PHI)</td>
-            </tr>
-            <tr>
-                <td><strong>PCI DSS</strong></td>
-                <td>Payment Card Industry Data Security Standard</td>
-                <td>Organizations handling credit cards</td>
-                <td>Credit card data</td>
-            </tr>
-            <tr>
-                <td><strong>GDPR</strong></td>
-                <td>General Data Protection Regulation</td>
-                <td>Organizations handling EU citizen data</td>
-                <td>Personal data privacy</td>
-            </tr>
-            <tr>
-                <td><strong>SOX</strong></td>
-                <td>Sarbanes-Oxley Act</td>
-                <td>Publicly traded companies</td>
-                <td>Financial reporting integrity</td>
-            </tr>
-        </table>
-
-        <div class="important">
-            <strong>Final Study Tip:</strong> This chapter establishes fundamental concepts that will be referenced throughout the exam. Master these basics before moving forward, as they form the foundation for more advanced topics in later chapters.
+    <div class="section">
+        <h2>8. Key Definitions Summary</h2>
+        <div class="definition-box">
+            <h4>Must-Know Definitions</h4>
+            <ul>
+                <li><strong>Gap Analysis:</strong> Review objectives vs. controls</li>
+                <li><strong>Control Objectives:</strong> Desired security state</li>
+                <li><strong>Security Controls:</strong> Measures to fulfill objectives</li>
+                <li><strong>Data Exfiltration:</strong> Unauthorized data removal</li>
+                <li><strong>Rainbow Table Attack:</strong> Precomputed hashes to reverse values</li>
+                <li><strong>Compensating Controls:</strong> Alternatives when primary controls can't be used</li>
+                <li><strong>Deidentification:</strong> Removing ability to link data to individuals</li>
+            </ul>
         </div>
 
+        <h3>Compliance Regulations Quick Reference</h3>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Regulation</th>
+                    <th>Full Name</th>
+                    <th>Applies To</th>
+                    <th>Key Protection</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>HIPAA</strong></td>
+                    <td>Health Insurance Portability and Accountability Act</td>
+                    <td>Healthcare providers, insurers</td>
+                    <td>Protected Health Information (PHI)</td>
+                </tr>
+                <tr>
+                    <td><strong>PCI DSS</strong></td>
+                    <td>Payment Card Industry Data Security Standard</td>
+                    <td>Organizations handling credit cards</td>
+                    <td>Credit card data</td>
+                </tr>
+                <tr>
+                    <td><strong>GDPR</strong></td>
+                    <td>General Data Protection Regulation</td>
+                    <td>Organizations handling EU citizen data</td>
+                    <td>Personal data privacy</td>
+                </tr>
+                <tr>
+                    <td><strong>SOX</strong></td>
+                    <td>Sarbanes-Oxley Act</td>
+                    <td>Publicly traded companies</td>
+                    <td>Financial reporting integrity</td>
+                </tr>
+            </tbody>
+        </table>
+
         <div class="exam-note">
-            <strong>Practice Questions:</strong> The chapter includes 20 review questions. Focus on questions about control types/categories, CIA triad violations, risk categories, and data protection methods as these are heavily tested on the actual exam.
+            <strong>Final Study Tip:</strong> This chapter establishes fundamental concepts that will be referenced throughout the exam. Master these basics before moving forward, as they form the foundation for more advanced topics in later chapters.
         </div>
     </div>
 </body>
