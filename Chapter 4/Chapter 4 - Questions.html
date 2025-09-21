@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Review Questions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .instructions {
+            background-color: #e8f4f8;
+            border: 2px solid #2196F3;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        
+        .question-block {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            page-break-inside: avoid;
+        }
+        
+        .question-number {
+            font-weight: bold;
+            color: #673ab7;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        
+        .question-text {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+        
+        .options {
+            margin-left: 20px;
+        }
+        
+        .option {
+            margin: 10px 0;
+            padding: 8px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .option:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .special-note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 10px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        
+        .answer-sheet {
+            background-color: white;
+            padding: 30px;
+            margin-top: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            page-break-before: always;
+        }
+        
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .answer-box {
+            border: 2px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        
+        .answer-box-label {
+            font-weight: bold;
+            color: #673ab7;
+        }
+        
+        .answer-space {
+            height: 30px;
+            border-bottom: 1px solid #999;
+            margin-top: 10px;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+            }
+            .question-block {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+            .option:hover {
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Chapter 4: Review Questions</h1>
+        <h2>Social Engineering and Password Attacks</h2>
+        <p>CompTIA Security+ SY0-701</p>
+    </div>
+
+    <div class="instructions">
+        <h2>📝 Instructions</h2>
+        <ul>
+            <li>Read each question carefully before selecting your answer</li>
+            <li>Pay special attention to questions containing "NOT" or "EXCEPT"</li>
+            <li>Some questions may have scenarios - analyze all details provided</li>
+            <li>Consider real-world applications of the concepts</li>
+            <li>Mark your answers on the answer sheet at the end</li>
+            <li>Time estimate: 30-40 minutes for all questions</li>
+        </ul>
+    </div>
+
+    <div class="question-block">
+        <div class="question-number">Question 1</div>
+        <div class="question-text">
+            Joseph receives an email notifying him that he needs to change his password due to a recent account issue. He notices that the email links him to a website using the domain amaz0n.com. What type of attack should he describe this as?
+        </div>
+        <div class="options">
+            <div class="option">A. Typosquatting</div>
+            <div class="option">B. Phishing</div>
+            <div class="option">C. Smishing</div>
+            <div class="option">D. A watering hole attack</div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-number">Question 2</div>
+        <div class="question-text">
+            When you combine phishing with voicemail, it is known as:
+        </div>
+        <div class="options">
+            <div class="option">A. Whaling</div>
+            <div class="option">B. Spoofing</div>
+            <div class="option">C. Spooning</div>
+            <div class="option">D. Vishing</div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-number">Question 3</div>
+        <div class="question-text">
+            While reviewing her logs, Michele notices that a remote system has attempted to log into her server via SSH using the username admin and a variety of passwords like "password" and "ninja." What type of attack has Michele noticed?
+        </div>
+        <div class="options">
+            <div class="option">A. A brute-force attack</div>
+            <div class="option">B. Shoulder surfing</div>
+            <div class="option">C. An on-path attack</div>
+            <div class="option">D. Pretexting</div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-number">Question 4</div>
+        <div class="question-text">
+            Joanna wants to detect password spraying attacks. What type of rule should she deploy through her security systems?
+        </div>
+        <div class="options">
+            <div class="option">A. Match attempts to log into many systems with the same username and password.</div>
+            <div class="option">B. Match multiple attempts to log into the same user account using different passwords.</div>
+            <div class="option">C. Match repeated use of the same password during failed login attempts for multiple usernames.</div>
+            <div class="option">D. Match all attempts to use passwords with slight changes for the same account.</div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-number">Question 5</div>
+        <div class="question-text">
+            One of the staff at Susan's organization has reported that a critical vendor has contacted them about an unpaid invoice. After Susan investigates, she discovers that the invoice was sent from an email account that was not typically a contact and that the invoice requested payment to a PayPal account. What type of social engineering attack has Susan most likely discovered?
+        </div>
+        <div class="options">
+            <div class="option">A. Smishing</div>
+            <div class="option">B. Business email compromise</div>
+            <div class="option">C. Disinformation</div>
+            <div class="option">D. Typosquatting</div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-number">Question 6</div>
+        <div class="question-text">
+            Selah infects the ads on a website that users from her target company frequently visit with malware as part of her penetration test. What technique has she used?
+        </div>
+        <div class="options">
+            <div class="option">A. A watering hole attack</div>
+            <div class="option">B. Vishing</div>
+            <div class="option">C. Whaling</div>
+            <div class="option">D. Typosquatting</div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-number">Question 7</div>
+        <div class="question-text">
+            Ben wants to determine if brute-force password attacks are being used against his company. What log information is least likely to be useful when working to detect brute-force attacks?
+        </div>
+        <div class="special-note">Note: This question asks for the LEAST likely option.</div>
+        <div class="options">
+            <div class="option">A. Source IP address or hostname</div>
+            <div class="option">B. Failed login logs</div>
+            <div class="option">C. The password that was used for each attempt</div>
+            <div class="option">D. The geographic location of system being logged into</div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-number">Question 8</div>
+        <div class="question-text">
+            Melissa receives a call and the caller informs her a senior manager in her organization needs her to buy gift cards for an event that starts in an hour. The caller says that the senior leader forgot to get the cards, and that the event is critical to her organization. Melissa buys the cards and sends them to the Gmail address the caller says that the senior leader needs them sent to. What type of attack has Melissa fallen for?
+        </div>
+        <div class="options">
+            <div class="option">A. Phishing</div>
+            <div class="option">B. Pretexting</div>
+            <div class="option">C. Business email compromise</div>
+            <div class="option">D. Carding</div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-number">Question 9</div>
+        <div class="question-text">
+            Alaina wants to determine if a password spraying attack was used against her organization. Which of the following indicators would be most useful as part of her investigation?
+        </div>
+        <div class="options">
+            <div class="option">A. The time the login attempts happened</div>
+            <div class="option">B. The passwords used for failed attempts</div>
+            <div class="option">C. The source IP address of the attempts</div>
+            <div class="option">D. The number of failed attempts for each user</div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-number">Question 10</div>
+        <div class="question-text">
+            Which of the following human vectors is primarily associated with nation-state actors?
+        </div>
+        <div class="options">
+            <div class="option">A. Misinformation campaigns</div>
+            <div class="option">B. Watering hole attacks</div>
+            <div class="option">C. Business email compromise</div>
+            <div class="option">D. Password spraying</div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-number">Question 11</div>
+        <div class="question-text">
+            Nicole accidentally types www.smazon.com into her browser and discovers that she is directed to a different site loaded with ads and pop-ups. Which of the following is the most accurate description of the attack she has experienced?
+        </div>
+        <div class="options">
+            <div class="option">A. DNS hijacking</div>
+            <div class="option">B. Pharming</div>
+            <div class="option">C. Typosquatting</div>
+            <div class="option">D. Hosts file compromise</div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-number">Question 12</div>
+        <div class="question-text">
+            Devon is a penetration tester and sets up malicious tools on his target organization's primary internal website. What type of attack is he conducting?
+        </div>
+        <div class="options">
+            <div class="option">A. A misinformation campaign</div>
+            <div class="option">B. A watering hole attack</div>
+            <div class="option">C. A typosquatting attack</div>
+            <div class="option">D. A disinformation campaign</div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-number">Question 13</div>
+        <div class="question-text">
+            Phishing emails sent pretending to be from a company that recipients are familiar with and likely to respond to is what type of attack?
+        </div>
+        <div class="options">
+            <div class="option">A. Phishing</div>
+            <div class="option">B. Pharming</div>
+            <div class="option">C. Brand impersonation</div>
+            <div class="option">D. Pretexting</div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-number">Question 14</div>
+        <div class="question-text">
+            When a caller was recently directed to Amanda, who is a junior IT employee at her company, the caller informed her that they were the head of IT for her organization and that she needed to immediately disable the organization's firewall. After Amanda made the change, she discovered that the caller was not the head of IT, and that they were actually a penetration tester hired by her company. What social engineering attack best describes this?
+        </div>
+        <div class="options">
+            <div class="option">A. Smishing</div>
+            <div class="option">B. Pretexting</div>
+            <div class="option">C. Impersonation</div>
+            <div class="option">D. Vishing</div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-number">Question 15</div>
+        <div class="question-text">
+            Fred is concerned about text message–based attacks. Which of the following attacks relies on text messages as its primary focus?
+        </div>
+        <div class="options">
+            <div class="option">A. Impersonation</div>
+            <div class="option">B. Watering hole attacks</div>
+            <div class="option">C. Smishing</div>
+            <div class="option">D. Business email compromise</div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-number">Question 16</div>
+        <div class="question-text">
+            Sharif notices that his authentication logs have many different usernames showing failed logins with the same password. What type of attack has he discovered?
+        </div>
+        <div class="options">
+            <div class="option">A. Credential harvesting</div>
+            <div class="option">B. Impersonation</div>
+            <div class="option">C. BEC</div>
+            <div class="option">D. Spraying</div>
+        </div>
+    </div>
+
+    <!-- Answer Sheet -->
+    <div class="answer-sheet">
+        <h2>📋 Answer Sheet</h2>
+        <p>Mark your answers below. Write the letter (A, B, C, or D) for each question.</p>
+        
+        <div class="answer-grid">
+            <div class="answer-box">
+                <div class="answer-box-label">Q1</div>
+                <div class="answer-space"></div>
+            </div>
+            <div class="answer-box">
+                <div class="answer-box-label">Q2</div>
+                <div class="answer-space"></div>
+            </div>
+            <div class="answer-box">
+                <div class="answer-box-label">Q3</div>
+                <div class="answer-space"></div>
+            </div>
+            <div class="answer-box">
+                <div class="answer-box-label">Q4</div>
+                <div class="answer-space"></div>
+            </div>
+            <div class="answer-box">
+                <div class="answer-box-label">Q5</div>
+                <div class="answer-space"></div>
+            </div>
+            <div class="answer-box">
+                <div class="answer-box-label">Q6</div>
+                <div class="answer-space"></div>
+            </div>
+            <div class="answer-box">
+                <div class="answer-box-label">Q7</div>
+                <div class="answer-space"></div>
+            </div>
+            <div class="answer-box">
+                <div class="answer-box-label">Q8</div>
+                <div class="answer-space"></div>
+            </div>
+            <div class="answer-box">
+                <div class="answer-box-label">Q9</div>
+                <div class="answer-space"></div>
+            </div>
+            <div class="answer-box">
+                <div class="answer-box-label">Q10</div>
+                <div class="answer-space"></div>
+            </div>
+            <div class="answer-box">
+                <div class="answer-box-label">Q11</div>
+                <div class="answer-space"></div>
+            </div>
+            <div class="answer-box">
+                <div class="answer-box-label">Q12</div>
+                <div class="answer-space"></div>
+            </div>
+            <div class="answer-box">
+                <div class="answer-box-label">Q13</div>
+                <div class="answer-space"></div>
+            </div>
+            <div class="answer-box">
+                <div class="answer-box-label">Q14</div>
+                <div class="answer-space"></div>
+            </div>
+            <div class="answer-box">
+                <div class="answer-box-label">Q15</div>
+                <div class="answer-space"></div>
+            </div>
+            <div class="answer-box">
+                <div class="answer-box-label">Q16</div>
+                <div class="answer-space"></div>
+            </div>
+            <div class="answer-box">
+                <div class="answer-box-label">Q17</div>
+                <div class="answer-space"></div>
+            </div>
+            <div class="answer-box">
+                <div class="answer-box-label">Q18</div>
+                <div class="answer-space"></div>
+            </div>
+            <div class="answer-box">
+                <div class="answer-box-label">Q19</div>
+                <div class="answer-space"></div>
+            </div>
+            <div class="answer-box">
+                <div class="answer-box-label">Q20</div>
+                <div class="answer-space"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-number">Question 17</div>
+        <div class="question-text">
+            Naomi receives a report of smishing. What type of attack should she be looking for?
+        </div>
+        <div class="options">
+            <div class="option">A. Compressed files in phishing</div>
+            <div class="option">B. Text message–based phishing</div>
+            <div class="option">C. Voicemail-based phishing</div>
+            <div class="option">D. Server-based phishing</div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-number">Question 18</div>
+        <div class="question-text">
+            Jack's organization wants to prevent typosquatting. What option should he select to address this issue?
+        </div>
+        <div class="options">
+            <div class="option">A. Copyright the domain name</div>
+            <div class="option">B. Purchase the most common typos for his organization's domain</div>
+            <div class="option">C. Trademark the domain name</div>
+            <div class="option">D. Disable typo resolution for the domain</div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-number">Question 19</div>
+        <div class="question-text">
+            Gwyne's company has been contacted by customers asking about a new social media account operating under the company's brand. The social media account is advertising cryptocurrency, which Gwyne's organization does not sell or work with. What type of attack best describes what Gwyne's organization has encountered?
+        </div>
+        <div class="options">
+            <div class="option">A. Impersonation</div>
+            <div class="option">B. Brand impersonation</div>
+            <div class="option">C. Mis-branding</div>
+            <div class="option">D. Crypto-phishing</div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-number">Question 20</div>
+        <div class="question-text">
+            Nation-state-driven social media campaigns about the trustworthiness of the U.S. election in 2016 are an example of what type of social engineering?
+        </div>
+        <div class="options">
+            <div class="option">A. Smishing</div>
+            <div class="option">B. Pretexting</div>
+            <div class="option">C. Disinformation</div>
+            <div class="option">D. Spraying</div>

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5: Security Assessment and Testing - Answer Key</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #27ae60;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        h2 {
+            color: #27ae60;
+            background-color: #d5f4e6;
+            padding: 12px;
+            border-left: 5px solid #27ae60;
+            margin-top: 25px;
+        }
+        .answer-item {
+            background-color: #f8f9fa;
+            border-left: 5px solid #28a745;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .question-number {
+            font-weight: bold;
+            color: #155724;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .correct-answer {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .explanation {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #e8f5e8;
+            border-radius: 5px;
+        }
+        .why-wrong {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 3px solid #dc3545;
+        }
+        .concept-review {
+            background-color: #e3f2fd;
+            border: 1px solid #2196f3;
+            border-left: 5px solid #2196f3;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+        }
+        .summary-table th,
+        .summary-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        .summary-table th {
+            background-color: #27ae60;
+            color: white;
+            font-weight: bold;
+        }
+        .summary-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .exam-pattern {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-left: 5px solid #fdcb6e;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        @media print {
+            body { background-color: white; }
+            .container { box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CompTIA Security+ SY0-701<br>Chapter 5: Security Assessment and Testing<br>Detailed Answer Key</h1>
+
+        <h2>Quick Reference Answer Summary</h2>
+        <table class="summary-table">
+            <tr>
+                <th>Question</th>
+                <th>Answer</th>
+                <th>Topic</th>
+                <th>Question</th>
+                <th>Answer</th>
+                <th>Topic</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>C</td>
+                <td>Threat Hunting</td>
+                <td>11</td>
+                <td>A</td>
+                <td>External Audit</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>D</td>
+                <td>Credentialed Scanning</td>
+                <td>12</td>
+                <td>C</td>
+                <td>Bug Bounty</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>C</td>
+                <td>Scan Safety</td>
+                <td>13</td>
+                <td>D</td>
+                <td>Persistence</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>C</td>
+                <td>CVSS Metrics</td>
+                <td>14</td>
+                <td>C</td>
+                <td>Passive Reconnaissance</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>A</td>
+                <td>False Positive</td>
+                <td>15</td>
+                <td>B</td>
+                <td>SCAP/CVE</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>B</td>
+                <td>CIA Triad</td>
+                <td>16</td>
+                <td>C</td>
+                <td>Known Environment</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>C</td>
+                <td>Reconnaissance Tools</td>
+                <td>17</td>
+                <td>C</td>
+                <td>Rules of Engagement</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>A</td>
+                <td>Patch Management</td>
+                <td>18</td>
+                <td>B</td>
+                <td>Footprinting</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>B</td>
+                <td>Web Application Scanning</td>
+                <td>19</td>
+                <td>B</td>
+                <td>CVSS Scoring</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>A</td>
+                <td>Lateral Movement</td>
+                <td>20</td>
+                <td>C</td>
+                <td>CVSS Metrics</td>
+            </tr>
+        </table>
+
+        <h2>Detailed Answer Explanations</h2>
+
+        <div class="answer-item">
+            <div class="question-number">Question 1</div>
+            <div class="correct-answer">Correct Answer: C. Threat hunting</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Threat hunting assumes that an organization has already been compromised (presumption of compromise) and actively searches for evidence of successful attacks. It uses the attacker mindset to identify what attackers might do and what evidence they might leave behind.
+            </div>
+            <div class="why-wrong">
+                <strong>Why other answers are incorrect:</strong><br>
+                <strong>A. Vulnerability scanning</strong> - Identifies potential vulnerabilities, doesn't assume compromise<br>
+                <strong>B. Penetration testing</strong> - Tests security controls by attempting to exploit vulnerabilities<br>
+                <strong>D. War driving</strong> - Reconnaissance technique for identifying wireless networks
+            </div>
+            <div class="concept-review">
+                <strong>Key Concept:</strong> Threat hunting builds on intelligence fusion, using threat feeds, advisories, and bulletins to search for indicators of compromise.
+            </div>
+        </div>
+
+        <div class="answer-item">
+            <div class="question-number">Question 2</div>
+            <div class="correct-answer">Correct Answer: D. Read-only</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Credentialed scans should use read-only accounts following the principle of least privilege. Since credentialed scans typically only retrieve information and don't make changes to servers, read-only access is sufficient and reduces security risk.
+            </div>
+            <div class="why-wrong">
+                <strong>Why other answers are incorrect:</strong><br>
+                <strong>A. Domain administrator</strong> - Excessive privileges, violates least privilege principle<br>
+                <strong>B. Local administrator</strong> - More privileges than necessary for scanning<br>
+                <strong>C. Root</strong> - Highest privilege level, unnecessary and risky for scanning
+            </div>
+            <div class="concept-review">
+                <strong>Key Concept:</strong> Credentialed scanning improves accuracy by accessing system configuration information while maintaining security through least privilege.
+            </div>
+        </div>
+
+        <div class="answer-item">
+            <div class="question-number">Question 3</div>
+            <div class="correct-answer">Correct Answer: C. Run the scan in a test environment</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Dangerous (intrusive) plug-ins may disrupt production systems or damage content. Best practice is to test these plug-ins in a test environment first to identify potential issues before running on production systems.
+            </div>
+            <div class="why-wrong">
+                <strong>Why other answers are incorrect:</strong><br>
+                <strong>A. Run against production</strong> - Risk of business disruption<br>
+                <strong>B. Run during business hours</strong> - Maximizes potential impact if problems occur<br>
+                <strong>D. Do not run the scan</strong> - Misses potential vulnerabilities that attackers could exploit
+            </div>
+            <div class="concept-review">
+                <strong>Key Concept:</strong> Intrusive plug-ins can cause system instability, so test environments provide safe testing grounds for dangerous scans.
+            </div>
+        </div>
+
+        <div class="answer-item">
+            <div class="question-number">Question 4</div>
+            <div class="correct-answer">Correct Answer: C. Low</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> In CVSS, the Attack Complexity (AC) metric has two values: Low (L) indicates the attack does not require specialized conditions and is simpler to exploit, while High (H) indicates specialized conditions are required.
+            </div>
+            <div class="why-wrong">
+                <strong>Why other answers are incorrect:</strong><br>
+                <strong>A. High</strong> - Indicates more difficult exploitation requiring specialized conditions<br>
+                <strong>B. Medium</strong> - Not a valid CVSS Attack Complexity value<br>
+                <strong>D. Severe</strong> - Not a valid CVSS Attack Complexity value
+            </div>
+            <div class="concept-review">
+                <strong>Key Concept:</strong> CVSS Attack Complexity only has two values: Low (easier) and High (harder).
+            </div>
+        </div>
+
+        <div class="answer-item">
+            <div class="question-number">Question 5</div>
+            <div class="correct-answer">Correct Answer: A. False positive</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> A false positive occurs when a scanner reports a vulnerability that does not actually exist. In this case, the scanner reported a vulnerability on a system that was already properly patched.
+            </div>
+            <div class="why-wrong">
+                <strong>Why other answers are incorrect:</strong><br>
+                <strong>B. False negative</strong> - When scanner misses an actual vulnerability<br>
+                <strong>C. True positive</strong> - Correctly identifies an existing vulnerability<br>
+                <strong>D. True negative</strong> - Correctly reports no vulnerability exists
+            </div>
+            <div class="concept-review">
+                <strong>Key Concept:</strong> False positives require time-consuming administrator investigation and can be reduced through proper scanner configuration and credentialed scanning.
+            </div>
+        </div>
+
+        <div class="answer-item">
+            <div class="question-number">Question 6</div>
+            <div class="correct-answer">Correct Answer: B. Integrity</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> SQL injection allowing students to alter grades is an integrity attack. The CIA triad includes Confidentiality, Integrity, and Availability. Preventing unauthorized data modification requires integrity controls.
+            </div>
+            <div class="why-wrong">
+                <strong>Why other answers are incorrect:</strong><br>
+                <strong>A. Confidentiality</strong> - Protects against unauthorized disclosure, not modification<br>
+                <strong>C. Alteration</strong> - Not a standard security control category<br>
+                <strong>D. Availability</strong> - Protects against service disruption, not data modification
+            </div>
+            <div class="concept-review">
+                <strong>Key Concept:</strong> Integrity controls prevent unauthorized modification of data and include input validation, access controls, and database constraints.
+            </div>
+        </div>
+
+        <div class="answer-item">
+            <div class="question-number">Question 7</div>
+            <div class="correct-answer">Correct Answer: C. Metasploit</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Metasploit is an exploitation framework used for actively exploiting vulnerabilities, not for reconnaissance. It's used after vulnerabilities are identified to test if they can be exploited.
+            </div>
+            <div class="why-wrong">
+                <strong>Why other answers are incorrect:</strong><br>
+                <strong>A. Nmap</strong> - Port scanning tool commonly used in reconnaissance<br>
+                <strong>B. Nessus</strong> - Vulnerability scanner used to identify weaknesses<br>
+                <strong>D. Nslookup</strong> - DNS lookup tool for gathering domain information
+            </div>
+            <div class="concept-review">
+                <strong>Key Concept:</strong> Reconnaissance focuses on information gathering, while exploitation tools like Metasploit are used after vulnerabilities are identified.
+            </div>
+        </div>
+
+        <div class="answer-item">
+            <div class="question-number">Question 8</div>
+            <div class="correct-answer">Correct Answer: A. Patch management</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> The vulnerability description specifically mentions Microsoft Advisory MS17-010 and references patches to fix the SMB vulnerabilities. This is clearly a patch management issue where proper patching would have prevented the vulnerability.
+            </div>
+            <div class="why-wrong">
+                <strong>Why other answers are incorrect:</strong><br>
+                <strong>B. File integrity monitoring</strong> - Monitors file changes, doesn't prevent vulnerabilities<br>
+                <strong>C. Intrusion detection</strong> - Detects attacks, doesn't prevent vulnerabilities<br>
+                <strong>D. Threat hunting</strong> - Searches for existing compromises, doesn't prevent vulnerabilities
+            </div>
+            <div class="concept-review">
+                <strong>Key Concept:</strong> Patch management is a fundamental security control that addresses known vulnerabilities by applying vendor-provided fixes.
+            </div>
+        </div>
+
+        <div class="answer-item">
+            <div class="question-number">Question 9</div>
+            <div class="correct-answer">Correct Answer: B. Web application vulnerability scanner</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Cross-site scripting (XSS) is a web-specific vulnerability that is best detected by specialized web application vulnerability scanners designed to test for web application flaws like XSS, SQL injection, and CSRF.
+            </div>
+            <div class="why-wrong">
+                <strong>Why other answers are incorrect:</strong><br>
+                <strong>A. Static application test</strong> - May detect some XSS but less effective than web scanners<br>
+                <strong>C. Intrusion detection system</strong> - Detects active attacks, not vulnerabilities<br>
+                <strong>D. Network vulnerability scanner</strong> - Focuses on infrastructure, not web application flaws
+            </div>
+            <div class="concept-review">
+                <strong>Key Concept:</strong> Web application scanners are specialized tools that test for web-specific vulnerabilities through dynamic testing and fuzzing.
+            </div>
+        </div>
+
+        <div class="answer-item">
+            <div class="question-number">Question 10</div>
+            <div class="correct-answer">Correct Answer: A. Lateral movement</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Lateral movement (also called pivoting) occurs when an attacker uses a compromised system to gain access to other systems on the same network. Deploying a toolkit to access additional systems is a classic example of lateral movement.
+            </div>
+            <div class="why-wrong">
+                <strong>Why other answers are incorrect:</strong><br>
+                <strong>B. Privilege escalation</strong> - Increasing access levels on the same system<br>
+                <strong>C. Footprinting</strong> - Reconnaissance technique for gathering system information<br>
+                <strong>D. OSINT</strong> - Open source intelligence gathering from public sources
+            </div>
+            <div class="concept-review">
+                <strong>Key Concept:</strong> Lateral movement is a key phase in penetration testing and attack progression, expanding the attack scope across the network.
+            </div>
+        </div>
+
+        <div class="answer-item">
+            <div class="question-number">Question 11</div>
+            <div class="correct-answer">Correct Answer: A. External audit</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> This is an external audit because it's being performed by independent auditors to validate financial statements for external stakeholders (investors). External audits provide third-party validation for external audiences.
+            </div>
+            <div class="why-wrong">
+                <strong>Why other answers are incorrect:</strong><br>
+                <strong>B. Penetration test</strong> - Tests security controls through simulated attacks<br>
+                <strong>C. Internal audit</strong> - Performed by internal audit staff for internal purposes<br>
+                <strong>D. Informal audit</strong> - Not a standard audit classification
+            </div>
+            <div class="concept-review">
+                <strong>Key Concept:</strong> External audits provide independent validation for external stakeholders and result in formal attestations about control effectiveness.
+            </div>
+        </div>
+
+        <div class="answer-item">
+            <div class="question-number">Question 12</div>
+            <div class="correct-answer">Correct Answer: C. Bug bounty</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Bug bounty programs are designed to incentivize external security researchers by offering financial rewards for discovering and reporting vulnerabilities. They solicit participation from external experts through monetary incentives.
+            </div>
+            <div class="why-wrong">
+                <strong>Why other answers are incorrect:</strong><br>
+                <strong>A. Threat hunting</strong> - Internal activity searching for existing compromises<br>
+                <strong>B. Penetration testing</strong> - Usually performed by hired professionals, not rewarded external experts<br>
+                <strong>D. Vulnerability scanning</strong> - Automated tool-based activity, not human expert participation
+            </div>
+            <div class="concept-review">
+                <strong>Key Concept:</strong> Bug bounty programs leverage the crowd-sourced security community by providing financial incentives for vulnerability discovery.
+            </div>
+        </div>
+
+        <div class="answer-item">
+            <div class="question-number">Question 13</div>
+            <div class="correct-answer">Correct Answer: D. Persistence</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Installing a backdoor to maintain future access is establishing persistence. Persistence mechanisms ensure continued access to compromised systems even if the original vulnerability is patched.
+            </div>
+            <div class="why-wrong">
+                <strong>Why other answers are incorrect:</strong><br>
+                <strong>A. Privilege escalation</strong> - Increasing access levels on the current system<br>
+                <strong>B. Lateral movement</strong> - Moving to other systems in the network<br>
+                <strong>C. Maneuver</strong> - General term, not specific to maintaining access
+            </div>
+            <div class="concept-review">
+                <strong>Key Concept:</strong> Persistence is a critical phase in penetration testing that simulates how real attackers maintain long-term access to compromised environments.
+            </div>
+        </div>
+
+        <div class="answer-item">
+            <div class="question-number">Question 14</div>
+            <div class="correct-answer">Correct Answer: C. WHOIS lookups</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> WHOIS lookups are passive reconnaissance because they gather information from public databases without directly engaging the target. Passive techniques don't interact with target systems.
+            </div>
+            <div class="why-wrong">
+                <strong>Why other answers are incorrect:</strong><br>
+                <strong>A. Port scans</strong> - Active technique that directly probes target systems<br>
+                <strong>B. Vulnerability scans</strong> - Active technique that tests target systems<br>
+                <strong>D. Footprinting</strong> - Can be active or passive, but often involves direct target interaction
+            </div>
+            <div class="concept-review">
+                <strong>Key Concept:</strong> Passive reconnaissance gathers information without alerting the target, while active reconnaissance directly engages target systems.
+            </div>
+        </div>
+
+        <div class="answer-item">
+            <div class="question-number">Question 15</div>
+            <div class="correct-answer">Correct Answer: B. CVE</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Common Vulnerabilities and Exposures (CVE) provides a standard nomenclature for describing security-related software flaws. Each vulnerability gets a unique CVE identifier for consistent reference.
+            </div>
+            <div class="why-wrong">
+                <strong>Why other answers are incorrect:</strong><br>
+                <strong>A. CPE</strong> - Common Platform Enumeration for product names and versions<br>
+                <strong>C. CVSS</strong> - Common Vulnerability Scoring System for rating severity<br>
+                <strong>D. CCE</strong> - Common Configuration Enumeration for configuration issues
+            </div>
+            <div class="concept-review">
+                <strong>Key Concept:</strong> CVE provides standardized vulnerability naming, while CVSS provides standardized vulnerability scoring within the SCAP framework.
+            </div>
+        </div>
+
+        <div class="answer-item">
+            <div class="question-number">Question 16</div>
+            <div class="correct-answer">Correct Answer: C. Known environment test</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> When clients provide full system details in advance, this is a known environment test (formerly called "white box"). Testers have complete information about the target environment.
+            </div>
+            <div class="why-wrong">
+                <strong>Why other answers are incorrect:</strong><br>
+                <strong>A. Partially known environment</strong> - Only some information provided<br>
+                <strong>B. Detailed environment test</strong> - Not a standard penetration testing classification<br>
+                <strong>D. Unknown environment test</strong> - No information provided (black box testing)
+            </div>
+            <div class="concept-review">
+                <strong>Key Concept:</strong> Known environment tests allow comprehensive testing but may not reflect real-world attacker perspectives, while unknown environment tests provide realistic attack simulation.
+            </div>
+        </div>
+
+        <div class="answer-item">
+            <div class="question-number">Question 17</div>
+            <div class="correct-answer">Correct Answer: C. Rules of engagement</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Rules of engagement (RoE) define what activities are permitted during a penetration test, including whether social engineering is allowed. This document specifies the scope and boundaries of testing activities.
+            </div>
+            <div class="why-wrong">
+                <strong>Why other answers are incorrect:</strong><br>
+                <strong>A. Contract</strong> - Legal agreement but typically doesn't contain detailed testing procedures<br>
+                <strong>B. Statement of work</strong> - Defines deliverables but not specific testing boundaries<br>
+                <strong>D. Lessons learned report</strong> - Post-test documentation, not pre-test guidance
+            </div>
+            <div class="concept-review">
+                <strong>Key Concept:</strong> Rules of engagement are critical for defining testing boundaries and ensuring legal and appropriate penetration testing activities.
+            </div>
+        </div>
+
+        <div class="answer-item">
+            <div class="question-number">Question 18</div>
+            <div class="correct-answer">Correct Answer: B. Footprinting</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Footprinting is specifically designed to identify operating systems and applications in use on target systems. It's the most direct method for determining OS information during penetration testing.
+            </div>
+            <div class="why-wrong">
+                <strong>Why other answers are incorrect:</strong><br>
+                <strong>A. Port scanning</strong> - Identifies open ports/services but doesn't directly reveal OS<br>
+                <strong>C. Vulnerability scanning</strong> - May reveal OS but primarily focuses on vulnerabilities<br>
+                <strong>D. Packet capture</strong> - Captures network traffic for analysis, indirect OS identification
+            </div>
+            <div class="concept-review">
+                <strong>Key Concept:</strong> Footprinting uses various techniques to identify target system characteristics including OS, applications, and network services.
+            </div>
+        </div>
+
+        <div class="answer-item">
+            <div class="question-number">Question 19</div>
+            <div class="correct-answer">Correct Answer: B. Medium</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> According to the CVSS Qualitative Severity Rating Scale, a score of 6.5 falls into the Medium category (4.0-6.9). This is a fundamental CVSS scoring concept for the Security+ exam.
+            </div>
+            <div class="why-wrong">
+                <strong>Why other answers are incorrect:</strong><br>
+                <strong>A. Low</strong> - CVSS scores 0.1-3.9<br>
+                <strong>C. High</strong> - CVSS scores 7.0-8.9<br>
+                <strong>D. Critical</strong> - CVSS scores 9.0-10.0
+            </div>
+            <div class="concept-review">
+                <strong>Key Concept:</strong> CVSS severity scale: None (0.0), Low (0.1-3.9), Medium (4.0-6.9), High (7.0-8.9), Critical (9.0-10.0).
+            </div>
+        </div>
+
+        <div class="answer-item">
+            <div class="question-number">Question 20</div>
+            <div class="correct-answer">Correct Answer: C. PR</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> The Privileges Required (PR) metric describes the type of account access an attacker needs to execute an attack. Values include None (N), Low (L), and High (H) privilege requirements.
+            </div>
+            <div class="why-wrong">
+                <strong>Why other answers are incorrect:</strong><br>
+                <strong>A. AV</strong> - Attack Vector describes how the vulnerability is exploited (Physical, Local, Adjacent, Network)<br>
+                <strong>B. C</strong> - Confidentiality describes information disclosure impact<br>
+                <strong>D. AC</strong> - Attack Complexity describes difficulty of exploitation
+            </div>
+            <div class="concept-review">
+                <strong>Key Concept:</strong> CVSS metrics include four exploitability measures (AV, AC, PR, UI), three impact measures (C, I, A), and one scope measure (S).
+            </div>
+        </div>
+
+        <h2>Common Exam Patterns</h2>
+        <div class="exam-pattern">
+            <strong>Pattern Analysis:</strong>
+            <ul>
+                <li><strong>CVSS Questions (19, 20, 4):</strong> 15% of questions focused on CVSS metrics and scoring</li>
+                <li><strong>Penetration Testing (10, 13, 16, 17, 18):</strong> 25% covered pen testing concepts and phases</li>
+                <li><strong>Vulnerability Management (2, 3, 5, 8):</strong> 20% addressed scanning and vulnerability handling</li>
+                <li><strong>Assessment Types (1, 11, 12):</strong> 15% covered different assessment methodologies</li>
+                <li><strong>Technical Tools/Techniques (7, 9, 14, 15):</strong> 25% focused on specific tools and techniques</li>
+            </ul>
+        </div>
+
+        <h2>Study Recommendations</h2>
+        <div class="concept-review">
+            <strong>Focus Areas for Additional Study:</strong>
+            <ul>
+                <li><strong>CVSS Metrics:</strong> Memorize all eight metrics and their values</li>
+                <li><strong>Penetration Testing Phases:</strong> Understand reconnaissance, initial access, privilege escalation, lateral movement, persistence, and cleanup</li>
+                <li><strong>False Positive vs. False Negative:</strong> Critical concept for vulnerability scanning</li>
+                <li><strong>Passive vs. Active Reconnaissance:</strong> Know which techniques fall into each category</li>
+                <li><strong>Audit Types:</strong> Distinguish between internal, external, and third-party audits</li>
+                <li><strong>SCAP Components:</strong> Understand CVE, CVSS, CPE, CCE, XCCDF, and OVAL</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

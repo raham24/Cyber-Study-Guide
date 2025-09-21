@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Answer Key</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .quick-reference {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .answer-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        .answer-table th {
+            background-color: #673ab7;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        .answer-table td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .answer-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .answer-block {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .answer-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #673ab7;
+            padding-bottom: 10px;
+        }
+        
+        .question-number {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #673ab7;
+        }
+        
+        .correct-answer {
+            background-color: #4caf50;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        
+        .explanation {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .why-wrong {
+            background-color: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .concept-link {
+            background-color: #e8f4f8;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .statistics {
+            background-color: #fff3cd;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 15px;
+        }
+        
+        .stat-box {
+            text-align: center;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #673ab7;
+        }
+        
+        .pattern-note {
+            background-color: #f3e5f5;
+            border: 2px solid #9c27b0;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+            }
+            .answer-block {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Chapter 4: Answer Key</h1>
+        <h2>Social Engineering and Password Attacks</h2>
+        <p>CompTIA Security+ SY0-701 - Complete Explanations</p>
+    </div>
+
+    <div class="quick-reference">
+        <h2>Quick Answer Reference</h2>
+        <table class="answer-table">
+            <thead>
+                <tr>
+                    <th>Question</th>
+                    <th>Answer</th>
+                    <th>Topic</th>
+                    <th>Difficulty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>A</td><td>Typosquatting</td><td>Basic</td></tr>
+                <tr><td>2</td><td>D</td><td>Vishing</td><td>Basic</td></tr>
+                <tr><td>3</td><td>A</td><td>Brute-force Attack</td><td>Basic</td></tr>
+                <tr><td>4</td><td>C</td><td>Password Spraying</td><td>Intermediate</td></tr>
+                <tr><td>5</td><td>B</td><td>Business Email Compromise</td><td>Intermediate</td></tr>
+                <tr><td>6</td><td>A</td><td>Watering Hole Attack</td><td>Intermediate</td></tr>
+                <tr><td>7</td><td>D</td><td>Brute-force Detection</td><td>Intermediate</td></tr>
+                <tr><td>8</td><td>B</td><td>Pretexting</td><td>Intermediate</td></tr>
+                <tr><td>9</td><td>D</td><td>Password Spraying Detection</td><td>Advanced</td></tr>
+                <tr><td>10</td><td>A</td><td>Misinformation Campaigns</td><td>Intermediate</td></tr>
+                <tr><td>11</td><td>C</td><td>Typosquatting</td><td>Basic</td></tr>
+                <tr><td>12</td><td>B</td><td>Watering Hole Attack</td><td>Intermediate</td></tr>
+                <tr><td>13</td><td>C</td><td>Brand Impersonation</td><td>Basic</td></tr>
+                <tr><td>14</td><td>C</td><td>Impersonation</td><td>Intermediate</td></tr>
+                <tr><td>15</td><td>C</td><td>Smishing</td><td>Basic</td></tr>
+                <tr><td>16</td><td>D</td><td>Password Spraying</td><td>Intermediate</td></tr>
+                <tr><td>17</td><td>B</td><td>Smishing</td><td>Basic</td></tr>
+                <tr><td>18</td><td>B</td><td>Typosquatting Prevention</td><td>Intermediate</td></tr>
+                <tr><td>19</td><td>B</td><td>Brand Impersonation</td><td>Intermediate</td></tr>
+                <tr><td>20</td><td>C</td><td>Disinformation</td><td>Intermediate</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="answer-block">
+        <div class="answer-header">
+            <span class="question-number">Question 1</span>
+            <span class="correct-answer">Answer: A - Typosquatting</span>
+        </div>
+        <div class="why-wrong">
+            <strong>Why other options are more useful:</strong>
+            <ul>
+                <li><strong>A (Source IP):</strong> Essential for identifying attack sources and patterns.</li>
+                <li><strong>B (Failed login logs):</strong> Critical for detecting repeated attempts.</li>
+                <li><strong>C (Passwords used):</strong> Can reveal attack patterns and password lists being used.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="answer-block">
+        <div class="answer-header">
+            <span class="question-number">Question 8</span>
+            <span class="correct-answer">Answer: B - Pretexting</span>
+        </div>
+        <div class="explanation">
+            <strong>Why B is correct:</strong> Pretexting involves creating a fabricated scenario (the urgent event requiring gift cards) to manipulate the target into taking action. The caller created a believable pretext about a senior manager's urgent need.
+        </div>
+        <div class="why-wrong">
+            <strong>Why other options are less accurate:</strong>
+            <ul>
+                <li><strong>A (Phishing):</strong> This was a phone call, not email-based phishing.</li>
+                <li><strong>C (BEC):</strong> While similar, BEC specifically involves business email, not phone calls.</li>
+                <li><strong>D (Carding):</strong> Carding involves using stolen credit card information.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="answer-block">
+        <div class="answer-header">
+            <span class="question-number">Question 9</span>
+            <span class="correct-answer">Answer: D - The number of failed attempts for each user</span>
+        </div>
+        <div class="explanation">
+            <strong>Why D is correct:</strong> Password spraying typically results in a low number of failed attempts per user (often just one) across many users. This pattern distinguishes it from brute-force attacks which show many attempts against individual accounts.
+        </div>
+        <div class="pattern-note">
+            <strong>Detection Pattern:</strong> Password spraying shows 1-2 failed attempts per user across many users, while brute force shows many attempts against few users.
+        </div>
+    </div>
+
+    <div class="answer-block">
+        <div class="answer-header">
+            <span class="question-number">Question 10</span>
+            <span class="correct-answer">Answer: A - Misinformation campaigns</span>
+        </div>
+        <div class="explanation">
+            <strong>Why A is correct:</strong> Nation-state actors frequently use misinformation and disinformation campaigns as part of influence operations and cyber warfare. These campaigns are resource-intensive and align with nation-state objectives.
+        </div>
+        <div class="concept-link">
+            <strong>Real-World Context:</strong> Examples include election interference campaigns and social media manipulation by state-sponsored actors.
+        </div>
+    </div>
+
+    <div class="answer-block">
+        <div class="answer-header">
+            <span class="question-number">Question 11</span>
+            <span class="correct-answer">Answer: C - Typosquatting</span>
+        </div>
+        <div class="explanation">
+            <strong>Why C is correct:</strong> The misspelled domain "smazon.com" (missing 'a') directing to an ad-filled site is classic typosquatting behavior. Typosquatters monetize traffic from typing errors.
+        </div>
+    </div>
+
+    <div class="answer-block">
+        <div class="answer-header">
+            <span class="question-number">Question 12</span>
+            <span class="correct-answer">Answer: B - A watering hole attack</span>
+        </div>
+        <div class="explanation">
+            <strong>Why B is correct:</strong> Setting up malicious tools on the organization's primary internal website that employees frequently visit is a watering hole attack. The attacker compromises a site the targets will naturally visit.
+        </div>
+    </div>
+
+    <div class="answer-block">
+        <div class="answer-header">
+            <span class="question-number">Question 13</span>
+            <span class="correct-answer">Answer: C - Brand impersonation</span>
+        </div>
+        <div class="explanation">
+            <strong>Why C is correct:</strong> Brand impersonation specifically involves pretending to be a legitimate, recognizable brand to increase trust and response rates. This goes beyond generic phishing by leveraging brand recognition.
+        </div>
+    </div>
+
+    <div class="answer-block">
+        <div class="answer-header">
+            <span class="question-number">Question 14</span>
+            <span class="correct-answer">Answer: C - Impersonation</span>
+        </div>
+        <div class="explanation">
+            <strong>Why C is correct:</strong> The caller impersonated the head of IT - directly claiming to be someone they were not. While pretexting was involved (creating urgency), the primary attack was impersonation of a specific person.
+        </div>
+        <div class="why-wrong">
+            <strong>Why B (Pretexting) is less accurate:</strong> Pretexting was the supporting technique, but impersonation was the main attack vector.
+        </div>
+    </div>
+
+    <div class="answer-block">
+        <div class="answer-header">
+            <span class="question-number">Question 15</span>
+            <span class="correct-answer">Answer: C - Smishing</span>
+        </div>
+        <div class="explanation">
+            <strong>Why C is correct:</strong> Smishing is specifically SMS/text message-based phishing. The 's' in smishing stands for 'SMS'.
+        </div>
+    </div>
+
+    <div class="answer-block">
+        <div class="answer-header">
+            <span class="question-number">Question 16</span>
+            <span class="correct-answer">Answer: D - Spraying</span>
+        </div>
+        <div class="explanation">
+            <strong>Why D is correct:</strong> Many different usernames with the same password is the signature pattern of password spraying attacks. This technique avoids account lockouts while testing common passwords.
+        </div>
+    </div>
+
+    <div class="answer-block">
+        <div class="answer-header">
+            <span class="question-number">Question 17</span>
+            <span class="correct-answer">Answer: B - Text message–based phishing</span>
+        </div>
+        <div class="explanation">
+            <strong>Why B is correct:</strong> Smishing is phishing via SMS (text messages). It's a portmanteau of "SMS" and "phishing."
+        </div>
+    </div>
+
+    <div class="answer-block">
+        <div class="answer-header">
+            <span class="question-number">Question 18</span>
+            <span class="correct-answer">Answer: B - Purchase the most common typos for his organization's domain</span>
+        </div>
+        <div class="explanation">
+            <strong>Why B is correct:</strong> The most effective defense against typosquatting is to proactively register common misspellings and typos of your domain, then redirect them to the legitimate site.
+        </div>
+        <div class="concept-link">
+            <strong>Real Example:</strong> Amazon owns amason.com and redirects it to amazon.com.
+        </div>
+    </div>
+
+    <div class="answer-block">
+        <div class="answer-header">
+            <span class="question-number">Question 19</span>
+            <span class="correct-answer">Answer: B - Brand impersonation</span>
+        </div>
+        <div class="explanation">
+            <strong>Why B is correct:</strong> Creating a social media account that appears to represent a legitimate company to conduct fraudulent activities (cryptocurrency scams) is brand impersonation.
+        </div>
+    </div>
+
+    <div class="answer-block">
+        <div class="answer-header">
+            <span class="question-number">Question 20</span>
+            <span class="correct-answer">Answer: C - Disinformation</span>
+        </div>
+        <div class="explanation">
+            <strong>Why C is correct:</strong> Nation-state campaigns spreading false information about election integrity are disinformation - deliberately false information spread to achieve political goals.
+        </div>
+        <div class="concept-link">
+            <strong>Key Distinction:</strong> Disinformation is intentionally false (propaganda), while misinformation is accidentally false (mistakes).
+        </div>
+    </div>
+
+    <div class="statistics">
+        <h2>Answer Distribution Analysis</h2>
+        <div class="stat-grid">
+            <div class="stat-box">
+                <div class="stat-number">5</div>
+                <div>A Answers (25%)</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">6</div>
+                <div>B Answers (30%)</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">6</div>
+                <div>C Answers (30%)</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">3</div>
+                <div>D Answers (15%)</div>
+            </div>
+        </div>
+        
+        <h3>Common Exam Patterns</h3>
+        <ul>
+            <li><strong>Password Attacks:</strong> Focus on log patterns - spraying shows one password across many accounts, brute force shows many passwords against one account.</li>
+            <li><strong>Phishing Variants:</strong> Remember the medium - vishing (voice), smishing (SMS), phishing (email).</li>
+            <li><strong>Impersonation vs. Pretexting:</strong> Impersonation is claiming to be someone else, pretexting is the false scenario used.</li>
+            <li><strong>Typosquatting:</strong> Look for misspelled domains with character substitutions or missing letters.</li>
+            <li><strong>BEC:</strong> Business context with payment redirection or invoice fraud.</li>
+        </ul>
+    </div>
+</body>
+</html>
+        <div class="explanation">
+            <strong>Why A is correct:</strong> The domain "amaz0n.com" (with a zero instead of 'o') is a classic example of typosquatting. Typosquatters register domains with common misspellings or character substitutions to catch users who make typing errors.
+        </div>
+        <div class="why-wrong">
+            <strong>Why other options are wrong:</strong>
+            <ul>
+                <li><strong>B (Phishing):</strong> While this could be part of a phishing campaign, the specific technique of using a misspelled domain is typosquatting.</li>
+                <li><strong>C (Smishing):</strong> Smishing involves SMS/text messages, not email.</li>
+                <li><strong>D (Watering hole):</strong> Watering hole attacks compromise legitimate sites that targets frequently visit.</li>
+            </ul>
+        </div>
+        <div class="concept-link">
+            <strong>Key Concept:</strong> Typosquatting specifically targets users who make typing mistakes when entering URLs. Common techniques include character substitution (0 for o), adjacent key errors, and missing letters.
+        </div>
+    </div>
+
+    <div class="answer-block">
+        <div class="answer-header">
+            <span class="question-number">Question 2</span>
+            <span class="correct-answer">Answer: D - Vishing</span>
+        </div>
+        <div class="explanation">
+            <strong>Why D is correct:</strong> Vishing is phishing accomplished via voice or voicemail messages. The 'v' in vishing stands for 'voice'.
+        </div>
+        <div class="why-wrong">
+            <strong>Why other options are wrong:</strong>
+            <ul>
+                <li><strong>A (Whaling):</strong> Whaling targets high-level executives, not related to voice communication.</li>
+                <li><strong>B (Spoofing):</strong> Spoofing is falsifying identity or source, not specific to voice phishing.</li>
+                <li><strong>C (Spooning):</strong> This is not a recognized security term.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="answer-block">
+        <div class="answer-header">
+            <span class="question-number">Question 3</span>
+            <span class="correct-answer">Answer: A - A brute-force attack</span>
+        </div>
+        <div class="explanation">
+            <strong>Why A is correct:</strong> Multiple password attempts against a single username (admin) is characteristic of a brute-force attack, where an attacker tries various passwords until finding one that works.
+        </div>
+        <div class="why-wrong">
+            <strong>Why other options are wrong:</strong>
+            <ul>
+                <li><strong>B (Shoulder surfing):</strong> Involves physically observing someone entering credentials.</li>
+                <li><strong>C (On-path attack):</strong> Involves intercepting communications between two parties.</li>
+                <li><strong>D (Pretexting):</strong> A social engineering technique using false scenarios.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="answer-block">
+        <div class="answer-header">
+            <span class="question-number">Question 4</span>
+            <span class="correct-answer">Answer: C - Match repeated use of the same password during failed login attempts for multiple usernames</span>
+        </div>
+        <div class="explanation">
+            <strong>Why C is correct:</strong> Password spraying uses one or few passwords across many accounts. The key indicator is the same password being tried against multiple different usernames.
+        </div>
+        <div class="why-wrong">
+            <strong>Why other options are wrong:</strong>
+            <ul>
+                <li><strong>A:</strong> This describes credential stuffing, not password spraying.</li>
+                <li><strong>B:</strong> This describes a brute-force attack against a single account.</li>
+                <li><strong>D:</strong> This describes password variations, more typical of targeted brute-force.</li>
+            </ul>
+        </div>
+        <div class="pattern-note">
+            <strong>Exam Pattern:</strong> Password spraying = One password, many accounts. Brute force = Many passwords, one account.
+        </div>
+    </div>
+
+    <div class="answer-block">
+        <div class="answer-header">
+            <span class="question-number">Question 5</span>
+            <span class="correct-answer">Answer: B - Business email compromise</span>
+        </div>
+        <div class="explanation">
+            <strong>Why B is correct:</strong> BEC involves using apparently legitimate business emails to conduct scams. Invoice fraud with payment redirection to unauthorized accounts is a classic BEC technique.
+        </div>
+        <div class="concept-link">
+            <strong>Key Indicators of BEC:</strong> Unusual payment methods, unfamiliar contact addresses, urgency, and requests to change payment details.
+        </div>
+    </div>
+
+    <div class="answer-block">
+        <div class="answer-header">
+            <span class="question-number">Question 6</span>
+            <span class="correct-answer">Answer: A - A watering hole attack</span>
+        </div>
+        <div class="explanation">
+            <strong>Why A is correct:</strong> Watering hole attacks compromise websites that targets frequently visit. Infecting ads on a site regularly visited by the target company's users is a textbook watering hole attack.
+        </div>
+    </div>
+
+    <div class="answer-block">
+        <div class="answer-header">
+            <span class="question-number">Question 7</span>
+            <span class="correct-answer">Answer: D - The geographic location of system being logged into</span>
+        </div>
+        <div class="explanation">
+            <strong>Why D is correct:</strong> The geographic location of the target system doesn't help detect brute-force attacks. Brute-force detection focuses on authentication patterns, not where the target system is located.

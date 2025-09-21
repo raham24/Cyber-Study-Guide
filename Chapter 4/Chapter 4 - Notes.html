@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Social Engineering and Password Attacks - Study Guide</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .exam-objectives {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .definition-box {
+            background-color: #e8f4f8;
+            border-left: 5px solid #2196F3;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .exam-note {
+            background-color: #ffebee;
+            border-left: 5px solid #f44336;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        .key-concept {
+            background-color: #e8f5e9;
+            border-left: 5px solid #4caf50;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .comparison-table th {
+            background-color: #673ab7;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .comparison-table td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .comparison-table tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .section {
+            background-color: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            color: #673ab7;
+            border-bottom: 3px solid #673ab7;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        
+        h3 {
+            color: #4a5568;
+            margin-top: 20px;
+        }
+        
+        .tip {
+            background-color: #fffbf0;
+            border: 1px solid #feb144;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .real-world-example {
+            background-color: #f3e5f5;
+            border-left: 5px solid #9c27b0;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .acronym-list {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+            }
+            .section {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Chapter 4: Social Engineering and Password Attacks</h1>
+        <p><strong>CompTIA Security+ SY0-701 Study Guide</strong></p>
+        <p>Complete Coverage of Domain 2.0: Threats, Vulnerabilities, and Mitigations</p>
+    </div>
+
+    <div class="exam-objectives">
+        <h2>📋 Exam Objectives Covered</h2>
+        <p><strong>Domain 2.0: Threats, Vulnerabilities, and Mitigations</strong></p>
+        <ul>
+            <li><strong>2.2 Explain common threat vectors and attack surfaces:</strong>
+                <ul>
+                    <li>Human vectors/social engineering (Phishing, Vishing, Smishing, Misinformation/disinformation, Impersonation, Business email compromise, Pretexting, Watering hole, Brand impersonation, Typosquatting)</li>
+                </ul>
+            </li>
+            <li><strong>2.4 Given a scenario, analyze indicators of malicious activity:</strong>
+                <ul>
+                    <li>Password attacks (Spraying, Brute force)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Part 1: Social Engineering Fundamentals</h2>
+        
+        <div class="definition-box">
+            <strong>Social Engineering:</strong> The practice of manipulating people through various strategies to accomplish desired actions. Social engineers influence targets to take actions they might not otherwise have taken.
+        </div>
+
+        <h3>Core Principles of Social Engineering</h3>
+        
+        <div class="key-concept">
+            <h4>1. Authority</h4>
+            <p>Relies on people's tendency to obey someone who appears to be in charge or knowledgeable. Attackers may claim to be managers, government officials, or other authority figures.</p>
+            <div class="real-world-example">
+                <strong>Example:</strong> A caller claiming to be from "IT headquarters" demanding immediate password changes or system access.
+            </div>
+        </div>
+
+        <div class="key-concept">
+            <h4>2. Intimidation</h4>
+            <p>Uses fear or bullying to force desired actions. Targets feel threatened and comply to avoid consequences.</p>
+            <div class="real-world-example">
+                <strong>Example:</strong> Threatening job loss or legal action if immediate compliance isn't given.
+            </div>
+        </div>
+
+        <div class="key-concept">
+            <h4>3. Consensus/Social Proof</h4>
+            <p>Exploits people's desire to do what others are doing. May include fake testimonials or claims that "everyone else" has already complied.</p>
+            <div class="real-world-example">
+                <strong>Example:</strong> "All other departments have already updated their information through this link."
+            </div>
+        </div>
+
+        <div class="key-concept">
+            <h4>4. Scarcity</h4>
+            <p>Creates urgency by making something appear limited or about to expire.</p>
+            <div class="real-world-example">
+                <strong>Example:</strong> "Only 2 spots left for this security training - register now!"
+            </div>
+        </div>
+
+        <div class="key-concept">
+            <h4>5. Familiarity</h4>
+            <p>Relies on targets liking or recognizing the individual or organization being impersonated.</p>
+            <div class="real-world-example">
+                <strong>Example:</strong> Using company logos and email templates to appear legitimate.
+            </div>
+        </div>
+
+        <div class="key-concept">
+            <h4>6. Trust</h4>
+            <p>Builds a connection with targets to encourage compliance. Unlike familiarity, this involves actively developing rapport.</p>
+            <div class="real-world-example">
+                <strong>Example:</strong> Engaging in small talk before making requests, referencing shared connections.
+            </div>
+        </div>
+
+        <div class="key-concept">
+            <h4>7. Urgency</h4>
+            <p>Creates time pressure to prevent careful thinking and force quick decisions.</p>
+            <div class="real-world-example">
+                <strong>Example:</strong> "Your account will be closed in 24 hours unless you verify immediately."
+            </div>
+        </div>
+
+        <div class="exam-note">
+            <strong>⚠️ Exam Note:</strong> The Security+ exam doesn't require categorizing attacks by principles, but understanding these principles helps explain why attacks succeed and how to prevent them.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Part 2: Social Engineering Attack Types</h2>
+
+        <h3>Phishing and Variants</h3>
+        
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Attack Type</th>
+                    <th>Description</th>
+                    <th>Medium</th>
+                    <th>Key Indicators</th>
+                    <th>Defense Strategies</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Phishing</strong></td>
+                    <td>Fraudulent acquisition of information (credentials, credit cards, personal data)</td>
+                    <td>Email</td>
+                    <td>Generic greetings, urgency, suspicious links, grammar errors</td>
+                    <td>Email filtering, user training, MFA</td>
+                </tr>
+                <tr>
+                    <td><strong>Vishing</strong></td>
+                    <td>Voice-based phishing via phone calls</td>
+                    <td>Phone/VoIP</td>
+                    <td>Unsolicited calls, urgency, requests for sensitive info</td>
+                    <td>Callback verification, never give info to inbound callers</td>
+                </tr>
+                <tr>
+                    <td><strong>Smishing</strong></td>
+                    <td>SMS/text message phishing</td>
+                    <td>SMS/Text</td>
+                    <td>Shortened URLs, urgent requests, MFA code requests</td>
+                    <td>Don't click links in texts, verify independently</td>
+                </tr>
+                <tr>
+                    <td><strong>Spear Phishing</strong></td>
+                    <td>Targeted phishing at specific individuals/groups</td>
+                    <td>Email</td>
+                    <td>Personal details, company-specific info, targeted content</td>
+                    <td>Advanced threat protection, user awareness</td>
+                </tr>
+                <tr>
+                    <td><strong>Whaling</strong></td>
+                    <td>Phishing targeting senior executives (CEOs, CFOs)</td>
+                    <td>Email</td>
+                    <td>Executive impersonation, high-value requests</td>
+                    <td>Executive training, approval processes</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Information Warfare Attacks</h3>
+        
+        <div class="definition-box">
+            <strong>Misinformation:</strong> Incorrect information, often from getting facts wrong (unintentional).<br>
+            <strong>Disinformation:</strong> Deliberately false information spread to serve specific goals (intentional).<br>
+            <strong>Malinformation:</strong> True information used maliciously to inflict harm (MDM framework).
+        </div>
+
+        <div class="key-concept">
+            <h4>CISA's TRUST Process for Countering MDM</h4>
+            <ol>
+                <li><strong>T</strong>ell your story</li>
+                <li><strong>R</strong>eady your team</li>
+                <li><strong>U</strong>nderstand and assess MDM</li>
+                <li><strong>S</strong>trategize response</li>
+                <li><strong>T</strong>rack outcomes</li>
+            </ol>
+        </div>
+
+        <h3>Impersonation-Based Attacks</h3>
+        
+        <div class="definition-box">
+            <strong>Impersonation:</strong> Pretending to be someone else to gain access, data, or achieve other objectives.
+        </div>
+
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Attack Type</th>
+                    <th>Technique</th>
+                    <th>Common Scenarios</th>
+                    <th>Prevention</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Identity Fraud</strong></td>
+                    <td>Using someone else's actual identity</td>
+                    <td>Financial fraud, account takeover</td>
+                    <td>Identity verification, MFA</td>
+                </tr>
+                <tr>
+                    <td><strong>Business Email Compromise (BEC)</strong></td>
+                    <td>Using legitimate-appearing email addresses for scams</td>
+                    <td>Invoice scams, gift card fraud, data theft</td>
+                    <td>Email authentication, approval workflows</td>
+                </tr>
+                <tr>
+                    <td><strong>Pretexting</strong></td>
+                    <td>Creating false scenarios to justify approaches</td>
+                    <td>Help desk calls, vendor impersonation</td>
+                    <td>Verification procedures, callback policies</td>
+                </tr>
+                <tr>
+                    <td><strong>Brand Impersonation</strong></td>
+                    <td>Mimicking legitimate brands in communications</td>
+                    <td>Fake bank emails, store notifications</td>
+                    <td>Check sender addresses, verify independently</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Infrastructure-Based Attacks</h3>
+        
+        <div class="key-concept">
+            <h4>Watering Hole Attacks</h4>
+            <p>Compromise websites frequently visited by targets, like animals gathering at a watering hole.</p>
+            <ul>
+                <li>Attackers identify sites targets visit regularly</li>
+                <li>Compromise the site or its ad networks</li>
+                <li>Deploy malware to visitors</li>
+            </ul>
+            <div class="real-world-example">
+                <strong>Example:</strong> Compromising an industry news site that employees regularly visit for updates.
+            </div>
+        </div>
+
+        <div class="key-concept">
+            <h4>Typosquatting</h4>
+            <p>Register misspelled domains to catch users who make typing errors.</p>
+            <ul>
+                <li>Common character substitutions (amaz0n.com)</li>
+                <li>Missing or extra characters (amazoon.com)</li>
+                <li>Wrong TLD (.co instead of .com)</li>
+            </ul>
+            <div class="tip">
+                <strong>💡 Defense Tip:</strong> Organizations often register common typos of their domains and redirect them to the legitimate site.
+            </div>
+        </div>
+
+        <div class="key-concept">
+            <h4>Pharming</h4>
+            <p>Redirecting users to fake sites by manipulating DNS resolution.</p>
+            <ul>
+                <li>Modifying hosts files</li>
+                <li>Compromising DNS servers</li>
+                <li>DNS cache poisoning</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Part 3: Password Attacks</h2>
+        
+        <div class="exam-note">
+            <strong>⚠️ Exam Focus:</strong> The SY0-701 exam specifically focuses on password spraying and brute force attacks. Dictionary attacks and rainbow tables provide context but aren't exam objectives.
+        </div>
+
+        <h3>Primary Attack Methods (Exam Focus)</h3>
+        
+        <div class="key-concept">
+            <h4>1. Brute Force Attacks</h4>
+            <p><strong>Definition:</strong> Iterating through passwords until finding one that works.</p>
+            <ul>
+                <li>Can use word lists with common passwords</li>
+                <li>May include modification rules for complexity</li>
+                <li>Time-intensive but eventually successful if undefended</li>
+            </ul>
+            <div class="real-world-example">
+                <strong>Example:</strong> Trying "password", "Password1", "Password123", etc. against a single account.
+            </div>
+        </div>
+
+        <div class="key-concept">
+            <h4>2. Password Spraying</h4>
+            <p><strong>Definition:</strong> Using a single password or small set against many accounts.</p>
+            <ul>
+                <li>Avoids account lockout policies</li>
+                <li>Effective with default or common passwords</li>
+                <li>Often targets known username formats</li>
+            </ul>
+            <div class="real-world-example">
+                <strong>Example:</strong> Trying "Summer2024!" against all employee accounts in an organization.
+            </div>
+        </div>
+
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Attack Type</th>
+                    <th>Approach</th>
+                    <th>Advantages</th>
+                    <th>Disadvantages</th>
+                    <th>Detection Methods</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Brute Force</strong></td>
+                    <td>Many passwords → One account</td>
+                    <td>Eventually finds weak passwords</td>
+                    <td>Triggers lockout policies, time-intensive</td>
+                    <td>Multiple failed logins for single account</td>
+                </tr>
+                <tr>
+                    <td><strong>Password Spraying</strong></td>
+                    <td>One password → Many accounts</td>
+                    <td>Avoids lockouts, quick results</td>
+                    <td>Limited password attempts</td>
+                    <td>Same password across multiple accounts</td>
+                </tr>
+                <tr>
+                    <td><strong>Dictionary Attack</strong></td>
+                    <td>Word list → Target accounts</td>
+                    <td>Efficient for common passwords</td>
+                    <td>Limited by word list quality</td>
+                    <td>Pattern of common passwords</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Online vs. Offline Attacks</h3>
+        
+        <div class="key-concept">
+            <h4>Online Attacks</h4>
+            <ul>
+                <li>Performed against live systems</li>
+                <li>Subject to rate limiting and lockouts</li>
+                <li>Can trigger alerts and logging</li>
+                <li>Limited attempts possible</li>
+            </ul>
+        </div>
+
+        <div class="key-concept">
+            <h4>Offline Attacks</h4>
+            <ul>
+                <li>Performed against captured password hashes</li>
+                <li>No rate limiting or lockouts</li>
+                <li>Can use rainbow tables or GPU acceleration</li>
+                <li>Much faster than online attacks</li>
+            </ul>
+        </div>
+
+        <h3>Password Storage and Protection</h3>
+        
+        <div class="definition-box">
+            <strong>Hash:</strong> A one-way cryptographic function that generates a unique, repeatable output from an input. Cannot be reversed to obtain the original input.
+        </div>
+
+        <div class="key-concept">
+            <h4>Rainbow Tables</h4>
+            <p>Precomputed databases of hash values for quick password lookup.</p>
+            <ul>
+                <li>Only work for specific hash algorithms</li>
+                <li>Defeated by salting (adding random data to passwords)</li>
+                <li>Require significant storage space</li>
+            </ul>
+        </div>
+
+        <div class="key-concept">
+            <h4>Password Cracking Tools</h4>
+            <p><strong>John the Ripper:</strong> Popular open-source password cracking tool</p>
+            <ul>
+                <li>Supports multiple hash formats</li>
+                <li>Includes built-in word lists</li>
+                <li>Can be used for password assessment</li>
+                <li>Supports GPU acceleration</li>
+            </ul>
+        </div>
+
+        <div class="tip">
+            <strong>💡 Best Practice:</strong> Use strong hashing algorithms (bcrypt, scrypt, Argon2) with salting and peppering to protect stored passwords.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Quick Reference: Attack Indicators</h2>
+        
+        <div class="acronym-list">
+            <h3>Key Acronyms</h3>
+            <ul>
+                <li><strong>BEC:</strong> Business Email Compromise</li>
+                <li><strong>EAC:</strong> Email Account Compromise</li>
+                <li><strong>MFA:</strong> Multifactor Authentication</li>
+                <li><strong>MDM:</strong> Misinformation, Disinformation, and Malinformation</li>
+                <li><strong>SMS:</strong> Short Message Service (text messages)</li>
+                <li><strong>CISA:</strong> Cybersecurity and Infrastructure Security Agency</li>
+            </ul>
+        </div>
+
+        <h3>Common Exam Scenarios</h3>
+        
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Scenario</th>
+                    <th>Attack Type</th>
+                    <th>Key Indicators</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Email with urgent payment request from CEO</td>
+                    <td>BEC/Whaling</td>
+                    <td>Unusual request, different reply-to address</td>
+                </tr>
+                <tr>
+                    <td>Text message with link to verify account</td>
+                    <td>Smishing</td>
+                    <td>Shortened URL, unsolicited message</td>
+                </tr>
+                <tr>
+                    <td>Multiple accounts with failed login using "Password123"</td>
+                    <td>Password Spraying</td>
+                    <td>Same password, different usernames</td>
+                </tr>
+                <tr>
+                    <td>Thousands of login attempts on single account</td>
+                    <td>Brute Force</td>
+                    <td>Multiple passwords, same username</td>
+                </tr>
+                <tr>
+                    <td>Users visiting wrong domain (amaz0n.com)</td>
+                    <td>Typosquatting</td>
+                    <td>Similar but misspelled domain</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Exam Tips and Strategies</h2>
+        
+        <div class="tip">
+            <h3>Time Management</h3>
+            <ul>
+                <li>Social engineering questions often involve scenarios - read carefully</li>
+                <li>Look for keywords that indicate specific attack types</li>
+                <li>Password attack questions focus on patterns in logs</li>
+            </ul>
+        </div>
+
+        <div class="exam-note">
+            <h3>Common Exam Traps</h3>
+            <ul>
+                <li><strong>Phishing vs. Spear Phishing:</strong> Look for targeting specificity</li>
+                <li><strong>Misinformation vs. Disinformation:</strong> Intent matters (accidental vs. deliberate)</li>
+                <li><strong>Password Spraying vs. Brute Force:</strong> Check the pattern (one password/many accounts vs. many passwords/one account)</li>
+                <li><strong>BEC vs. Brand Impersonation:</strong> BEC uses legitimate-looking business emails, brand impersonation mimics known companies</li>
+            </ul>
+        </div>
+
+        <div class="key-concept">
+            <h3>Defense Priorities</h3>
+            <ol>
+                <li><strong>User Education:</strong> Most effective against social engineering</li>
+                <li><strong>MFA Implementation:</strong> Defeats most password attacks</li>
+                <li><strong>Email Security:</strong> Filters, authentication (SPF, DKIM, DMARC)</li>
+                <li><strong>Verification Procedures:</strong> Callback policies, approval workflows</li>
+                <li><strong>Monitoring and Logging:</strong> Detect attack patterns early</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

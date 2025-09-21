@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5: Security Assessment and Testing - Quick Reference</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            margin: 0;
+            padding: 15px;
+            background-color: #f8f9fa;
+            font-size: 11px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #9b59b6;
+            padding-bottom: 8px;
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        h2 {
+            color: #8e44ad;
+            background-color: #f4ecf7;
+            padding: 8px 12px;
+            border-left: 4px solid #9b59b6;
+            margin: 15px 0 10px 0;
+            font-size: 14px;
+        }
+        h3 {
+            color: #6c3483;
+            font-size: 12px;
+            margin: 10px 0 5px 0;
+            border-bottom: 1px solid #d7bde2;
+        }
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 10px 0;
+        }
+        .three-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .objectives-box {
+            background-color: #ebf3fd;
+            border: 2px solid #3498db;
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 6px;
+            font-size: 10px;
+        }
+        .key-terms {
+            background-color: #e8f5e8;
+            border-left: 4px solid #27ae60;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .formula-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 10px;
+        }
+        .exam-tip {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 8px 0;
+            font-size: 9px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 4px 6px;
+            text-align: left;
+        }
+        th {
+            background-color: #9b59b6;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        ul, ol {
+            margin: 5px 0;
+            padding-left: 15px;
+        }
+        li {
+            margin: 2px 0;
+        }
+        .compact-list {
+            columns: 2;
+            margin: 5px 0;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        .process-flow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #e3f2fd;
+            padding: 10px;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+        .process-step {
+            text-align: center;
+            flex: 1;
+            padding: 5px;
+        }
+        .arrow {
+            font-size: 16px;
+            color: #2196f3;
+        }
+        @media print {
+            body { background-color: white; font-size: 10px; }
+            .container { box-shadow: none; padding: 10px; }
+            .two-column, .three-column { break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CompTIA Security+ SY0-701<br>Chapter 5: Security Assessment and Testing<br>Quick Reference Sheet</h1>
+
+        <div class="objectives-box">
+            <strong>Exam Objectives:</strong> Domain 4.0 (4.3, 4.4, 4.8) & Domain 5.0 (5.3, 5.5)
+        </div>
+
+        <div class="two-column">
+            <div>
+                <h2>Vulnerability Management Process</h2>
+                <div class="process-flow">
+                    <div class="process-step">
+                        <strong>Identify</strong><br>
+                        Scan Targets
+                    </div>
+                    <div class="arrow">→</div>
+                    <div class="process-step">
+                        <strong>Scan</strong><br>
+                        Run Tests
+                    </div>
+                    <div class="arrow">→</div>
+                    <div class="process-step">
+                        <strong>Analyze</strong><br>
+                        Prioritize
+                    </div>
+                    <div class="arrow">→</div>
+                    <div class="process-step">
+                        <strong>Remediate</strong><br>
+                        Fix Issues
+                    </div>
+                    <div class="arrow">→</div>
+                    <div class="process-step">
+                        <strong>Validate</strong><br>
+                        Verify Fixed
+                    </div>
+                </div>
+
+                <h3>Scan Target Factors</h3>
+                <ul>
+                    <li>Data classification level</li>
+                    <li>Internet/public exposure</li>
+                    <li>Services offered</li>
+                    <li>System type (prod/test/dev)</li>
+                </ul>
+
+                <h3>Scan Frequency Factors</h3>
+                <ul>
+                    <li>Risk appetite</li>
+                    <li>Regulatory requirements</li>
+                    <li>Technical constraints</li>
+                    <li>Business constraints</li>
+                    <li>Licensing limitations</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>CVSS Severity Scale</h2>
+                <table>
+                    <tr>
+                        <th>Score</th>
+                        <th>Rating</th>
+                        <th>Color</th>
+                    </tr>
+                    <tr style="background-color: #f8f9fa;">
+                        <td>0.0</td>
+                        <td>None</td>
+                        <td>White</td>
+                    </tr>
+                    <tr style="background-color: #d4edda;">
+                        <td>0.1-3.9</td>
+                        <td>Low</td>
+                        <td>Green</td>
+                    </tr>
+                    <tr style="background-color: #fff3cd;">
+                        <td>4.0-6.9</td>
+                        <td>Medium</td>
+                        <td>Yellow</td>
+                    </tr>
+                    <tr style="background-color: #f8d7da;">
+                        <td>7.0-8.9</td>
+                        <td>High</td>
+                        <td>Orange</td>
+                    </tr>
+                    <tr style="background-color: #d1ecf1;">
+                        <td>9.0-10.0</td>
+                        <td>Critical</td>
+                        <td>Red</td>
+                    </tr>
+                </table>
+
+                <div class="exam-tip">
+                    MEMORIZE: CVSS severity scale is a frequent exam topic!
+                </div>
+            </div>
+        </div>
+
+        <h2>CVSS v3.1 Metrics</h2>
+        <div class="three-column">
+            <div>
+                <h3>Exploitability Metrics</h3>
+                <table>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Values</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Attack Vector (AV)</strong></td>
+                        <td>Physical(P), Local(L), Adjacent(A), Network(N)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Attack Complexity (AC)</strong></td>
+                        <td>High(H), Low(L)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Privileges Required (PR)</strong></td>
+                        <td>High(H), Low(L), None(N)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>User Interaction (UI)</strong></td>
+                        <td>None(N), Required(R)</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h3>Impact Metrics</h3>
+                <table>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Values</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Confidentiality (C)</strong></td>
+                        <td>None(N), Low(L), High(H)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Integrity (I)</strong></td>
+                        <td>None(N), Low(L), High(H)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Availability (A)</strong></td>
+                        <td>None(N), Low(L), High(H)</td>
+                    </tr>
+                </table>
+                <h3>Scope Metric</h3>
+                <table>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Values</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Scope (S)</strong></td>
+                        <td>Unchanged(U), Changed(C)</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h3>Sample CVSS Vector</h3>
+                <div class="formula-box">
+                    CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+                </div>
+                <h3>SCAP Components</h3>
+                <ul>
+                    <li><strong>CCE:</strong> Configuration issues</li>
+                    <li><strong>CPE:</strong> Product names/versions</li>
+                    <li><strong>CVE:</strong> Vulnerability naming</li>
+                    <li><strong>CVSS:</strong> Vulnerability scoring</li>
+                    <li><strong>XCCDF:</strong> Checklist format</li>
+                    <li><strong>OVAL:</strong> Testing procedures</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="two-column">
+            <div>
+                <h2>Penetration Testing</h2>
+                
+                <h3>Test Categories</h3>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Focus</th>
+                    </tr>
+                    <tr>
+                        <td>Physical</td>
+                        <td>Physical security controls</td>
+                    </tr>
+                    <tr>
+                        <td>Offensive</td>
+                        <td>Exploit vulnerabilities</td>
+                    </tr>
+                    <tr>
+                        <td>Defensive</td>
+                        <td>Evaluate defense capability</td>
+                    </tr>
+                    <tr>
+                        <td>Integrated</td>
+                        <td>Combined approach</td>
+                    </tr>
+                </table>
+
+                <h3>Knowledge Classifications</h3>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Information</th>
+                    </tr>
+                    <tr>
+                        <td>Known Environment</td>
+                        <td>Full system details</td>
+                    </tr>
+                    <tr>
+                        <td>Unknown Environment</td>
+                        <td>No information</td>
+                    </tr>
+                    <tr>
+                        <td>Partially Known</td>
+                        <td>Limited information</td>
+                    </tr>
+                </table>
+
+                <h3>Penetration Testing Process</h3>
+                <ol>
+                    <li><strong>Reconnaissance:</strong> Information gathering</li>
+                    <li><strong>Initial Access:</strong> Exploit vulnerabilities</li>
+                    <li><strong>Privilege Escalation:</strong> Increase access</li>
+                    <li><strong>Lateral Movement:</strong> Expand to other systems</li>
+                    <li><strong>Persistence:</strong> Maintain access</li>
+                    <li><strong>Cleanup:</strong> Remove tools/traces</li>
+                </ol>
+            </div>
+
+            <div>
+                <h2>Reconnaissance Types</h2>
+                
+                <h3>Passive Reconnaissance</h3>
+                <div class="key-terms">
+                    <strong>No direct target engagement</strong>
+                </div>
+                <ul>
+                    <li>WHOIS lookups</li>
+                    <li>DNS queries</li>
+                    <li>Web searches</li>
+                    <li>Public website reviews</li>
+                    <li>OSINT (Open Source Intelligence)</li>
+                </ul>
+
+                <h3>Active Reconnaissance</h3>
+                <div class="key-terms">
+                    <strong>Direct target engagement</strong>
+                </div>
+                <ul>
+                    <li>Port scanning</li>
+                    <li>Footprinting</li>
+                    <li>Vulnerability scanning</li>
+                    <li>War driving/War flying</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="two-column">
+            <div>
+                <h2>Vulnerability Scanning</h2>
+                
+                <h3>Scan Types</h3>
+                <table>
+                    <tr>
+                        <th>Scan Type</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Credentialed</td>
+                        <td>Uses provided credentials (read-only recommended)</td>
+                    </tr>
+                    <tr>
+                        <td>Non-credentialed</td>
+                        <td>External view without system access</td>
+                    </tr>
+                    <tr>
+                        <td>Agent-based</td>
+                        <td>Software agents on target systems</td>
+                    </tr>
+                    <tr>
+                        <td>Server-based</td>
+                        <td>Traditional network scanning</td>
+                    </tr>
+                </table>
+
+                <h3>Scan Perspectives</h3>
+                <ul>
+                    <li><strong>External:</strong> Internet/attacker view</li>
+                    <li><strong>Internal:</strong> Corporate network view</li>
+                    <li><strong>Datacenter:</strong> Most accurate view</li>
+                </ul>
+
+                <h3>Popular Scanning Tools</h3>
+                <div class="compact-list">
+                    <li>Tenable Nessus</li>
+                    <li>Qualys</li>
+                    <li>Rapid7 Nexpose</li>
+                    <li>OpenVAS (free)</li>
+                    <li>Nikto (web apps)</li>
+                    <li>Arachni (web apps)</li>
+                </div>
+            </div>
+
+            <div>
+                <h2>Common Vulnerabilities</h2>
+                
+                <h3>Patch Management Issues</h3>
+                <ul>
+                    <li>Missing security patches</li>
+                    <li>Outdated operating systems</li>
+                    <li>Legacy platforms (unsupported)</li>
+                    <li>Application vulnerabilities</li>
+                </ul>
+
+                <h3>Weak Configurations</h3>
+                <ul>
+                    <li>Default settings/credentials</li>
+                    <li>Open permissions</li>
+                    <li>Unnecessary services/ports</li>
+                    <li>Debug mode enabled</li>
+                    <li>Weak encryption settings</li>
+                    <li>Insecure protocols (FTP, Telnet)</li>
+                </ul>
+
+                <h3>Application Testing Methods</h3>
+                <table>
+                    <tr>
+                        <th>Method</th>
+                        <th>Approach</th>
+                    </tr>
+                    <tr>
+                        <td>Static</td>
+                        <td>Code analysis without execution</td>
+                    </tr>
+                    <tr>
+                        <td>Dynamic</td>
+                        <td>Runtime testing with inputs</td>
+                    </tr>
+                    <tr>
+                        <td>Interactive</td>
+                        <td>Combined static + dynamic</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <h2>Audits and Assessments</h2>
+        <div class="three-column">
+            <div>
+                <h3>Security Tests</h3>
+                <ul>
+                    <li><strong>Purpose:</strong> Verify control functioning</li>
+                    <li><strong>Performer:</strong> Internal teams</li>
+                    <li><strong>Frequency:</strong> Regular/automated</li>
+                    <li><strong>Scope:</strong> Specific controls</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Security Assessments</h3>
+                <ul>
+                    <li><strong>Purpose:</strong> Comprehensive review</li>
+                    <li><strong>Performer:</strong> Internal or external</li>
+                    <li><strong>Output:</strong> Risk assessment report</li>
+                    <li><strong>Audience:</strong> Management</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Security Audits</h3>
+                <ul>
+                    <li><strong>Purpose:</strong> Independent evaluation</li>
+                    <li><strong>Performer:</strong> Independent auditors</li>
+                    <li><strong>Output:</strong> Attestation</li>
+                    <li><strong>Audience:</strong> Third parties</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="two-column">
+            <div>
+                <h3>Audit Types</h3>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Characteristics</th>
+                    </tr>
+                    <tr>
+                        <td>Internal</td>
+                        <td>Internal audit staff, independent reporting</td>
+                    </tr>
+                    <tr>
+                        <td>External</td>
+                        <td>Independent firm, high credibility</td>
+                    </tr>
+                    <tr>
+                        <td>Third-party</td>
+                        <td>Initiated by regulators/customers</td>
+                    </tr>
+                </table>
+
+                <h3>Big Four Audit Firms</h3>
+                <ul>
+                    <li>Ernst & Young</li>
+                    <li>Deloitte</li>
+                    <li>PricewaterhouseCoopers (PwC)</li>
+                    <li>KPMG</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Responsible Disclosure</h3>
+                <div class="key-terms">
+                    <strong>Bug Bounty Programs</strong> - Financial incentives for external security researchers to discover and report vulnerabilities
+                </div>
+
+                <h3>Threat Hunting</h3>
+                <div class="key-terms">
+                    <strong>Presumption of Compromise</strong> - Assumes organization is already compromised and searches for evidence
+                </div>
+                <ul>
+                    <li>Intelligence fusion</li>
+                    <li>Threat feeds analysis</li>
+                    <li>Indicator search</li>
+                    <li>Attack artifact detection</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Key Acronyms & Terms</h2>
+        <div class="three-column">
+            <div>
+                <h3>SCAP Framework</h3>
+                <ul>
+                    <li><strong>CCE:</strong> Common Configuration Enumeration</li>
+                    <li><strong>CPE:</strong> Common Platform Enumeration</li>
+                    <li><strong>CVE:</strong> Common Vulnerabilities and Exposures</li>
+                    <li><strong>CVSS:</strong> Common Vulnerability Scoring System</li>
+                    <li><strong>XCCDF:</strong> Extensible Configuration Checklist Description Format</li>
+                    <li><strong>OVAL:</strong> Open Vulnerability and Assessment Language</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Testing Concepts</h3>
+                <ul>
+                    <li><strong>False Positive:</strong> Scanner reports non-existent vulnerability</li>
+                    <li><strong>False Negative:</strong> Scanner misses actual vulnerability</li>
+                    <li><strong>RoE:</strong> Rules of Engagement</li>
+                    <li><strong>OSINT:</strong> Open Source Intelligence</li>
+                    <li><strong>SOC:</strong> Service Organization Controls</li>
+                    <li><strong>SSAE 18:</strong> Attestation standard</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Penetration Testing</h3>
+                <ul>
+                    <li><strong>Lateral Movement:</strong> Spread to other systems</li>
+                    <li><strong>Privilege Escalation:</strong> Increase access level</li>
+                    <li><strong>Persistence:</strong> Maintain access</li>
+                    <li><strong>Footprinting:</strong> OS/service identification</li>
+                    <li><strong>War Driving:</strong> Wireless network reconnaissance</li>
+                    <li><strong>Pivoting:</strong> Using compromised system as attack platform</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Vulnerability Life Cycle</h2>
+        <div class="process-flow">
+            <div class="process-step">
+                <strong>1. Identification</strong><br>
+                Scans, tests, disclosure
+            </div>
+            <div class="arrow">→</div>
+            <div class="process-step">
+                <strong>2. Analysis</strong><br>
+                Confirm, prioritize, CVSS
+            </div>
+            <div class="arrow">→</div>
+            <div class="process-step">
+                <strong>3. Response</strong><br>
+                Patch, segment, controls
+            </div>
+            <div class="arrow">→</div>
+            <div class="process-step">
+                <strong>4. Validation</strong><br>
+                Rescan, audit, verify
+            </div>
+            <div class="arrow">→</div>
+            <div class="process-step">
+                <strong>5. Reporting</strong><br>
+                Document, communicate
+            </div>
+        </div>
+
+        <div class="two-column">
+            <div>
+                <h3>Vulnerability Response Options</h3>
+                <ul>
+                    <li><strong>Patching:</strong> Apply vendor fixes</li>
+                    <li><strong>Segmentation:</strong> Isolate affected systems</li>
+                    <li><strong>Compensating Controls:</strong> Alternative protections</li>
+                    <li><strong>Insurance:</strong> Transfer financial risk</li>
+                    <li><strong>Exceptions/Exemptions:</strong> Formal risk acceptance</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Validation Methods</h3>
+                <ul>
+                    <li><strong>Rescanning:</strong> Verify vulnerability resolution</li>
+                    <li><strong>Audit:</strong> Independent verification</li>
+                    <li><strong>Verification:</strong> Manual confirmation</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="exam-tip">
+            <strong>Critical Exam Topics:</strong>
+            • CVSS severity scale (0.0=None, 0.1-3.9=Low, 4.0-6.9=Medium, 7.0-8.9=High, 9.0-10.0=Critical)
+            • False positive vs false negative concepts
+            • Passive vs active reconnaissance techniques
+            • Penetration testing categories and knowledge classifications
+            • Credentialed vs non-credentialed scanning differences
+            • Vulnerability life cycle stages
+            • SCAP components (CVE, CVSS, CPE, CCE, XCCDF, OVAL)
+        </div>
+    </div>
+</body>
+</html>
