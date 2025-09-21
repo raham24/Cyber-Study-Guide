@@ -4,221 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 5: Security Assessment and Testing - Review Questions</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2c3e50;
-            border-bottom: 3px solid #e74c3c;
-            padding-bottom: 10px;
-            text-align: center;
-        }
-        h2 {
-            color: #c0392b;
-            background-color: #fadbd8;
-            padding: 12px;
-            border-left: 5px solid #e74c3c;
-            margin-top: 25px;
-        }
-        .instructions {
-            background-color: #eef7ff;
-            border: 2px solid #4169e1;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-        }
-        .question {
-            background-color: #f8f9fa;
-            border-left: 5px solid #6c757d;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 5px;
-        }
-        .question-number {
-            font-weight: bold;
-            color: #495057;
-            font-size: 1.1em;
-        }
-        .question-text {
-            margin: 10px 0;
-            font-weight: 500;
-        }
-        .options {
-            margin-left: 20px;
-        }
-        .option {
-            margin: 8px 0;
-            padding: 5px;
-        }
-        .special-note {
-            background-color: #fff3cd;
-            border: 1px solid #ffeaa7;
-            border-left: 5px solid #fdcb6e;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        .answer-sheet {
-            background-color: #e8f5e8;
-            border: 2px solid #28a745;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 8px;
-        }
-        .answer-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 15px;
-            margin-top: 15px;
-        }
-        .answer-item {
-            text-align: center;
-            padding: 10px;
-            background-color: white;
-            border: 1px solid #28a745;
-            border-radius: 5px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #e74c3c;
-            color: white;
-            font-weight: bold;
-        }
-        .vulnerability-image {
-            background-color: #f8f9fa;
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 5px;
-            font-family: monospace;
-            font-size: 0.9em;
-            white-space: pre-line;
-        }
-        @media print {
-            body { background-color: white; }
-            .container { box-shadow: none; }
-        }
-    </style>
+    <link rel="stylesheet" href="../cyber-guide-global.css">
+    <script src="../cyber-guide-global.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>CompTIA Security+ SY0-701<br>Chapter 5: Security Assessment and Testing<br>Review Questions</h1>
+    <div class="header">
+        <h1>Chapter 5: Security Assessment and Testing</h1>
+        <p><strong>CompTIA Security+ SY0-701</strong></p>
+        <p>Review Questions</p>
+    </div>
 
-        <div class="instructions">
-            <h2>Instructions</h2>
-            <ul>
-                <li><strong>Questions:</strong> 20 multiple-choice questions</li>
-                <li><strong>Time Limit:</strong> 30 minutes (recommended)</li>
-                <li><strong>Format:</strong> Choose the BEST answer for each question</li>
-                <li><strong>Special Notes:</strong> Pay attention to questions with "NOT" or "EXCEPT" - these are highlighted</li>
-                <li><strong>Answer Sheet:</strong> Use the answer grid at the bottom of this document</li>
-            </ul>
-        </div>
+    <div class="instructions">
+        <h2>Instructions</h2>
+        <ul>
+            <li>This assessment contains <strong>20 multiple-choice questions</strong></li>
+            <li>Each question has <strong>four possible answers (A, B, C, D)</strong></li>
+            <li>Select the <strong>best answer</strong> for each question</li>
+            <li>Pay special attention to questions with <strong>"NOT"</strong> or <strong>"EXCEPT"</strong> qualifiers</li>
+            <li>Use the answer sheet at the end to record your responses</li>
+            <li>Review your answers before submission</li>
+        </ul>
+    </div>
 
-        <div class="question">
-            <div class="question-number">Question 1</div>
-            <div class="question-text">Which one of the following security assessment techniques assumes that an organization has already been compromised and searches for evidence of that compromise?</div>
+    <div class="section">
+        <!-- Question 1 -->
+        <div class="question-block">
+            <span class="question-number">1</span>
+            <div class="question-text">
+                Which one of the following security assessment techniques assumes that an organization has already been compromised and searches for evidence of that compromise?
+            </div>
             <div class="options">
-                <div class="option">A. Vulnerability scanning</div>
-                <div class="option">B. Penetration testing</div>
-                <div class="option">C. Threat hunting</div>
-                <div class="option">D. War driving</div>
+                <label class="option"><input type="radio" name="q1" value="A"> <span class="option-letter">A.</span> Vulnerability scanning</label>
+                <label class="option"><input type="radio" name="q1" value="B"> <span class="option-letter">B.</span> Penetration testing</label>
+                <label class="option"><input type="radio" name="q1" value="C"> <span class="option-letter">C.</span> Threat hunting</label>
+                <label class="option"><input type="radio" name="q1" value="D"> <span class="option-letter">D.</span> War driving</label>
             </div>
         </div>
-
-        <div class="question">
-            <div class="question-number">Question 2</div>
-            <div class="question-text">Renee is configuring her vulnerability management solution to perform credentialed scans of servers on her network. What type of account should she provide to the scanner?</div>
+        <!-- Question 2 -->
+        <div class="question-block">
+            <span class="question-number">2</span>
+            <div class="question-text">
+                Renee is configuring her vulnerability management solution to perform credentialed scans of servers on her network. What type of account should she provide to the scanner?
+            </div>
             <div class="options">
-                <div class="option">A. Domain administrator</div>
-                <div class="option">B. Local administrator</div>
-                <div class="option">C. Root</div>
-                <div class="option">D. Read-only</div>
+                <label class="option"><input type="radio" name="q2" value="A"> <span class="option-letter">A.</span> Domain administrator</label>
+                <label class="option"><input type="radio" name="q2" value="B"> <span class="option-letter">B.</span> Local administrator</label>
+                <label class="option"><input type="radio" name="q2" value="C"> <span class="option-letter">C.</span> Root</label>
+                <label class="option"><input type="radio" name="q2" value="D"> <span class="option-letter">D.</span> Read-only</label>
             </div>
         </div>
-
-        <div class="question">
-            <div class="question-number">Question 3</div>
-            <div class="question-text">Ryan is planning to conduct a vulnerability scan of a business-critical system using dangerous plug-ins. What would be the best approach for the initial scan?</div>
+        <!-- Question 3 -->
+        <div class="question-block">
+            <span class="question-number">3</span>
+            <div class="question-text">
+                Ryan is planning to conduct a vulnerability scan of a business-critical system using dangerous plug-ins. What would be the best approach for the initial scan?
+            </div>
             <div class="options">
-                <div class="option">A. Run the scan against production systems to achieve the most realistic results possible.</div>
-                <div class="option">B. Run the scan during business hours.</div>
-                <div class="option">C. Run the scan in a test environment.</div>
-                <div class="option">D. Do not run the scan to avoid disrupting the business.</div>
+                <label class="option"><input type="radio" name="q3" value="A"> <span class="option-letter">A.</span> Run the scan against production systems to achieve the most realistic results possible.</label>
+                <label class="option"><input type="radio" name="q3" value="B"> <span class="option-letter">B.</span> Run the scan during business hours.</label>
+                <label class="option"><input type="radio" name="q3" value="C"> <span class="option-letter">C.</span> Run the scan in a test environment.</label>
+                <label class="option"><input type="radio" name="q3" value="D"> <span class="option-letter">D.</span> Do not run the scan to avoid disrupting the business.</label>
             </div>
         </div>
-
-        <div class="question">
-            <div class="question-number">Question 4</div>
-            <div class="question-text">Which one of the following values for the CVSS attack complexity metric would indicate that the specified attack is simplest to exploit?</div>
+        <!-- Question 4 -->
+        <div class="question-block">
+            <span class="question-number">4</span>
+            <div class="question-text">
+                Which one of the following values for the CVSS attack complexity metric would indicate that the specified attack is simplest to exploit?
+            </div>
             <div class="options">
-                <div class="option">A. High</div>
-                <div class="option">B. Medium</div>
-                <div class="option">C. Low</div>
-                <div class="option">D. Severe</div>
+                <label class="option"><input type="radio" name="q4" value="A"> <span class="option-letter">A.</span> High</label>
+                <label class="option"><input type="radio" name="q4" value="B"> <span class="option-letter">B.</span> Medium</label>
+                <label class="option"><input type="radio" name="q4" value="C"> <span class="option-letter">C.</span> Low</label>
+                <label class="option"><input type="radio" name="q4" value="D"> <span class="option-letter">D.</span> Severe</label>
             </div>
         </div>
-
-        <div class="question">
-            <div class="question-number">Question 5</div>
-            <div class="question-text">Tara recently analyzed the results of a vulnerability scan report and found that a vulnerability reported by the scanner did not exist because the system was actually patched as specified. What type of error occurred?</div>
+        <!-- Question 5 -->
+        <div class="question-block">
+            <span class="question-number">5</span>
+            <div class="question-text">
+                Tara recently analyzed the results of a vulnerability scan report and found that a vulnerability reported by the scanner did not exist because the system was actually patched as specified. What type of error occurred?
+            </div>
             <div class="options">
-                <div class="option">A. False positive</div>
-                <div class="option">B. False negative</div>
-                <div class="option">C. True positive</div>
-                <div class="option">D. True negative</div>
+                <label class="option"><input type="radio" name="q5" value="A"> <span class="option-letter">A.</span> False positive</label>
+                <label class="option"><input type="radio" name="q5" value="B"> <span class="option-letter">B.</span> False negative</label>
+                <label class="option"><input type="radio" name="q5" value="C"> <span class="option-letter">C.</span> True positive</label>
+                <label class="option"><input type="radio" name="q5" value="D"> <span class="option-letter">D.</span> True negative</label>
             </div>
         </div>
-
-        <div class="question">
-            <div class="question-number">Question 6</div>
-            <div class="question-text">Brian ran a penetration test against a school's grading system and discovered a flaw that would allow students to alter their grades by exploiting a SQL injection vulnerability. What type of control should he recommend to the school's cybersecurity team to prevent students from engaging in this type of activity?</div>
+        <!-- Question 6 -->
+        <div class="question-block">
+            <span class="question-number">6</span>
+            <div class="question-text">
+                Brian ran a penetration test against a school's grading system and discovered a flaw that would allow students to alter their grades by exploiting a SQL injection vulnerability. What type of control should he recommend to the school's cybersecurity team to prevent students from engaging in this type of activity?
+            </div>
             <div class="options">
-                <div class="option">A. Confidentiality</div>
-                <div class="option">B. Integrity</div>
-                <div class="option">C. Alteration</div>
-                <div class="option">D. Availability</div>
+                <label class="option"><input type="radio" name="q6" value="A"> <span class="option-letter">A.</span> Confidentiality</label>
+                <label class="option"><input type="radio" name="q6" value="B"> <span class="option-letter">B.</span> Integrity</label>
+                <label class="option"><input type="radio" name="q6" value="C"> <span class="option-letter">C.</span> Alteration</label>
+                <label class="option"><input type="radio" name="q6" value="D"> <span class="option-letter">D.</span> Availability</label>
             </div>
         </div>
-
-        <div class="question">
-            <div class="question-number">Question 7</div>
-            <div class="question-text">Which one of the following security assessment tools is least likely to be used during the reconnaissance phase of a penetration test?</div>
+        <!-- Question 7 -->
+        <div class="question-block">
+            <span class="question-number">7</span>
+            <div class="question-text">
+                Which one of the following security assessment tools is least likely to be used during the reconnaissance phase of a penetration test?
+            </div>
             <div class="options">
-                <div class="option">A. Nmap</div>
-                <div class="option">B. Nessus</div>
-                <div class="option">C. Metasploit</div>
-                <div class="option">D. Nslookup</div>
+                <label class="option"><input type="radio" name="q7" value="A"> <span class="option-letter">A.</span> Nmap</label>
+                <label class="option"><input type="radio" name="q7" value="B"> <span class="option-letter">B.</span> Nessus</label>
+                <label class="option"><input type="radio" name="q7" value="C"> <span class="option-letter">C.</span> Metasploit</label>
+                <label class="option"><input type="radio" name="q7" value="D"> <span class="option-letter">D.</span> Nslookup</label>
             </div>
         </div>
-
-        <div class="question">
-            <div class="question-number">Question 8</div>
-            <div class="question-text">During a vulnerability scan, Brian discovered that a system on his network contained this vulnerability:</div>
-            <div class="vulnerability-image">THREAT:
+        <!-- Question 8 -->
+        <div class="question-block">
+            <span class="question-number">8</span>
+            <div class="question-text">
+                During a vulnerability scan, Brian discovered that a system on his network contained this vulnerability:
+            </div>
+            <div class="vulnerability-image" style="background-color:#f8f9fa; border:1px solid #ddd; padding:15px; margin:15px 0; border-radius:5px; font-family:monospace; font-size:0.9em; white-space:pre-line;">
+THREAT:
 Microsoft Server Message Block (SMB) Protocol is a Microsoft network file sharing protocol used in Microsoft Windows.
 The Microsoft SMB Server is vulnerable to multiple remote code execution vulnerabilities due to the way that the Microsoft
 Server Message Block 1.0 (SMBv1) server handles certain requests.
@@ -233,238 +140,180 @@ A remote attacker could gain the ability to execute code by sending crafted mess
 SOLUTION:
 Customers are advised to refer to Microsoft Advisory MS17-010 for more details.
 Patch:
-Following are links for downloading patches to fix the vulnerabilities:</div>
+Following are links for downloading patches to fix the vulnerabilities:
+            </div>
             <div class="question-text">What security control, if deployed, would likely have addressed this issue?</div>
             <div class="options">
-                <div class="option">A. Patch management</div>
-                <div class="option">B. File integrity monitoring</div>
-                <div class="option">C. Intrusion detection</div>
-                <div class="option">D. Threat hunting</div>
+                <label class="option"><input type="radio" name="q8" value="A"> <span class="option-letter">A.</span> Patch management</label>
+                <label class="option"><input type="radio" name="q8" value="B"> <span class="option-letter">B.</span> File integrity monitoring</label>
+                <label class="option"><input type="radio" name="q8" value="C"> <span class="option-letter">C.</span> Intrusion detection</label>
+                <label class="option"><input type="radio" name="q8" value="D"> <span class="option-letter">D.</span> Threat hunting</label>
             </div>
         </div>
-
-        <div class="question">
-            <div class="question-number">Question 9</div>
-            <div class="question-text">Which one of the following tools is most likely to detect an XSS vulnerability?</div>
+        <!-- Question 9 -->
+        <div class="question-block">
+            <span class="question-number">9</span>
+            <div class="question-text">
+                Which one of the following tools is most likely to detect an XSS vulnerability?
+            </div>
             <div class="options">
-                <div class="option">A. Static application test</div>
-                <div class="option">B. Web application vulnerability scanner</div>
-                <div class="option">C. Intrusion detection system</div>
-                <div class="option">D. Network vulnerability scanner</div>
+                <label class="option"><input type="radio" name="q9" value="A"> <span class="option-letter">A.</span> Static application test</label>
+                <label class="option"><input type="radio" name="q9" value="B"> <span class="option-letter">B.</span> Web application vulnerability scanner</label>
+                <label class="option"><input type="radio" name="q9" value="C"> <span class="option-letter">C.</span> Intrusion detection system</label>
+                <label class="option"><input type="radio" name="q9" value="D"> <span class="option-letter">D.</span> Network vulnerability scanner</label>
             </div>
         </div>
-
-        <div class="question">
-            <div class="question-number">Question 10</div>
-            <div class="question-text">During a penetration test, Patrick deploys a toolkit on a compromised system and uses it to gain access to other systems on the same network. What term best describes this activity?</div>
+        <!-- Question 10 -->
+        <div class="question-block">
+            <span class="question-number">10</span>
+            <div class="question-text">
+                During a penetration test, Patrick deploys a toolkit on a compromised system and uses it to gain access to other systems on the same network. What term best describes this activity?
+            </div>
             <div class="options">
-                <div class="option">A. Lateral movement</div>
-                <div class="option">B. Privilege escalation</div>
-                <div class="option">C. Footprinting</div>
-                <div class="option">D. OSINT</div>
+                <label class="option"><input type="radio" name="q10" value="A"> <span class="option-letter">A.</span> Lateral movement</label>
+                <label class="option"><input type="radio" name="q10" value="B"> <span class="option-letter">B.</span> Privilege escalation</label>
+                <label class="option"><input type="radio" name="q10" value="C"> <span class="option-letter">C.</span> Footprinting</label>
+                <label class="option"><input type="radio" name="q10" value="D"> <span class="option-letter">D.</span> OSINT</label>
             </div>
         </div>
-
-        <div class="question">
-            <div class="question-number">Question 11</div>
-            <div class="question-text">Zian is a cybersecurity leader who is coordinating the activities of a security audit. The audit is being done to validate the organization's financial statements to investors and involves a review of cybersecurity controls. What term best describes this audit?</div>
+        <!-- Question 11 -->
+        <div class="question-block">
+            <span class="question-number">11</span>
+            <div class="question-text">
+                Zian is a cybersecurity leader who is coordinating the activities of a security audit. The audit is being done to validate the organization's financial statements to investors and involves a review of cybersecurity controls. What term best describes this audit?
+            </div>
             <div class="options">
-                <div class="option">A. External audit</div>
-                <div class="option">B. Penetration test</div>
-                <div class="option">C. Internal audit</div>
-                <div class="option">D. Informal audit</div>
+                <label class="option"><input type="radio" name="q11" value="A"> <span class="option-letter">A.</span> External audit</label>
+                <label class="option"><input type="radio" name="q11" value="B"> <span class="option-letter">B.</span> Penetration test</label>
+                <label class="option"><input type="radio" name="q11" value="C"> <span class="option-letter">C.</span> Internal audit</label>
+                <label class="option"><input type="radio" name="q11" value="D"> <span class="option-letter">D.</span> Informal audit</label>
             </div>
         </div>
-
-        <div class="question">
-            <div class="question-number">Question 12</div>
-            <div class="question-text">Which one of the following assessment techniques is designed to solicit participation from external security experts and reward them for discovering vulnerabilities?</div>
+        <!-- Question 12 -->
+        <div class="question-block">
+            <span class="question-number">12</span>
+            <div class="question-text">
+                Which one of the following assessment techniques is designed to solicit participation from external security experts and reward them for discovering vulnerabilities?
+            </div>
             <div class="options">
-                <div class="option">A. Threat hunting</div>
-                <div class="option">B. Penetration testing</div>
-                <div class="option">C. Bug bounty</div>
-                <div class="option">D. Vulnerability scanning</div>
+                <label class="option"><input type="radio" name="q12" value="A"> <span class="option-letter">A.</span> Threat hunting</label>
+                <label class="option"><input type="radio" name="q12" value="B"> <span class="option-letter">B.</span> Penetration testing</label>
+                <label class="option"><input type="radio" name="q12" value="C"> <span class="option-letter">C.</span> Bug bounty</label>
+                <label class="option"><input type="radio" name="q12" value="D"> <span class="option-letter">D.</span> Vulnerability scanning</label>
             </div>
         </div>
-
-        <div class="question">
-            <div class="question-number">Question 13</div>
-            <div class="question-text">Kyle is conducting a penetration test. After gaining access to an organization's database server, he installs a backdoor on the server to grant himself access in the future. What term best describes this action?</div>
+        <!-- Question 13 -->
+        <div class="question-block">
+            <span class="question-number">13</span>
+            <div class="question-text">
+                Kyle is conducting a penetration test. After gaining access to an organization's database server, he installs a backdoor on the server to grant himself access in the future. What term best describes this action?
+            </div>
             <div class="options">
-                <div class="option">A. Privilege escalation</div>
-                <div class="option">B. Lateral movement</div>
-                <div class="option">C. Maneuver</div>
-                <div class="option">D. Persistence</div>
+                <label class="option"><input type="radio" name="q13" value="A"> <span class="option-letter">A.</span> Privilege escalation</label>
+                <label class="option"><input type="radio" name="q13" value="B"> <span class="option-letter">B.</span> Lateral movement</label>
+                <label class="option"><input type="radio" name="q13" value="C"> <span class="option-letter">C.</span> Maneuver</label>
+                <label class="option"><input type="radio" name="q13" value="D"> <span class="option-letter">D.</span> Persistence</label>
             </div>
         </div>
-
-        <div class="question">
-            <div class="question-number">Question 14</div>
-            <div class="question-text">Which one of the following techniques would be considered passive reconnaissance?</div>
+        <!-- Question 14 -->
+        <div class="question-block">
+            <span class="question-number">14</span>
+            <div class="question-text">
+                Which one of the following techniques would be considered passive reconnaissance?
+            </div>
             <div class="options">
-                <div class="option">A. Port scans</div>
-                <div class="option">B. Vulnerability scans</div>
-                <div class="option">C. WHOIS lookups</div>
-                <div class="option">D. Footprinting</div>
+                <label class="option"><input type="radio" name="q14" value="A"> <span class="option-letter">A.</span> Port scans</label>
+                <label class="option"><input type="radio" name="q14" value="B"> <span class="option-letter">B.</span> Vulnerability scans</label>
+                <label class="option"><input type="radio" name="q14" value="C"> <span class="option-letter">C.</span> WHOIS lookups</label>
+                <label class="option"><input type="radio" name="q14" value="D"> <span class="option-letter">D.</span> Footprinting</label>
             </div>
         </div>
-
-        <div class="question">
-            <div class="question-number">Question 15</div>
-            <div class="question-text">Which element of the SCAP framework can be used to consistently describe vulnerabilities?</div>
+        <!-- Question 15 -->
+        <div class="question-block">
+            <span class="question-number">15</span>
+            <div class="question-text">
+                Which element of the SCAP framework can be used to consistently describe vulnerabilities?
+            </div>
             <div class="options">
-                <div class="option">A. CPE</div>
-                <div class="option">B. CVE</div>
-                <div class="option">C. CVSS</div>
-                <div class="option">D. CCE</div>
+                <label class="option"><input type="radio" name="q15" value="A"> <span class="option-letter">A.</span> CPE</label>
+                <label class="option"><input type="radio" name="q15" value="B"> <span class="option-letter">B.</span> CVE</label>
+                <label class="option"><input type="radio" name="q15" value="C"> <span class="option-letter">C.</span> CVSS</label>
+                <label class="option"><input type="radio" name="q15" value="D"> <span class="option-letter">D.</span> CCE</label>
             </div>
         </div>
-
-        <div class="question">
-            <div class="question-number">Question 16</div>
-            <div class="question-text">Bruce is conducting a penetration test for a client. The client provided him with full details of their systems in advance. What type of test is Bruce conducting?</div>
+        <!-- Question 16 -->
+        <div class="question-block">
+            <span class="question-number">16</span>
+            <div class="question-text">
+                Bruce is conducting a penetration test for a client. The client provided him with full details of their systems in advance. What type of test is Bruce conducting?
+            </div>
             <div class="options">
-                <div class="option">A. Partially known environment test</div>
-                <div class="option">B. Detailed environment test</div>
-                <div class="option">C. Known environment test</div>
-                <div class="option">D. Unknown environment test</div>
+                <label class="option"><input type="radio" name="q16" value="A"> <span class="option-letter">A.</span> Partially known environment test</label>
+                <label class="option"><input type="radio" name="q16" value="B"> <span class="option-letter">B.</span> Detailed environment test</label>
+                <label class="option"><input type="radio" name="q16" value="C"> <span class="option-letter">C.</span> Known environment test</label>
+                <label class="option"><input type="radio" name="q16" value="D"> <span class="option-letter">D.</span> Unknown environment test</label>
             </div>
         </div>
-
-        <div class="question">
-            <div class="question-number">Question 17</div>
-            <div class="question-text">Lila is working on a penetration testing team and she is unsure whether she is allowed to conduct social engineering as part of the test. What document should she consult to find this information?</div>
+        <!-- Question 17 -->
+        <div class="question-block">
+            <span class="question-number">17</span>
+            <div class="question-text">
+                Lila is working on a penetration testing team and she is unsure whether she is allowed to conduct social engineering as part of the test. What document should she consult to find this information?
+            </div>
             <div class="options">
-                <div class="option">A. Contract</div>
-                <div class="option">B. Statement of work</div>
-                <div class="option">C. Rules of engagement</div>
-                <div class="option">D. Lessons learned report</div>
+                <label class="option"><input type="radio" name="q17" value="A"> <span class="option-letter">A.</span> Contract</label>
+                <label class="option"><input type="radio" name="q17" value="B"> <span class="option-letter">B.</span> Statement of work</label>
+                <label class="option"><input type="radio" name="q17" value="C"> <span class="option-letter">C.</span> Rules of engagement</label>
+                <label class="option"><input type="radio" name="q17" value="D"> <span class="option-letter">D.</span> Lessons learned report</label>
             </div>
         </div>
-
-        <div class="question">
-            <div class="question-number">Question 18</div>
-            <div class="question-text">Grace would like to determine the operating system running on a system that she is targeting in a penetration test. Which one of the following techniques will most directly provide her with this information?</div>
+        <!-- Question 18 -->
+        <div class="question-block">
+            <span class="question-number">18</span>
+            <div class="question-text">
+                Grace would like to determine the operating system running on a system that she is targeting in a penetration test. Which one of the following techniques will most directly provide her with this information?
+            </div>
             <div class="options">
-                <div class="option">A. Port scanning</div>
-                <div class="option">B. Footprinting</div>
-                <div class="option">C. Vulnerability scanning</div>
-                <div class="option">D. Packet capture</div>
+                <label class="option"><input type="radio" name="q18" value="A"> <span class="option-letter">A.</span> Port scanning</label>
+                <label class="option"><input type="radio" name="q18" value="B"> <span class="option-letter">B.</span> Footprinting</label>
+                <label class="option"><input type="radio" name="q18" value="C"> <span class="option-letter">C.</span> Vulnerability scanning</label>
+                <label class="option"><input type="radio" name="q18" value="D"> <span class="option-letter">D.</span> Packet capture</label>
             </div>
         </div>
-
-        <div class="question">
-            <div class="question-number">Question 19</div>
-            <div class="question-text">Kevin recently identified a new security vulnerability and computed its CVSS base score as 6.5. Which risk category would this vulnerability fall into?</div>
+        <!-- Question 19 -->
+        <div class="question-block">
+            <span class="question-number">19</span>
+            <div class="question-text">
+                Kevin recently identified a new security vulnerability and computed its CVSS base score as 6.5. Which risk category would this vulnerability fall into?
+            </div>
             <div class="options">
-                <div class="option">A. Low</div>
-                <div class="option">B. Medium</div>
-                <div class="option">C. High</div>
-                <div class="option">D. Critical</div>
+                <label class="option"><input type="radio" name="q19" value="A"> <span class="option-letter">A.</span> Low</label>
+                <label class="option"><input type="radio" name="q19" value="B"> <span class="option-letter">B.</span> Medium</label>
+                <label class="option"><input type="radio" name="q19" value="C"> <span class="option-letter">C.</span> High</label>
+                <label class="option"><input type="radio" name="q19" value="D"> <span class="option-letter">D.</span> Critical</label>
             </div>
         </div>
-
-        <div class="question">
-            <div class="question-number">Question 20</div>
-            <div class="question-text">Which one of the CVSS metrics would contain information about the type of account access that an attacker must have to execute an attack?</div>
+        <!-- Question 20 -->
+        <div class="question-block">
+            <span class="question-number">20</span>
+            <div class="question-text">
+                Which one of the CVSS metrics would contain information about the type of account access that an attacker must have to execute an attack?
+            </div>
             <div class="options">
-                <div class="option">A. AV</div>
-                <div class="option">B. C</div>
-                <div class="option">C. PR</div>
-                <div class="option">D. AC</div>
+                <label class="option"><input type="radio" name="q20" value="A"> <span class="option-letter">A.</span> AV</label>
+                <label class="option"><input type="radio" name="q20" value="B"> <span class="option-letter">B.</span> C</label>
+                <label class="option"><input type="radio" name="q20" value="C"> <span class="option-letter">C.</span> PR</label>
+                <label class="option"><input type="radio" name="q20" value="D"> <span class="option-letter">D.</span> AC</label>
             </div>
         </div>
 
-        <div class="answer-sheet">
-            <h2>Answer Sheet</h2>
-            <p><strong>Instructions:</strong> Fill in your answers below. Each question has only one correct answer.</p>
-            <div class="answer-grid">
-                <div class="answer-item">
-                    <strong>1.</strong><br>
-                    A ⬜ B ⬜ C ⬜ D ⬜
-                </div>
-                <div class="answer-item">
-                    <strong>2.</strong><br>
-                    A ⬜ B ⬜ C ⬜ D ⬜
-                </div>
-                <div class="answer-item">
-                    <strong>3.</strong><br>
-                    A ⬜ B ⬜ C ⬜ D ⬜
-                </div>
-                <div class="answer-item">
-                    <strong>4.</strong><br>
-                    A ⬜ B ⬜ C ⬜ D ⬜
-                </div>
-                <div class="answer-item">
-                    <strong>5.</strong><br>
-                    A ⬜ B ⬜ C ⬜ D ⬜
-                </div>
-                <div class="answer-item">
-                    <strong>6.</strong><br>
-                    A ⬜ B ⬜ C ⬜ D ⬜
-                </div>
-                <div class="answer-item">
-                    <strong>7.</strong><br>
-                    A ⬜ B ⬜ C ⬜ D ⬜
-                </div>
-                <div class="answer-item">
-                    <strong>8.</strong><br>
-                    A ⬜ B ⬜ C ⬜ D ⬜
-                </div>
-                <div class="answer-item">
-                    <strong>9.</strong><br>
-                    A ⬜ B ⬜ C ⬜ D ⬜
-                </div>
-                <div class="answer-item">
-                    <strong>10.</strong><br>
-                    A ⬜ B ⬜ C ⬜ D ⬜
-                </div>
-                <div class="answer-item">
-                    <strong>11.</strong><br>
-                    A ⬜ B ⬜ C ⬜ D ⬜
-                </div>
-                <div class="answer-item">
-                    <strong>12.</strong><br>
-                    A ⬜ B ⬜ C ⬜ D ⬜
-                </div>
-                <div class="answer-item">
-                    <strong>13.</strong><br>
-                    A ⬜ B ⬜ C ⬜ D ⬜
-                </div>
-                <div class="answer-item">
-                    <strong>14.</strong><br>
-                    A ⬜ B ⬜ C ⬜ D ⬜
-                </div>
-                <div class="answer-item">
-                    <strong>15.</strong><br>
-                    A ⬜ B ⬜ C ⬜ D ⬜
-                </div>
-                <div class="answer-item">
-                    <strong>16.</strong><br>
-                    A ⬜ B ⬜ C ⬜ D ⬜
-                </div>
-                <div class="answer-item">
-                    <strong>17.</strong><br>
-                    A ⬜ B ⬜ C ⬜ D ⬜
-                </div>
-                <div class="answer-item">
-                    <strong>18.</strong><br>
-                    A ⬜ B ⬜ C ⬜ D ⬜
-                </div>
-                <div class="answer-item">
-                    <strong>19.</strong><br>
-                    A ⬜ B ⬜ C ⬜ D ⬜
-                </div>
-                <div class="answer-item">
-                    <strong>20.</strong><br>
-                    A ⬜ B ⬜ C ⬜ D ⬜
-                </div>
-            </div>
-        </div>
+        <div class="section-divider">End of Questions</div>
 
-        <div class="special-note">
-            <strong>Note:</strong> Check the detailed answer key document for complete explanations of all correct answers and why other options are incorrect.
-        </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setupQuestionPersistence('chapter5');
+        });
+    </script>
 </body>
 </html>
